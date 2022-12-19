@@ -6,6 +6,7 @@ import eslintPlugin from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/panoramax-website/',
   plugins: [vue(), eslintPlugin()],
   resolve: {
     alias: {
