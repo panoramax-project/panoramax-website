@@ -82,8 +82,8 @@ const messages = {
           "Vous souhaitez vous tenir infromé ou participer au projet Panoramax ? C'est par ici",
         joinUsLink: {
           title: "Contactez nous par mail à l'adresse suivant",
-          text: 'hello@panoramax.fr',
-          url: 'hello@panoramax.fr'
+          text: 'totototo',
+          url: 'totototo'
         },
         joinUsButton_1: {
           title: 'Accéder au forum de Panoramax',
