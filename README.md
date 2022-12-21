@@ -50,3 +50,25 @@ npm run workflows:unit
 ```sh
 npm run lint
 ```
+
+## Deploy with Github Pages
+
+The deploy is on the `gh-pages` branch.
+1 - You must build a static project :
+
+```sh
+vite build
+```
+
+2 - Add and Commit :
+
+```sh
+ga .
+gc -m 'my commit'
+```
+
+3 - Push on the specific branch
+
+```sh
+git subtree push --prefix dist origin gh-pages
+```

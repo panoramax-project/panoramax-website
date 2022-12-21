@@ -7,7 +7,7 @@ import eslintPlugin from 'vite-plugin-eslint'
 export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) }
   return defineConfig({
-    base: process.env.VITE_BASE_URL || '/panoramax-website/',
+    base: '/panoramax-website/',
     plugins: [vue(), eslintPlugin()],
     resolve: {
       alias: {
