@@ -62,9 +62,12 @@
                   class="wrapper-event-link"
                 >
                   <span>{{ joinUsButton.event_text_1 }}</span>
-                  <a :href="joinUsButton.event_link_url" class="event-link">{{
-                    joinUsButton.event_link_text
-                  }}</a>
+                  <a
+                    :href="joinUsButton.event_link_url"
+                    target="_blank"
+                    class="event-link"
+                    >{{ joinUsButton.event_link_text }}</a
+                  >
                   <span>{{ joinUsButton.event_text_2 }}</span>
                 </div>
                 <Button
