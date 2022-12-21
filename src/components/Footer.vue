@@ -28,7 +28,7 @@
         </li>
         <li>
           <a
-            href="https://forum.geocommuns.fr/c/panoramax/6"
+            href="https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
             target="_blank"
             class="footer-link"
             >{{ $t('general.footer.agenda_subtitle') }}</a

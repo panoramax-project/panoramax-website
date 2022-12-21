@@ -2,7 +2,7 @@
   <li class="entry-how-it-works">
     <div class="head">
       <div class="image-wrapper">
-        <img :src="imgUrl" :alt="props.image.alt" class="image" />
+        <img :src="props.image.url" :alt="props.image.alt" class="image" />
       </div>
       <h3 class="title">{{ props.title }}</h3>
     </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, computed } from 'vue'
+import { defineProps } from 'vue'
 import type { Image } from '@/components/ImageInterface'
 interface Props {
   title: string
@@ -28,9 +28,6 @@ interface Props {
   image: Image
 }
 const props = defineProps<Props>()
-const imgUrl = computed<string>(
-  () => `${import.meta.env.BASE_URL}${props.image.url}`
-)
 </script>
 
 <style scoped>

@@ -150,6 +150,7 @@ import Button from '@/components/Button.vue'
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 import type { Image } from '@/components/ImageInterface'
+
 interface HowItWorksData {
   title: string
   description: string[]
