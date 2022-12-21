@@ -247,7 +247,7 @@ const communities = <Image[]>[
   align-items: center;
   width: 100%;
   background-color: var(--blue-ligth);
-  padding: 0px 12%;
+  padding: 4rem 12%;
 }
 .wrapper-title {
   display: flex;
@@ -255,7 +255,7 @@ const communities = <Image[]>[
   margin-right: 2rem;
 }
 .image-top-home {
-  height: 40rem;
+  height: 100%;
   object-fit: contain;
   border-radius: 4rem;
   background-color: var(--white);
