@@ -2,25 +2,13 @@
   <header class="header">
     <nav class="nav">
       <img src="@/assets/images/logo.jpg" alt="" class="logo" />
-      <ul class="header-list">
-        <li>
-          <router-link to="/" class="header-link">{{
-            $t('general.nav.home')
-          }}</router-link>
-        </li>
-        <li>
-          <router-link to="a-propos" class="header-link">{{
-            $t('general.nav.about')
-          }}</router-link>
-        </li>
-      </ul>
     </nav>
   </header>
 </template>
 
 <style scoped>
 .header {
-  padding: 1rem 15rem;
+  padding: 1rem 12%;
   border-bottom: 0.1rem solid var(--violet);
 }
 .nav {

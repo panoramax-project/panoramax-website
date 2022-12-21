@@ -9,13 +9,6 @@
         <h2 class="main-title-second">
           {{ $t('pages.home.titleSecondPart') }}
         </h2>
-        <div class="button-about">
-          <Button
-            :text="$t('pages.home.discoverProject')"
-            look="blue"
-            url="a-propos"
-          ></Button>
-        </div>
       </div>
       <img
         src="@/assets/images/immersive-view.png"
@@ -52,9 +45,9 @@
           <JoinUs :title="joinUsLink.title">
             <div slot="content" class="wrapper-button">
               <img src="@/assets/images/mail.png" alt="" class="image-mail" />
-              <a :href="`mailto:${joinUsLink.url}`" class="mail-link">{{
-                joinUsLink.text
-              }}</a>
+              <a href="mailto:panoramax@panoramax.fr" class="mail-link"
+                >panoramax@panoramax.fr</a
+              >
             </div>
           </JoinUs>
           <JoinUs
@@ -63,12 +56,24 @@
             :title="joinUsButton.title"
           >
             <div slot="content" class="wrapper-button">
-              <Button
-                :text="joinUsButton.text"
-                :url="joinUsButton.url"
-                look="yellow"
-                type="external"
-              ></Button>
+              <div class="wrapper-content">
+                <div
+                  v-if="joinUsButton.event_text_1"
+                  class="wrapper-event-link"
+                >
+                  <span>{{ joinUsButton.event_text_1 }}</span>
+                  <a :href="joinUsButton.event_link_url" class="event-link">{{
+                    joinUsButton.event_link_text
+                  }}</a>
+                  <span>{{ joinUsButton.event_text_2 }}</span>
+                </div>
+                <Button
+                  :text="joinUsButton.text"
+                  :url="joinUsButton.url"
+                  look="yellow"
+                  type="external"
+                ></Button>
+              </div>
             </div>
           </JoinUs>
         </ul>
@@ -142,10 +147,9 @@ import Button from '@/components/Button.vue'
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 import type { Image } from '@/components/ImageInterface'
-
 interface HowItWorksData {
   title: string
-  description: string
+  description: string[]
   image: Image
 }
 interface joinUsData {
@@ -158,7 +162,11 @@ const { t } = useI18n()
 const howItWorks = <HowItWorksData[]>[
   {
     title: t('pages.home.howItWorks_1.title'),
-    description: t('pages.home.howItWorks_1.description'),
+    description: [
+      t('pages.home.howItWorks_1.description_1'),
+      t('pages.home.howItWorks_1.description_2'),
+      t('pages.home.howItWorks_1.description_3')
+    ],
     image: {
       url: t('pages.home.howItWorks_1.image.url'),
       alt: t('pages.home.howItWorks_1.image.alt')
@@ -166,7 +174,11 @@ const howItWorks = <HowItWorksData[]>[
   },
   {
     title: t('pages.home.howItWorks_2.title'),
-    description: t('pages.home.howItWorks_2.description'),
+    description: [
+      t('pages.home.howItWorks_2.description_1'),
+      t('pages.home.howItWorks_2.description_2'),
+      t('pages.home.howItWorks_2.description_3')
+    ],
     image: {
       url: t('pages.home.howItWorks_2.image.url'),
       alt: t('pages.home.howItWorks_2.image.alt')
@@ -174,7 +186,11 @@ const howItWorks = <HowItWorksData[]>[
   },
   {
     title: t('pages.home.howItWorks_3.title'),
-    description: t('pages.home.howItWorks_3.description'),
+    description: [
+      t('pages.home.howItWorks_3.description_1'),
+      t('pages.home.howItWorks_3.description_2'),
+      t('pages.home.howItWorks_3.description_3')
+    ],
     image: {
       url: t('pages.home.howItWorks_3.image.url'),
       alt: t('pages.home.howItWorks_3.image.alt')
@@ -195,6 +211,10 @@ const joinUsButtons = <joinUsData[]>[
   {
     title: t('pages.home.joinUsButton_2.title'),
     text: t('pages.home.joinUsButton_2.text'),
+    event_text_1: t('pages.home.joinUsButton_2.event_text_1'),
+    event_text_2: t('pages.home.joinUsButton_2.event_text_2'),
+    event_link_text: t('pages.home.joinUsButton_2.event_link_text'),
+    event_link_url: t('pages.home.joinUsButton_2.event_link_url'),
     url: t('pages.home.joinUsButton_2.url')
   }
 ]
@@ -224,7 +244,7 @@ const communities = <Image[]>[
   align-items: center;
   width: 100%;
   background-color: var(--blue-ligth);
-  padding: 0px 15rem;
+  padding: 0px 12%;
 }
 .wrapper-title {
   display: flex;
@@ -256,7 +276,7 @@ const communities = <Image[]>[
   position: relative;
   border-radius: 4rem;
   margin-top: 10rem;
-  padding: 0rem 15rem;
+  padding: 0rem 12%;
 }
 .home-section-title {
   text-align: center;
@@ -280,10 +300,28 @@ const communities = <Image[]>[
   position: relative;
   border: 0.1rem solid var(--violet-dark);
   border-radius: 2rem;
+  padding: 0 2rem 2rem;
+}
+.wrapper-event-link {
+  margin-bottom: 1rem;
+}
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
 }
 .wrapper-button {
   display: flex;
   align-items: center;
+}
+.event-link {
+  text-decoration: underline;
+  color: var(--violet-dark);
+  margin-left: 0.5rem;
+}
+.event-link:hover {
+  background-color: transparent;
+  text-decoration: none;
 }
 .mail-link {
   color: var(--violet-dark);
@@ -356,7 +394,7 @@ const communities = <Image[]>[
   height: 5rem;
 }
 .entry-footer {
-  padding: 0px 15rem;
+  padding: 0px 12%;
 }
 @media (max-width: 1324px) {
   .header-home,
@@ -377,6 +415,7 @@ const communities = <Image[]>[
   }
   .wrapper-list {
     flex-direction: column;
+    align-items: center;
   }
   .home-section-description {
     width: 100%;
@@ -398,7 +437,8 @@ const communities = <Image[]>[
     display: none;
   }
   .header-home,
-  .home-section {
+  .home-section,
+  .entry-footer {
     padding-right: 2rem;
     padding-left: 2rem;
   }

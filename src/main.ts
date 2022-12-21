@@ -38,13 +38,13 @@ const messages = {
         discoverProject: 'DÉCOUVRIR LE PROJET',
         howItWorksTitle: 'Comment ça marche ?',
         howItWorksDescription:
-          "Panoramax mobilise les énergies des différentes communautés (Collectivités, OSM, IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
+          "Panoramax fédère les initiatives (des collectivités, des contributeurs OSM, de l’IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
         howItWorks_1: {
-          title: 'Mettre en commun',
-          description:
-            '👉 Les savoirs-faire et les expériences sur le terrain\n' +
-            '👉 Les standards et les règles d’utilisation et de contribution\n' +
-            "👉 Les modes d'hébergement des données (base gérée par la communauté ou propre)",
+          title: 'Un geocommun',
+          description_1: 'Des photos de rue (360° ou non) accessibles à tous',
+          description_2:
+            'Des standards et les règles d’utilisation et de contribution',
+          description_3: 'Des outils pour favoriser les usages',
           image: {
             url: new URL(`@/assets/images/common-icon.png`, import.meta.url)
               .href,
@@ -52,12 +52,12 @@ const messages = {
           }
         },
         howItWorks_2: {
-          title: 'Favoriser les usages',
-          description:
-            '👉 Cartographier\n' +
-            '👉 Inventorier le mobilier urbain\n' +
-            '👉 Détecter les problèmes de voirie\n' +
-            '👉 Et construire ensemble les usages de demain',
+          title: 'Un hébergement flexible',
+          description_1:
+            'Des solutions adaptées aux usages de chacun : instance commune ou auto-hébergée',
+          description_2: 'Un principe commun d’ouverture des données ',
+          description_3:
+            'Des licences d’utilisation libre propres aux instances ',
           image: {
             url: new URL(`@/assets/images/usecases-icon.png`, import.meta.url)
               .href,
@@ -65,10 +65,12 @@ const messages = {
           }
         },
         howItWorks_3: {
-          title: 'Soutenir la gestion participative',
-          description:
-            '👉 Instaurer une gouvernance commune\n' +
-            '👉 Assurer la souveraineté et la pérennité des instances\n',
+          title: 'Une gouvernance commune',
+          description_1: 'Des processus collectifs de décisions',
+          description_2:
+            'Des moments d’échanges ouverts à tous les membres de la communauté',
+          description_3:
+            'Une multiplicité d’acteurs pour assurer la pérennité du projet',
           image: {
             url: new URL(
               `@/assets/images/participative-icon.png`,
@@ -81,19 +83,21 @@ const messages = {
         joinUsDescription:
           "Vous souhaitez vous tenir infromé ou participer au projet Panoramax ? C'est par ici",
         joinUsLink: {
-          title: "Contactez nous par mail à l'adresse suivant",
-          text: 'totototo',
-          url: 'totototo'
+          title: 'Une question, une remarque ?\n Contactez-nous'
         },
         joinUsButton_1: {
-          title: 'Accéder au forum de Panoramax',
-          text: 'Voir le forum',
+          title: 'Participez à la communauté',
+          text: 'Accéder au forum',
           url: 'https://forum.geocommuns.fr/c/panoramax/6'
         },
         joinUsButton_2: {
-          title: "L'agenda des évènements de Panoramax",
-          text: 'Voir les évènements',
-          url: 'https://forum.geocommuns.fr/c/panoramax/6'
+          title: 'Prochain évènement Panoramax',
+          text: "Voir l'agenda complet",
+          event_text_1: 'Comité mensuel',
+          event_text_2: ': 02/01/22 - 16h',
+          event_link_text: 'en visio',
+          event_link_url: 'https://meet.jit.si/panoramax',
+          url: 'https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/'
         },
         iconMailAlt: "Icon d'email",
         communityTitle: 'La communauté Panoramax',

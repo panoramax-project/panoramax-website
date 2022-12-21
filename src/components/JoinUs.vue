@@ -22,20 +22,25 @@ const props = defineProps<Props>()
   width: 33%;
   background-color: var(--blue-ligth);
   border-radius: 2rem;
-  margin: 0 2rem 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
   padding: 2rem 2rem 4rem;
+}
+.entry-join-us:nth-child(2) {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .title {
   font-family: SourceSansPro-SemiBold;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+  white-space: pre;
 }
 
 @media (max-width: 1024px) {
   .entry-join-us {
-    width: auto;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {

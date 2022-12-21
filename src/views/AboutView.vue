@@ -117,9 +117,14 @@ const aboutData = <ArticleData[]>[
   .page-about {
     padding-right: 2rem;
     padding-left: 2rem;
+    padding-bottom: 6rem;
   }
   .introduction,
   .article {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .entry-footer {
     padding-right: 2rem;
     padding-left: 2rem;
   }
