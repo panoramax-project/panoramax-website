@@ -2,7 +2,7 @@
   <li class="entry-how-it-works">
     <div class="head">
       <div class="image-wrapper">
-        <img :src="imageUrl" :alt="props.image.alt" class="image" />
+        <img :src="imgUrl" :alt="props.image.alt" class="image" />
       </div>
       <h3 class="title">{{ props.title }}</h3>
     </div>
@@ -28,7 +28,7 @@ interface Props {
   image: Image
 }
 const props = defineProps<Props>()
-const imageUrl = computed<string>(
+const imgUrl = computed<string>(
   () => `${import.meta.env.BASE_URL}${props.image.url}`
 )
 </script>
