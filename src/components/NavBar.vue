@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nav class="nav">
-      <router-link to="/" class="header-link"
+      <router-link to="/" class="header-link logo-link"
         ><img src="@/assets/images/logo.jpg" alt="" class="logo"
       /></router-link>
       <ul class="header-list">
@@ -44,6 +44,9 @@
   color: var(--violet);
   margin-left: 2rem;
   font-size: 1.8rem;
+}
+.logo-link {
+  margin-left: 0;
 }
 .header-link:hover {
   background-color: transparent;
