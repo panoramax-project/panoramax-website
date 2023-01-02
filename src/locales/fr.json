@@ -103,44 +103,44 @@
       "subtitle_2": "La gouvernance de Panoramax",
       "text_2": "Panoramax, ce n’est pas 1,2 ou 3 membres majoritaires, mais une multiplicité d’acteurs qui participent tous aux décisions de la communauté. Un principe essentiel d’ouverture et d’hétérogénnéité propre au commun, pour assurer sa perennité et son indépendance.\n\n<strong>Qui prend les décisions?</strong>\n✔ Les collectivités, agglomérations, départements, régions, et membres de l’AITF (Association des Ingénieurs territoriaux de France)\n✔ Les réseaux de distribution (distributeurs d’électricité, eau, traîtement des déchets)\n✔ OpenStreetMap, écosystème de carte ouverte et collaborative du monde \n✔ l'IGN (Institut national de l'information géographique et forestière)\n✔ les acteurs privés, éditeurs de logiciel ou data solutions. \n\nLes propositions sont débattues sur <a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>le forum du géocommun</a> et  lors <a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>des sessions d’échanges organisées regulièrement.</a>\nLe fonctionnement et les modalités de la gouvernance sont en cours de construction. Vous souhaitez participer à nos échanges? <a href='https://forum.geocommuns.fr/t/gouvernance-panoramax-atelier-du-6-12-2022/410/13' target='_blank' rel='noopener'>C’est par ici.</a>",
       "subtitle_3": "4 phases pour concevoir un service numérique utile ",
-      "text_3": "\n<img src='/panoramax-website/src/assets/images/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-commun' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développements, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
+      "text_3": "\n<img src='/panoramax-website/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-commun' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développements, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
       "subtitle_team": "L'équipe Panoramax",
       "panoramax_text": "Panoramax - Base vues immersives libres",
       "team": {
         "member_1": {
           "name": "Adrien Pavie",
           "work": "Géomaticien / Développeur",
-          "image_url": "/panoramax-website/src/assets/images/panier-avide.png",
+          "image_url": "/panoramax-website/panier-avide.png",
           "image_alt": "Photo du membre de l'équipe Adrien Pavie"
         },
         "member_2": {
           "name": "Antoine Desbodes",
           "work": "Développeur backend",
-          "image_url": "/panoramax-website/src/assets/images/antoine.jpg",
+          "image_url": "/panoramax-website/antoine.jpg",
           "image_alt": "Photo du membre de l'équipe Antoine Desbodes"
         },
         "member_3": {
           "name": "Camille Salou",
           "work": "Intrapreneuse",
-          "image_url": "/panoramax-website/src/assets/images/csalou.png",
+          "image_url": "/panoramax-website/csalou.png",
           "image_alt": "Photo du membre de l'équipe Camille Salou"
         },
         "member_4": {
           "name": "Christian Quest",
           "work": "Datatouilleur / Product Owner",
-          "image_url": "/panoramax-website/src/assets/images/christian-quest.jpg",
+          "image_url": "/panoramax-website/christian-quest.jpg",
           "image_alt": "Photo du membre de l'équipe Christian Quest"
         },
         "member_5": {
           "name": "Jean Andreani",
           "work": "Développeur frontend",
-          "image_url": "/panoramax-website/src/assets/images/logo-generique.jpeg",
+          "image_url": "/panoramax-website/logo-generique.jpeg",
           "image_alt": "Photo du membre de l'équipe Jean Andreani"
         },
         "member_6": {
           "name": "Mathilde Ferrey",
           "work": "Responsable Déploiement",
-          "image_url": "/panoramax-website/src/assets/images/mferrey.jpeg",
+          "image_url": "/panoramax-website/mferrey.jpeg",
           "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
         }
       }
