@@ -214,7 +214,7 @@ const joinUsLink = <joinUsData>{
   text: t('pages.home.joinUsLink.text'),
   url: t('pages.home.joinUsLink.url')
 }
-const joinUsButtons = <joinUsData[]>[
+const joinUsButtons = [
   {
     title: t('pages.home.joinUsButton_1.title'),
     text: t('pages.home.joinUsButton_1.text'),
