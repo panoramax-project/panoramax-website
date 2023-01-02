@@ -12,7 +12,7 @@
         <div class="wrapper-button-top">
           <Button
             :text="$t('pages.home.discoverProject')"
-            url="/a-propo"
+            url="/a-propos"
             look="blue"
           ></Button>
         </div>
