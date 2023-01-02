@@ -163,7 +163,13 @@ interface HowItWorksData {
   description: string[]
   image: Image
 }
-interface joinUsData {
+interface JoinUsEventData {
+  event_text_1: string
+  event_text_2: string
+  event_link_text: string
+  event_link_url: string
+}
+interface joinUsData extends Partial<JoinUsEventData> {
   title: string
   text: string
   url: string
@@ -214,7 +220,7 @@ const joinUsLink = <joinUsData>{
   text: t('pages.home.joinUsLink.text'),
   url: t('pages.home.joinUsLink.url')
 }
-const joinUsButtons = [
+const joinUsButtons = <joinUsData[]>[
   {
     title: t('pages.home.joinUsButton_1.title'),
     text: t('pages.home.joinUsButton_1.text'),
@@ -223,11 +229,11 @@ const joinUsButtons = [
   {
     title: t('pages.home.joinUsButton_2.title'),
     text: t('pages.home.joinUsButton_2.text'),
+    url: t('pages.home.joinUsButton_2.url'),
     event_text_1: t('pages.home.joinUsButton_2.event_text_1'),
     event_text_2: t('pages.home.joinUsButton_2.event_text_2'),
     event_link_text: t('pages.home.joinUsButton_2.event_link_text'),
-    event_link_url: t('pages.home.joinUsButton_2.event_link_url'),
-    url: t('pages.home.joinUsButton_2.url')
+    event_link_url: t('pages.home.joinUsButton_2.event_link_url')
   }
 ]
 const communities = <Image[]>[
