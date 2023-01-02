@@ -25,7 +25,7 @@
     "home": {
       "title": "Panoramax",
       "titleSecondPart": "Partager des images pour cartographier le monde",
-      "subtitleImage": "Des images de vue immersives",
+      "subtitleImage": "Quelques exemples du contenu de Panoramax",
       "illustrationAlt": "Illustration cartographique",
       "discoverProject": "DÉCOUVRIR LE PROJET",
       "howItWorksTitle": "Comment ça marche ?",
@@ -33,8 +33,9 @@
       "howItWorks_1": {
         "title": "Un geocommun",
         "description_1": "Des photos de rue (360° ou non) accessibles à tous",
-        "description_2": "Des standards et les règles d’utilisation et de contribution",
-        "description_3": "Des outils pour favoriser les usages",
+        "description_2": "Des bonnes pratiques et des cas d'usage",
+        "description_3": "Des standards et des règles d’utilisation et de contribution",
+        "description_4": "Des outils pour favoriser les usages",
         "image": {
           "url": "/panoramax-website/common-icon.png",
           "alt": "Image de mise en commun"
@@ -74,7 +75,7 @@
         "title": "Prochain évènement Panoramax",
         "text": "Voir l'agenda complet",
         "event_text_1": "Comité mensuel",
-        "event_text_2": ": 09/01/23 - 16h",
+        "event_text_2": ": 09/01/23 - 17h",
         "event_link_text": "en visio",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
@@ -96,11 +97,53 @@
     },
     "about": {
       "title": "À propos de Panoramax",
-      "introduction": "Coucou super intro blablabla a parisps À propos de Panoramax À propos de Panoramax.",
-      "subtitle_1": "Description du projet",
-      "text_1": "Description du projet Description du projet Description du projet Description du projetDescription du projet Description du projet Description du projetDescription du projetDescription du projet Description du projet Description du projet Description du projet Description du projet Description du projet  Description du projet",
-      "subtitle_2": "Description du projet",
-      "text_2": "Description du projet Description du projet Description du projet Description du projetDescription du projet Description du projet Description du projetDescription du projetDescription du projet Description du projet Description du projet Description du projet Description du projet Description du projet  Description du projet"
+      "introduction": "Vérifier l’état des voiries ? Inventorier le mobilier urbain ? Ou bien préparer une intervention sur un réseau de distribution ?\n\nPour réduire et faciliter les déplacements des agents sur le terrain, les collectivités locales comme les gestionnaires de réseaux ont intérêt à utiliser les bases de photos de rue existantes. Les solutions proposées sont cependant loin d’être idéales :\n\n✔ De nombreuses zones ne sont pas couvertes, notamment les zones rurales.\n✔ Plusieurs années peuvent s’écouler entre deux prises de vues.\n✔ La réutilisation des données peut être payante, et n’est pas toujours libre de droits,\n✔ Et surtout, la donnée est dépendante d’acteurs privés libres de changer leurs règles d’utilisation à tout moment.",
+      "subtitle_1": "Le géocommun Panoramax",
+      "text_1": "Les différentes communautés (AITF*, OSM*, Gestionnaires de réseaux, IGN, etc.) bouillonnent d’initiatives, mais sans voir l’émergence d’une réelle alternative aux modèles propriétaires de “streetview”. La solution proposée par Panoramax : fédérer ces inititatives pour favoriser l'émergence d’un géocommun.\n\n<strong>Une base de photos de rues, 360° ou non, ouverte et indépendante  :</strong> \n✔ Les contributeurs alimentent, gèrent et partagent les photos \n✔ L’hébergement des données est flexible : les membres de la communauté ont le choix de les stocker sur leur instance ou bien sur l’instance commune. \n\n<strong>Des standards et des règles d’utilisation définies par la communauté pour favoriser les usages :</strong> \n✔ Des standards techniques définis par la communauté pour le stockage et la publication de photos \n✔ <a href='https://forum.geocommuns.fr/t/licences-pour-panoramax-atelier-du-5-12-2022/409/17' target='_blank' rel='noopener'>Une licence</a> - toujours libre - par instance\n\n<strong>Des outils mis à disposition de tous :</strong> \n✔ <a href='https://forum.geocommuns.fr/t/floutage-anonymisation/106' target='_blank' rel='noopener'>Floutage automatisé pour anonymiser les véhicules et les personnes.</a>\n✔ Suppression des doublons\n✔ Tri et filtres pour faciliter la recherche des données pertinentes",
+      "subtitle_2": "La gouvernance de Panoramax",
+      "text_2": "Panoramax, ce n’est pas 1,2 ou 3 membres majoritaires, mais une multiplicité d’acteurs qui participent tous aux décisions de la communauté. Un principe essentiel d’ouverture et d’hétérogénnéité propre au commun, pour assurer sa perennité et son indépendance.\n\n<strong>Qui prend les décisions?</strong>\n✔ Les collectivités, agglomérations, départements, régions, et membres de l’AITF (Association des Ingénieurs territoriaux de France)\n✔ Les réseaux de distribution (distributeurs d’électricité, eau, traîtement des déchets)\n✔ OpenStreetMap, écosystème de carte ouverte et collaborative du monde \n✔ l'IGN (Institut national de l'information géographique et forestière)\n✔ les acteurs privés, éditeurs de logiciel ou data solutions. \n\nLes propositions sont débattues sur <a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>le forum du géocommun</a> et  lors <a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>des sessions d’échanges organisées regulièrement.</a>\nLe fonctionnement et les modalités de la gouvernance sont en cours de construction. Vous souhaitez participer à nos échanges? <a href='https://forum.geocommuns.fr/t/gouvernance-panoramax-atelier-du-6-12-2022/410/13' target='_blank' rel='noopener'>C’est par ici.</a>",
+      "subtitle_3": "4 phases pour concevoir un service numérique utile ",
+      "text_3": "\n<img src='/panoramax-website/src/assets/images/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-commun' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développements, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
+      "subtitle_team": "L'équipe Panoramax",
+      "panoramax_text": "Panoramax - Base vues immersives libres",
+      "team": {
+        "member_1": {
+          "name": "Adrien Pavie",
+          "work": "Géomaticien / Développeur",
+          "image_url": "/panoramax-website/src/assets/images/panier-avide.png",
+          "image_alt": "Photo du membre de l'équipe Adrien Pavie"
+        },
+        "member_2": {
+          "name": "Antoine Desbodes",
+          "work": "Développeur backend",
+          "image_url": "/panoramax-website/src/assets/images/antoine.jpg",
+          "image_alt": "Photo du membre de l'équipe Antoine Desbodes"
+        },
+        "member_3": {
+          "name": "Camille Salou",
+          "work": "Intrapreneuse",
+          "image_url": "/panoramax-website/src/assets/images/csalou.png",
+          "image_alt": "Photo du membre de l'équipe Camille Salou"
+        },
+        "member_4": {
+          "name": "Christian Quest",
+          "work": "Datatouilleur / Product Owner",
+          "image_url": "/panoramax-website/src/assets/images/christian-quest.jpg",
+          "image_alt": "Photo du membre de l'équipe Christian Quest"
+        },
+        "member_5": {
+          "name": "Jean Andreani",
+          "work": "Développeur frontend",
+          "image_url": "/panoramax-website/src/assets/images/logo-generique.jpeg",
+          "image_alt": "Photo du membre de l'équipe Jean Andreani"
+        },
+        "member_6": {
+          "name": "Mathilde Ferrey",
+          "work": "Responsable Déploiement",
+          "image_url": "/panoramax-website/src/assets/images/mferrey.jpeg",
+          "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
+        }
+      }
     }
   }
 }

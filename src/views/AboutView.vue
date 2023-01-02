@@ -2,16 +2,34 @@
   <NavBar></NavBar>
   <main class="page-about">
     <h1 class="main-title">{{ $t('pages.about.title') }}</h1>
-    <img
-      src="@/assets/images/immersive-view-street.jpg"
-      :alt="$t('pages.home.illustrationAlt')"
-      class="image-top-about"
-    />
-    <section class="section">
+    <div class="wrapper-introduction">
+      <img
+        src="@/assets/images/immersive-view-street.jpg"
+        :alt="$t('pages.home.illustrationAlt')"
+        class="image-top-about"
+      />
       <p class="introduction">{{ t('pages.about.introduction') }}</p>
+    </div>
+    <section class="section">
       <article v-for="article in aboutData" class="article">
         <h2 class="article-title">{{ article.subtitle }}</h2>
-        <p class="article-text">{{ article.text }}</p>
+        <p class="article-text" v-html="article.text"></p>
+      </article>
+    </section>
+    <section class="section">
+      <article class="article-team">
+        <h2 class="article-title">{{ t('pages.about.subtitle_team') }}</h2>
+        <ul class="team-list">
+          <li v-for="team in teamData" class="team-list-item">
+            <img
+              :src="team.image_url"
+              :alt="team.image_alt"
+              class="team-image"
+            />
+            <span class="team-name">{{ team.name }}</span>
+            <span class="team-work">{{ team.work }}</span>
+          </li>
+        </ul>
       </article>
     </section>
   </main>
@@ -29,6 +47,12 @@ interface ArticleData {
   subtitle: string
   text: string
 }
+interface TeamData {
+  name: string
+  work: string
+  image_url: string
+  image_alt: string
+}
 const { t } = useI18n()
 
 const aboutData = <ArticleData[]>[
@@ -39,6 +63,49 @@ const aboutData = <ArticleData[]>[
   {
     subtitle: t('pages.about.subtitle_2'),
     text: t('pages.about.text_2')
+  },
+  {
+    subtitle: t('pages.about.subtitle_3'),
+    text: t('pages.about.text_3')
+  }
+]
+
+const teamData = <TeamData[]>[
+  {
+    name: t('pages.about.team.member_1.name'),
+    work: t('pages.about.team.member_1.work'),
+    image_url: t('pages.about.team.member_1.image_url'),
+    image_alt: t('pages.about.team.member_1.image_alt')
+  },
+  {
+    name: t('pages.about.team.member_2.name'),
+    work: t('pages.about.team.member_2.work'),
+    image_url: t('pages.about.team.member_2.image_url'),
+    image_alt: t('pages.about.team.member_2.image_alt')
+  },
+  {
+    name: t('pages.about.team.member_3.name'),
+    work: t('pages.about.team.member_3.work'),
+    image_url: t('pages.about.team.member_3.image_url'),
+    image_alt: t('pages.about.team.member_3.image_alt')
+  },
+  {
+    name: t('pages.about.team.member_4.name'),
+    work: t('pages.about.team.member_4.work'),
+    image_url: t('pages.about.team.member_4.image_url'),
+    image_alt: t('pages.about.team.member_4.image_alt')
+  },
+  {
+    name: t('pages.about.team.member_5.name'),
+    work: t('pages.about.team.member_5.work'),
+    image_url: t('pages.about.team.member_5.image_url'),
+    image_alt: t('pages.about.team.member_5.image_alt')
+  },
+  {
+    name: t('pages.about.team.member_6.name'),
+    work: t('pages.about.team.member_6.work'),
+    image_url: t('pages.about.team.member_6.image_url'),
+    image_alt: t('pages.about.team.member_6.image_alt')
   }
 ]
 </script>
@@ -48,10 +115,9 @@ const aboutData = <ArticleData[]>[
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10rem 30rem;
+  padding: 10rem 18%;
 }
 .main-title {
-  text-align: center;
   font-family: SourceSansPro-Bold;
   font-size: 5rem;
   color: var(--violet-dark);
@@ -61,17 +127,27 @@ const aboutData = <ArticleData[]>[
 .image-top-about {
   border-radius: 4rem;
   object-fit: cover;
-  height: 40rem;
+  height: 30rem;
+}
+.wrapper-introduction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
 }
 .introduction {
   font-family: SourceSansPro-SemiBold;
   font-size: 1.8rem;
-  padding: 6rem 4rem 0;
+  padding-left: 4rem;
+  padding-bottom: 0;
+  white-space: pre-wrap;
 }
 .article {
   padding: 4rem;
   border-radius: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+.article-team {
+  margin-top: 2rem;
 }
 .article:nth-child(odd) {
   background-color: var(--blue-ligth);
@@ -84,9 +160,65 @@ const aboutData = <ArticleData[]>[
 .article-text {
   font-size: 1.6rem;
   line-height: 1.5;
+  white-space: pre-wrap;
 }
 .entry-footer {
   padding: 0px 15rem;
+}
+.team-list {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 3rem 5rem;
+  margin-right: 2rem;
+  border: 0.1rem solid var(--violet-dark);
+  border-radius: 2rem;
+  width: calc(33% - 1.1rem);
+  margin-bottom: 2rem;
+}
+.team-list-item:nth-child(3),
+.team-list-item:nth-child(6) {
+  margin-right: 0;
+}
+.team-image {
+  margin-bottom: 3rem;
+  height: 9rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.team-name {
+  font-family: SourceSansPro-SemiBold;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.team-work {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 1624px) {
+  .wrapper-introduction {
+    flex-direction: column;
+    align-items: initial;
+  }
+  .image-top-about {
+    height: 40rem;
+  }
+  .image-top-about {
+    margin-bottom: 4rem;
+  }
+  .introduction {
+    padding-right: 4rem;
+  }
+  .team-list-item {
+    width: calc(50% - 1.1rem);
+  }
 }
 @media (max-width: 1324px) {
   .page-about {
@@ -102,6 +234,13 @@ const aboutData = <ArticleData[]>[
   .page-about {
     padding-right: 10rem;
     padding-left: 10rem;
+  }
+  .team-list-item:nth-child(3) {
+    margin-right: 2rem;
+  }
+  .team-list-item:nth-child(2),
+  .team-list-item:nth-child(4) {
+    margin-right: 0;
   }
   .image-top-about {
     height: 30rem;
@@ -127,6 +266,29 @@ const aboutData = <ArticleData[]>[
   .entry-footer {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-list-item,
+  .team-list-item:nth-child(3) {
+    width: 100%;
+    margin-right: 0;
+  }
+  .page-about {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .article-team,
+  .main-title {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .image-top-about,
+  .article {
+    border-radius: 0;
+  }
+  .article {
+    margin-bottom: 2rem;
   }
 }
 </style>

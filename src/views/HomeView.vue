@@ -9,6 +9,13 @@
         <h2 class="main-title-second">
           {{ $t('pages.home.titleSecondPart') }}
         </h2>
+        <div class="wrapper-button-top">
+          <Button
+            :text="$t('pages.home.discoverProject')"
+            url="/a-propos"
+            look="blue"
+          ></Button>
+        </div>
       </div>
       <img
         src="@/assets/images/immersive-view.png"
@@ -169,7 +176,8 @@ const howItWorks = <HowItWorksData[]>[
     description: [
       t('pages.home.howItWorks_1.description_1'),
       t('pages.home.howItWorks_1.description_2'),
-      t('pages.home.howItWorks_1.description_3')
+      t('pages.home.howItWorks_1.description_3'),
+      t('pages.home.howItWorks_1.description_4')
     ],
     image: {
       url: t('pages.home.howItWorks_1.image.url'),
@@ -255,6 +263,10 @@ const communities = <Image[]>[
   flex-direction: column;
   margin-right: 2rem;
 }
+.wrapper-button-top {
+  width: fit-content;
+  margin-top: 4rem;
+}
 .image-top-home {
   height: 100%;
   object-fit: contain;
@@ -317,6 +329,7 @@ const communities = <Image[]>[
 .wrapper-button {
   display: flex;
   align-items: center;
+  width: fit-content;
 }
 .event-link {
   text-decoration: underline;
@@ -354,9 +367,6 @@ const communities = <Image[]>[
   height: 3rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-}
-.button-about {
-  margin-top: 4rem;
 }
 .carousel__item {
   min-height: 200px;
