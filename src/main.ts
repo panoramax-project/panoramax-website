@@ -5,7 +5,7 @@ import router from './router'
 import fr from './locales/fr.json'
 
 import './assets/main.css'
-
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL
 const i18n = createI18n({
   locale: 'fr',
   legacy: false,

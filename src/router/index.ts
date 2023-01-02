@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 
 const router = createRouter({
-  history: createWebHistory('/panoramax-website/'),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
