@@ -10,10 +10,29 @@
             $t('general.nav.home')
           }}</router-link>
         </li>
-        <li>
-          <router-link to="a-propos" class="header-link">{{
-            $t('general.nav.about')
-          }}</router-link>
+        <li class="header-logo first-logo">
+          <a href="https://mapstodon.space/@panoramax" target="_blank"
+            ><img
+              src="@/assets/images/mastodon-logo.png"
+              :alt="$t('general.nav.alt_mastodon')"
+              class="header-img"
+          /></a>
+        </li>
+        <li class="header-logo">
+          <a href="https://www.linkedin.com/groups/12741355/" target="_blank"
+            ><img
+              src="@/assets/images/linkedin-logo.png"
+              :alt="$t('general.nav.alt_linkedin')"
+              class="header-img"
+          /></a>
+        </li>
+        <li class="header-logo">
+          <a href="https://twitter.com/panoramax_" target="_blank"
+            ><img
+              src="@/assets/images/twitter-logo.png"
+              :alt="$t('general.nav.alt_twitter')"
+              class="header-img"
+          /></a>
         </li>
       </ul>
     </nav>
@@ -38,6 +57,7 @@
 }
 .header-list {
   display: flex;
+  align-items: center;
 }
 .header-link {
   text-decoration: none;
@@ -51,6 +71,18 @@
 .header-link:hover {
   background-color: transparent;
   text-decoration: underline;
+}
+.header-img {
+  height: 2rem;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+}
+.first-logo {
+  margin-left: 4rem;
+}
+.header-logo a:hover {
+  opacity: 0.7;
+  background: transparent;
 }
 @media (max-width: 1324px) {
   .header {

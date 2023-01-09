@@ -2,7 +2,10 @@
   "general": {
     "nav": {
       "home": "Accueil",
-      "about": "À propos"
+      "about": "À propos",
+      "alt_mastodon": "Logo Mastodon",
+      "alt_linkedin": "Logo linkedin",
+      "alt_twitter": "Logo twitter"
     },
     "footer": {
       "panoramax_title": "Panoramax",
@@ -14,6 +17,7 @@
       "forum_subtitle": "Forum",
       "agenda_subtitle": "Agenda",
       "twitter_subtitle": "Twitter",
+      "mastodon_subtitle": "Mastodon",
       "linkedin_subtitle": "LinkedIn",
       "credit_mail_subtitle": "Email icône créée par Those Icons",
       "credit_decentralize_subtitle": "Décentralisé icône créée par Freepik",

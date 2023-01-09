@@ -44,6 +44,14 @@
         </li>
         <li>
           <a
+            href="https://mapstodon.space/@panoramax"
+            target="_blank"
+            class="footer-link"
+            >{{ $t('general.footer.mastodon_subtitle') }}</a
+          >
+        </li>
+        <li>
+          <a
             href="https://www.linkedin.com/groups/12741355/"
             target="_blank"
             class="footer-link"
