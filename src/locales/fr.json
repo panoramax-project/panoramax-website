@@ -26,14 +26,14 @@
     "home": {
       "title": "Panoramax",
       "titleSecondPart": "L’alternative libre pour photo-cartographier les territoires",
-      "subtitleImage": "Quelques exemples du contenu de Panoramax",
+      "subtitleImage": "Un aperçu de Panoramax",
       "illustrationAlt": "Illustration cartographique",
       "discoverProject": "DÉCOUVRIR LE PROJET",
       "howItWorksTitle": "Comment ça marche ?",
       "howItWorksDescription": "Panoramax fédère les initiatives (des collectivités, des contributeurs OSM, de l’IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
       "howItWorks_1": {
         "title": "Un geocommun",
-        "description_1": "Des photos de rue (360° ou non) accessibles à tous",
+        "description_1": "Des photos de terrain (360° ou non) accessibles à tous",
         "description_2": "Des standards et des règles d’utilisation et de contribution",
         "description_3": "Des bonnes pratiques et des outils pour favoriser les usages",
         "image": {
@@ -43,7 +43,7 @@
       },
       "howItWorks_2": {
         "title": "Un hébergement flexible",
-        "description_1": "Des solutions adaptées aux usages de chacun : instance commune ou auto-hébergée",
+        "description_1": "Une fédération avec des solutions adaptées aux usages de chacun : instance commune ou auto-hébergée",
         "description_2": "Un principe commun d’ouverture des données ",
         "description_3": "Des licences d’utilisation libre propres aux instances ",
         "image": {
@@ -53,7 +53,7 @@
       },
       "howItWorks_3": {
         "title": "Une gouvernance commune",
-        "description_1": "Des processus collectifs de décisions",
+        "description_1": "Des processus ouverts de décisions",
         "description_2": "Des moments d’échanges ouverts à tous les membres de la communauté",
         "description_3": "Une multiplicité d’acteurs pour assurer la pérennité du projet",
         "image": {
@@ -62,7 +62,7 @@
         }
       },
       "joinUsTitle": "Rejoignez-nous !",
-      "joinUsDescription": "Vous souhaitez vous tenir informé ou participer au projet Panoramax ? C'est par ici",
+      "joinUsDescription": "Vous souhaitez participer ou vous tenir informé ? C'est par ici",
       "joinUsLink": {
         "title": "Une question, une remarque ?\n Contactez-nous"
       },
@@ -74,7 +74,7 @@
       "joinUsButton_2": {
         "title": "Prochain évènement Panoramax",
         "text": "Voir l'agenda complet",
-        "event_text_1": "Comité mensuel",
+        "event_text_1": "Temp d'échange mensuel",
         "event_text_2": ": 09/01/23 - 17h",
         "event_link_text": "en visio",
         "event_link_url": "https://meet.jit.si/panoramax",
