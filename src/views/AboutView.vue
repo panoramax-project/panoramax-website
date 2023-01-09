@@ -29,12 +29,7 @@
           </h2>
         </div>
         <p class="article-text" v-html="article.text"></p>
-        <img
-          v-if="article.image"
-          :src="article.image.url"
-          :alt="article.image.alt"
-          class="article-image"
-        />
+        <img class="article-image" />
       </article>
     </section>
     <section class="section">
