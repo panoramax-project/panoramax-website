@@ -9,13 +9,6 @@
         <h2 class="main-title-second">
           {{ $t('pages.home.titleSecondPart') }}
         </h2>
-        <div class="wrapper-button-top">
-          <Button
-            :text="$t('pages.home.discoverProject')"
-            url="/a-propos"
-            look="blue"
-          ></Button>
-        </div>
       </div>
       <img
         src="@/assets/images/immersive-view.png"
@@ -248,6 +241,10 @@ const communities = <Image[]>[
   {
     url: t('pages.home.communityLogo_3.url'),
     alt: t('pages.home.communityLogo_3.alt')
+  },
+  {
+    url: t('pages.home.communityLogo_4.url'),
+    alt: t('pages.home.communityLogo_4.alt')
   }
 ]
 </script>

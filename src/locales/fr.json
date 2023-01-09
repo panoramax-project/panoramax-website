@@ -93,6 +93,10 @@
       "communityLogo_3": {
         "url": "/panoramax-website/fabrique-logo.jpg",
         "alt": "Logo de la Fabrique des communs"
+      },
+      "communityLogo_4": {
+        "url": "/panoramax-website/osm-logo.png",
+        "alt": "Logo OpenStreetMap France"
       }
     },
     "about": {
