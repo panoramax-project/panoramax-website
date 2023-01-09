@@ -96,6 +96,15 @@
             >{{ $t('general.footer.credit_participative_subtitle') }}</a
           >
         </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/fr/auteurs/pixel-perfect"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="footer-link"
+            >{{ $t('general.footer.credit_quatre_subtitle') }}</a
+          >
+        </li>
       </ul>
     </div>
   </footer>

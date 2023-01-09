@@ -3,22 +3,43 @@
   <main class="page-about">
     <h1 class="main-title">{{ $t('pages.about.title') }}</h1>
     <div class="wrapper-introduction">
-      <img
-        src="@/assets/images/immersive-view-street.jpg"
-        :alt="$t('pages.home.illustrationAlt')"
-        class="image-top-about"
-      />
-      <p class="introduction">{{ t('pages.about.introduction') }}</p>
+      <div class="wrapper-image-top">
+        <img
+          src="@/assets/images/carousel-street-view.jpg"
+          :alt="$t('pages.home.illustrationAlt')"
+          class="image-top-about"
+        />
+        <div class="credit-wrapper">
+          <p class="credit-title">Crédit IGN - 2022</p>
+        </div>
+      </div>
+      <p class="introduction" v-html="$t('pages.about.introduction')"></p>
     </div>
     <section class="section">
       <article v-for="article in aboutData" class="article">
-        <h2 class="article-title">{{ article.subtitle }}</h2>
+        <div class="wrapper-title">
+          <img
+            v-if="article.icon"
+            :src="article.icon.url"
+            :alt="article.icon.alt"
+            class="icon-image"
+          />
+          <h2 class="article-title" v-if="article.subtitle">
+            {{ article.subtitle }}
+          </h2>
+        </div>
         <p class="article-text" v-html="article.text"></p>
+        <img
+          v-if="article.image"
+          :src="article.image.url"
+          :alt="article.image.alt"
+          class="article-image"
+        />
       </article>
     </section>
     <section class="section">
       <article class="article-team">
-        <h2 class="article-title">{{ t('pages.about.subtitle_team') }}</h2>
+        <h2 class="article-title">{{ $t('pages.about.subtitle_team') }}</h2>
         <ul class="team-list">
           <li v-for="team in teamData" class="team-list-item">
             <img
@@ -42,10 +63,12 @@
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 import { useI18n } from 'vue-i18n'
+import type { Image } from '@/components/ImageInterface'
 
 interface ArticleData {
   subtitle: string
   text: string
+  icon: Image
 }
 interface TeamData {
   name: string
@@ -58,15 +81,35 @@ const { t } = useI18n()
 const aboutData = <ArticleData[]>[
   {
     subtitle: t('pages.about.subtitle_1'),
-    text: t('pages.about.text_1')
+    text: t('pages.about.text_1'),
+    image: {
+      url: t('pages.about.image_1.url'),
+      alt: t('pages.about.image_1.alt')
+    }
   },
   {
+    icon: {
+      url: t('pages.about.icon_2.url'),
+      alt: t('pages.about.icon_2.alt')
+    },
     subtitle: t('pages.about.subtitle_2'),
     text: t('pages.about.text_2')
   },
   {
+    icon: {
+      url: t('pages.about.icon_3.url'),
+      alt: t('pages.about.icon_3.alt')
+    },
     subtitle: t('pages.about.subtitle_3'),
     text: t('pages.about.text_3')
+  },
+  {
+    icon: {
+      url: t('pages.about.icon_4.url'),
+      alt: t('pages.about.icon_4.alt')
+    },
+    subtitle: t('pages.about.subtitle_4'),
+    text: t('pages.about.text_4')
   }
 ]
 
@@ -122,12 +165,16 @@ const teamData = <TeamData[]>[
   font-size: 5rem;
   color: var(--violet-dark);
   line-height: 1;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+.wrapper-image-top {
+  width: 60%;
 }
 .image-top-about {
   border-radius: 4rem;
   object-fit: cover;
   height: 30rem;
+  width: 100%;
 }
 .wrapper-introduction {
   display: flex;
@@ -135,8 +182,8 @@ const teamData = <TeamData[]>[
   margin-bottom: 6rem;
 }
 .introduction {
-  font-family: SourceSansPro-SemiBold;
-  font-size: 1.8rem;
+  width: 40%;
+  font-size: 2rem;
   padding-left: 4rem;
   padding-bottom: 0;
   white-space: pre-wrap;
@@ -155,7 +202,13 @@ const teamData = <TeamData[]>[
 .article-title {
   font-family: SourceSansPro-SemiBold;
   font-size: 2.4rem;
-  margin-bottom: 2rem;
+}
+.article-image {
+  margin-top: 3rem;
+  border-radius: 4rem;
+  height: 50rem;
+  width: 100%;
+  object-fit: cover;
 }
 .article-text {
   font-size: 1.6rem;
@@ -201,7 +254,30 @@ const teamData = <TeamData[]>[
 .team-work {
   font-size: 1.6rem;
 }
-
+.credit-wrapper {
+  position: absolute;
+  background-color: var(--white);
+  min-width: 10rem;
+  padding: 1rem 1rem 0.5rem;
+  border-radius: 1rem;
+  right: 2rem;
+  bottom: 2rem;
+  text-align: left;
+}
+.credit-title {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.wrapper-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.icon-image {
+  height: 4rem;
+  margin-right: 1rem;
+}
 @media (max-width: 1624px) {
   .wrapper-introduction {
     flex-direction: column;

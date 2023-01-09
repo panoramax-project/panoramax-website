@@ -95,32 +95,33 @@
         <Slide :key="1">
           <img
             class="carousel__item"
-            src="@/assets/images/immersive-view-street.jpg"
+            src="@/assets/images/carousel-geovisio.jpg"
             :alt="$t('pages.home.iconMailAlt')"
           />
+          <div class="credit-wrapper">
+            <p class="credit-title">Crédit Geovisio - 2022</p>
+          </div>
         </Slide>
         <Slide :key="2">
           <img
             class="carousel__item"
-            src="@/assets/images/immersive-view-street.jpg"
+            src="@/assets/images/carousel-street-view.jpg"
             :alt="$t('pages.home.iconMailAlt')"
           />
+          <div class="credit-wrapper">
+            <p class="credit-title">Crédit IGN - 2022</p>
+          </div>
         </Slide>
         <Slide :key="3">
           <img
             class="carousel__item"
-            src="@/assets/images/immersive-view-street.jpg"
+            src="@/assets/images/carousel-immersive-view-street.jpg"
             :alt="$t('pages.home.iconMailAlt')"
           />
+          <div class="credit-wrapper">
+            <p class="credit-title">Crédit Geovisio - 2022</p>
+          </div>
         </Slide>
-        <Slide :key="4">
-          <img
-            class="carousel__item"
-            src="@/assets/images/immersive-view-street.jpg"
-            :alt="$t('pages.home.iconMailAlt')"
-          />
-        </Slide>
-
         <template #addons>
           <Navigation />
           <Pagination />
@@ -135,7 +136,7 @@
         <li v-for="community in communities" :key="community.alt">
           <img
             :src="community.url"
-            alt="community.alt"
+            :alt="community.alt"
             class="logo-community"
           />
         </li>
@@ -182,8 +183,7 @@ const howItWorks = <HowItWorksData[]>[
     description: [
       t('pages.home.howItWorks_1.description_1'),
       t('pages.home.howItWorks_1.description_2'),
-      t('pages.home.howItWorks_1.description_3'),
-      t('pages.home.howItWorks_1.description_4')
+      t('pages.home.howItWorks_1.description_3')
     ],
     image: {
       url: t('pages.home.howItWorks_1.image.url'),
@@ -387,6 +387,20 @@ const communities = <Image[]>[
 }
 .carousel__viewport {
   border-radius: 4rem;
+}
+.credit-wrapper {
+  position: absolute;
+  background-color: var(--white);
+  min-width: 15rem;
+  padding: 1rem 1.5rem 0.5rem;
+  border-radius: 1rem;
+  right: 2rem;
+  bottom: 5rem;
+  text-align: left;
+}
+.credit-title {
+  font-family: SourceSansPro-SemiBold;
+  margin-bottom: 0.5rem;
 }
 .home-carousel ::v-deep(.carousel__next) {
   height: 8rem;

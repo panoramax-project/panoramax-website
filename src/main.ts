@@ -8,6 +8,7 @@ import './assets/main.css'
 
 const i18n = createI18n({
   locale: 'fr',
+  globalInjection: true,
   legacy: false,
   messages: {
     fr
