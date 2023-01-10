@@ -41,7 +41,7 @@
         "description_2": "Des standards et des règles d’utilisation et de contribution",
         "description_3": "Des bonnes pratiques et des outils pour favoriser les usages",
         "image": {
-          "url": "/panoramax-website/common-icon.png",
+          "url": "/common-icon.png",
           "alt": "Image de mise en commun"
         }
       },
@@ -51,7 +51,7 @@
         "description_2": "Un principe commun d’ouverture des données ",
         "description_3": "Des licences d’utilisation libre propres aux instances ",
         "image": {
-          "url": "/panoramax-website/usecases-icon.png",
+          "url": "/usecases-icon.png",
           "alt": "Image d'usages"
         }
       },
@@ -61,7 +61,7 @@
         "description_2": "Des moments d’échanges ouverts à tous les membres de la communauté",
         "description_3": "Une multiplicité d’acteurs pour assurer la pérennité du projet",
         "image": {
-          "url": "/panoramax-website/participative-icon.png",
+          "url": "/participative-icon.png",
           "alt": "Image de gestion participative"
         }
       },
@@ -87,19 +87,19 @@
       "iconMailAlt": "Icon d'email",
       "communityTitle": "La communauté Panoramax",
       "communityLogo_1": {
-        "url": "/panoramax-website/beta-gouv-logo.png",
+        "url": "/beta-gouv-logo.png",
         "alt": "Logo de beta.gouv"
       },
       "communityLogo_2": {
-        "url": "/panoramax-website/ign-logo.png",
+        "url": "/ign-logo.png",
         "alt": "Logo de l'IGN"
       },
       "communityLogo_3": {
-        "url": "/panoramax-website/fabrique-logo.jpg",
+        "url": "/fabrique-logo.jpg",
         "alt": "Logo de la Fabrique des communs"
       },
       "communityLogo_4": {
-        "url": "/panoramax-website/osm-logo.png",
+        "url": "/osm-logo.png",
         "alt": "Logo OpenStreetMap France"
       }
     },
@@ -109,64 +109,64 @@
       "subtitle_1": "\uD83D\uDCA1 La solution pour réduire et faciliter ces déplacements ?",
       "text_1": "<strong>L’utilisation de bases de photos immersives.</strong> Mais les propositions existantes sont insuffisantes :\nzones rurales non couvertes, données anciennes et obsolètes, non libres de droits, potentiellement payantes, entre les mains d’acteurs privés capables de changer les règles à tout moment...\n\n<strong>Panoramax, c’est l’alternative libre, indépendante et ouverte, des photos de nos territoires.</strong>",
       "image_1": {
-        "url": "/panoramax-website/carousel-street-view.jpg",
+        "url": "/carousel-street-view.jpg",
         "alt": "Photo de vue"
       },
       "icon_2": {
-        "url": "/panoramax-website/common-icon.png",
+        "url": "/common-icon.png",
         "alt": "Icone de géocommun"
       },
       "subtitle_2": "Le géocommun Panoramax",
       "text_2": "Les différentes communautés (AITF*, OSM*, Gestionnaires de réseaux, IGN, etc.) bouillonnent d’initiatives, mais sans voir l’émergence d’une réelle alternative aux modèles propriétaires de “streetview”.\n<strong>Panoramax fédère ces inititatives au sein du géocommun.</strong>\n\n<strong>\uD83D\uDC49 Une base de photos de rues, 360° ou non, ouverte et indépendante  :</strong> \n      ✔ Les contributeurs alimentent, gèrent et partagent les photos \n      ✔ L’hébergement des données est flexible : les membres de la communauté ont le choix de les stocker sur leur instance ou bien sur l’instance commune. \n\n<strong>\uD83D\uDC49 Des standards et des règles d’utilisation définies par la communauté :</strong> \n      ✔ Des standards techniques définis par la communauté pour le stockage et la publication de photos \n      ✔ <a href='https://forum.geocommuns.fr/t/licences-pour-panoramax-atelier-du-5-12-2022/409/17' target='_blank' rel='noopener'>Une licence</a> - toujours libre - par instance\n\n<strong>\uD83D\uDC49 Des outils et des bonnes pratiques pour favoriser les usages :</strong> \n      ✔ <a href='https://forum.geocommuns.fr/t/floutage-anonymisation/106' target='_blank' rel='noopener'>Floutage automatisé pour anonymiser les véhicules et les personnes.</a>\n      ✔ Suppression des doublons\n      ✔ Tri et filtres pour faciliter la recherche des données pertinentes",
       "icon_3": {
-        "url": "/panoramax-website/participative-icon.png",
+        "url": "/participative-icon.png",
         "alt": "Icone participative"
       },
       "subtitle_3": "La gouvernance de Panoramax",
       "text_3": "Panoramax, ce n’est pas 1,2 ou 3 membres majoritaires, mais une multiplicité d’acteurs qui participent tous aux décisions de la communauté.\n\n<strong>Qui prend les décisions?</strong>\nLa communauté est ouverte à tout individu ou organisation souhaitant contribuer. Parmi les membres :\n✔ Les collectivités, agglomérations, départements, régions, et membres de l’AITF (Association des Ingénieurs territoriaux de France)\n✔ Les réseaux de distribution (distributeurs d’électricité, eau, traîtement des déchets)\n✔ OpenStreetMap, écosystème de carte ouverte et collaborative du monde \n✔ l'IGN (Institut national de l'information géographique et forestière)\n✔ les acteurs privés, éditeurs de logiciel ou data solutions. \n\nVous souhaitez participer à nos échanges?\n<a href='https://forum.geocommuns.fr/t/gouvernance-panoramax-atelier-du-6-12-2022/410/13' target='_blank' rel='noopener'>C’est par ici</a>, sur le forum du géocommun",
       "icon_4": {
-        "url": "/panoramax-website/four-icon.png",
+        "url": "/four-icon.png",
         "alt": "Icone main quatre"
       },
       "subtitle_4": "4 phases pour concevoir un service numérique utile ",
-      "text_4": "\n<img src='/panoramax-website/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-commun' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développements, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
+      "text_4": "\n<img src='/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-commun' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développements, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
       "subtitle_team": "L'équipe Panoramax",
       "panoramax_text": "Panoramax - Base vues immersives libres",
       "team": {
         "member_1": {
           "name": "Adrien Pavie",
           "work": "Géomaticien / Développeur",
-          "image_url": "/panoramax-website/panier-avide.png",
+          "image_url": "/panier-avide.png",
           "image_alt": "Photo du membre de l'équipe Adrien Pavie"
         },
         "member_2": {
           "name": "Antoine Desbodes",
           "work": "Développeur backend",
-          "image_url": "/panoramax-website/antoine.jpg",
+          "image_url": "/antoine.jpg",
           "image_alt": "Photo du membre de l'équipe Antoine Desbodes"
         },
         "member_3": {
           "name": "Camille Salou",
           "work": "Intrapreneuse",
-          "image_url": "/panoramax-website/csalou.png",
+          "image_url": "/csalou.png",
           "image_alt": "Photo du membre de l'équipe Camille Salou"
         },
         "member_4": {
           "name": "Christian Quest",
           "work": "Datatouilleur / Product Owner",
-          "image_url": "/panoramax-website/christian-quest.jpg",
+          "image_url": "/christian-quest.jpg",
           "image_alt": "Photo du membre de l'équipe Christian Quest"
         },
         "member_5": {
           "name": "Jean Andreani",
           "work": "Développeur frontend",
-          "image_url": "/panoramax-website/logo-generique.jpeg",
+          "image_url": "/logo-generique.jpeg",
           "image_alt": "Photo du membre de l'équipe Jean Andreani"
         },
         "member_6": {
           "name": "Mathilde Ferrey",
           "work": "Responsable Déploiement",
-          "image_url": "/panoramax-website/mferrey.jpeg",
+          "image_url": "/mferrey.jpeg",
           "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
         }
       }
