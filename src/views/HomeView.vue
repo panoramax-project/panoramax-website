@@ -11,7 +11,7 @@
         </h2>
       </div>
       <img
-        src="@/assets/images/immersive-view.png"
+        src="@/assets/images/map-fr.png"
         :alt="$t('pages.home.illustrationAlt')"
         class="image-top-home"
       />
@@ -274,7 +274,7 @@ const communities = <Image[]>[
   height: 100%;
   object-fit: contain;
   border-radius: 4rem;
-  background-color: var(--white);
+  background-color: var(--violet);
 }
 .main-title {
   display: flex;
