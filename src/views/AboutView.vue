@@ -29,7 +29,12 @@
           </h2>
         </div>
         <p class="article-text" v-html="article.text"></p>
-        <img class="article-image" />
+        <img
+          v-if="article.image"
+          :src="article.image.url"
+          :alt="article.image.alt"
+          class="article-image"
+        />
       </article>
     </section>
     <section class="section">
@@ -64,6 +69,7 @@ interface ArticleData {
   subtitle: string
   text: string
   icon: Image
+  image?: Image
 }
 interface TeamData {
   name: string
@@ -75,12 +81,12 @@ const { t } = useI18n()
 
 const aboutData = <ArticleData[]>[
   {
-    subtitle: t('pages.about.subtitle_1'),
-    text: t('pages.about.text_1'),
     image: {
       url: t('pages.about.image_1.url'),
       alt: t('pages.about.image_1.alt')
-    }
+    },
+    subtitle: t('pages.about.subtitle_1'),
+    text: t('pages.about.text_1')
   },
   {
     icon: {
@@ -153,7 +159,7 @@ const teamData = <TeamData[]>[
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10rem 18%;
+  padding: 10rem 12%;
 }
 .main-title {
   font-family: SourceSansPro-Bold;
@@ -201,7 +207,7 @@ const teamData = <TeamData[]>[
 .article-image {
   margin-top: 3rem;
   border-radius: 4rem;
-  height: 50rem;
+  height: 60rem;
   width: 100%;
   object-fit: cover;
 }
@@ -281,14 +287,25 @@ const teamData = <TeamData[]>[
   .image-top-about {
     height: 40rem;
   }
-  .image-top-about {
-    margin-bottom: 4rem;
+  .wrapper-image-top {
+    width: 100%;
   }
   .introduction {
+    margin-top: 4rem;
     padding-right: 4rem;
+    width: 100%;
   }
   .team-list-item {
     width: calc(50% - 1.1rem);
+  }
+  .team-list-item:nth-child(3),
+  .team-list-item:nth-child(6) {
+    margin-right: 2rem;
+  }
+  .team-list-item:nth-child(2),
+  .team-list-item:nth-child(4),
+  .team-list-item:nth-child(6) {
+    margin-right: 0;
   }
 }
 @media (max-width: 1324px) {

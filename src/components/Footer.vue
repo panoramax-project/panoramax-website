@@ -8,6 +8,11 @@
             $t('general.footer.home_subtitle')
           }}</router-link>
         </li>
+        <li>
+          <router-link to="/a-propos" class="footer-link">{{
+            $t('general.footer.about_subtitle')
+          }}</router-link>
+        </li>
       </ul>
     </div>
     <div class="footer-block">
