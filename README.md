@@ -1,10 +1,8 @@
 # panoramax-website
+The Panoramax website was created to present and make available the tools related to the geocommun.
 
+# Tech template
 This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
 ## Type Support for `.vue` Imports in TS
 
@@ -16,10 +14,6 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -57,7 +51,7 @@ The deploy is on the `gh-pages` branch.
 1 - You must build a static project :
 
 ```sh
-vite build
+vite deploy
 ```
 
 2 - Add and Commit :
@@ -67,7 +61,7 @@ ga .
 gc -m 'my commit'
 ```
 
-3 - Push on the specific branch
+3 - Push the dist folder on the specific branch
 
 ```sh
 git subtree push --prefix dist origin gh-pages
