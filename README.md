@@ -5,8 +5,11 @@ Take a look on [Panoramax](https://panoramax.fr/)
 # Contribution
 Do not hesitate if you want to contribute to the project.
 To do that you can :
+
 1 - Create PR (pull requests) here on Github
+
 2 - Create Issues here on Github too
+
 3 - Go to the [Panoramax Forum](https://forum.geocommuns.fr/c/panoramax/6) and create a post
 
 # Tech template
