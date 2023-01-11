@@ -1,19 +1,19 @@
 # panoramax-website
 The Panoramax website was created to present and make available the tools related to the geocommun.
+Take a look on [Panoramax](https://panoramax.fr/)
+
 
 # Tech template
 This template should help get you started developing with Vue 3 in Vite.
+If at some point you're lost, need help or if you have any question about the project,
+you can contact us through issues or by [email](panoramax@panoramax.fr).
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+# Contribution
+Do not hesitate if you want to contribute to the project.
+To do that you can :
+1 - Create PR (pull requests) here on Github
+2 - Create Issues here on Github too
+3 - Go to the [Panoramax Forum](https://forum.geocommuns.fr/c/panoramax/6) and create a post
 
 ## Project Setup
 
