@@ -6,11 +6,11 @@ Take a look on [Panoramax](https://panoramax.fr/)
 Do not hesitate if you want to contribute to the project.
 To do that you can :
 
-1 - Create PR (pull requests) here on Github
+- Create PR (pull requests) here on Github
 
-2 - Create Issues here on Github too
+- Create Issues here on Github too
 
-3 - Go to the [Panoramax Forum](https://forum.geocommuns.fr/c/panoramax/6) and create a post
+- Go to the [Panoramax Forum](https://forum.geocommuns.fr/c/panoramax/6) and create a post
 
 # Tech template
 This template should help get you started developing and deploy with Vue 3 in Vite.
