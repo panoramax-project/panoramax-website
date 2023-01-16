@@ -34,6 +34,14 @@
             >{{ $t('general.footer.agenda_subtitle') }}</a
           >
         </li>
+        <li>
+          <a
+            href="https://github.com/panoramax-project/panoramax-website"
+            target="_blank"
+            class="footer-link"
+            >{{ $t('general.footer.github_subtitle') }}</a
+          >
+        </li>
       </ul>
     </div>
     <div class="footer-block">
