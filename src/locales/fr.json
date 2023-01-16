@@ -101,6 +101,10 @@
       "communityLogo_4": {
         "url": "/osm-logo.png",
         "alt": "Logo OpenStreetMap France"
+      },
+      "communityLogo_5": {
+        "url": "/carto-cite-logo.png",
+        "alt": "Logo Carto Cité"
       }
     },
     "about": {

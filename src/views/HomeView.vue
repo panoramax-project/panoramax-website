@@ -245,6 +245,10 @@ const communities = <Image[]>[
   {
     url: t('pages.home.communityLogo_4.url'),
     alt: t('pages.home.communityLogo_4.alt')
+  },
+  {
+    url: t('pages.home.communityLogo_5.url'),
+    alt: t('pages.home.communityLogo_5.alt')
   }
 ]
 </script>
