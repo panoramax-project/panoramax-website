@@ -79,7 +79,7 @@
         "title": "Prochain évènement Panoramax",
         "text": "Voir l'agenda complet",
         "event_text_1": "Temp d'échange mensuel",
-        "event_text_2": ": 09/01/23 - 17h",
+        "event_text_2": ": 13/02/23 - 17h",
         "event_link_text": "en visio",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
@@ -107,7 +107,7 @@
       "title": "À propos de Panoramax",
       "introduction": "Vérifier l’état des voiries, inventorier le mobilier urbain ou bien préparer une intervention sur un réseau de distribution...\n\n<strong>Chaque année, des centaines de milliers de kilomètres sont parcourus par les agents territoriaux et des réseaux de distribution.</strong>",
       "subtitle_1": "\uD83D\uDCA1 La solution pour réduire et faciliter ces déplacements ?",
-      "text_1": "<strong>L’utilisation de bases de photos immersives.</strong> Mais les propositions existantes sont insuffisantes :\nzones rurales non couvertes, données anciennes et obsolètes, non libres de droits, potentiellement payantes, entre les mains d’acteurs privés capables de changer les règles à tout moment...\n\n<strong>Panoramax, c’est l’alternative libre, indépendante et ouverte, des photos de nos territoires.</strong>",
+      "text_1": "<strong>L’utilisation de bases de photos immersives.</strong> Mais les propositions existantes sont insuffisantes :\nzones rurales non couvertes, données anciennes et obsolètes, non libres de droits, potentiellement payantes, entre les mains d’acteurs privés capables de changer les règles à tout moment...\n\n<strong>Panoramax, c’est l’alternative libre, indépendante et ouverte, pour photo-cartographier nos territoires</strong>",
       "image_1": {
         "url": "/carousel-immersive-view-street.jpg",
         "alt": "Photo de vue"
@@ -117,26 +117,26 @@
         "alt": "Icone de géocommun"
       },
       "subtitle_2": "Le géocommun Panoramax",
-      "text_2": "Les différentes communautés (AITF*, OSM*, Gestionnaires de réseaux, IGN, etc.) bouillonnent d’initiatives, mais sans voir l’émergence d’une réelle alternative aux modèles propriétaires de “streetview”.\n<strong>Panoramax fédère ces inititatives au sein du géocommun.</strong>\n\n<strong>\uD83D\uDC49 Une base de photos de rues, 360° ou non, ouverte et indépendante  :</strong> \n      ✔ Les contributeurs alimentent, gèrent et partagent les photos \n      ✔ L’hébergement des données est flexible : les membres de la communauté ont le choix de les stocker sur leur instance ou bien sur l’instance commune. \n\n<strong>\uD83D\uDC49 Des standards et des règles d’utilisation définies par la communauté :</strong> \n      ✔ Des standards techniques définis par la communauté pour le stockage et la publication de photos \n      ✔ <a href='https://forum.geocommuns.fr/t/licences-pour-panoramax-atelier-du-5-12-2022/409/17' target='_blank' rel='noopener'>Une licence</a> - toujours libre - par instance\n\n<strong>\uD83D\uDC49 Des outils et des bonnes pratiques pour favoriser les usages :</strong> \n      ✔ <a href='https://forum.geocommuns.fr/t/floutage-anonymisation/106' target='_blank' rel='noopener'>Floutage automatisé pour anonymiser les véhicules et les personnes.</a>\n      ✔ Suppression des doublons\n      ✔ Tri et filtres pour faciliter la recherche des données pertinentes",
+      "text_2": "Les différentes communautés (<a href='https://www.aitf.fr/' target='_blank' rel='noopener'>AITF</a>, <a href='https://www.openstreetmap.fr/' target='_blank' rel='noopener'>OSM</a>, Gestionnaires de réseaux, IGN, etc.) bouillonnent d’initiatives, mais sans voir l’émergence d’une réelle alternative aux modèles propriétaires de “streetview”.\n<strong>Panoramax fédère ces inititatives au sein du géocommun.</strong>\n\n<strong>\uD83D\uDC49 Une base de photos de rues, 360° ou non, ouverte et indépendante  :</strong> \n      ✔ Les contributeurs alimentent, gèrent et partagent les photos \n      ✔ L’hébergement des données est flexible : les membres de la communauté ont le choix de les stocker sur leur instance ou bien sur l’instance commune. \n\n<strong>\uD83D\uDC49 Des standards et des règles d’utilisation définies par la communauté :</strong> \n      ✔ Des standards techniques définis par la communauté pour le stockage et la publication de photos \n      ✔ <a href='https://forum.geocommuns.fr/t/licences-pour-panoramax-atelier-du-5-12-2022/409/17' target='_blank' rel='noopener'>Une licence</a> - toujours libre - par instance\n\n<strong>\uD83D\uDC49 Des outils et des bonnes pratiques pour favoriser les usages :</strong> \n      ✔ <a href='https://forum.geocommuns.fr/t/floutage-anonymisation/106' target='_blank' rel='noopener'>Floutage automatisé pour anonymiser les véhicules et les personnes.</a>\n      ✔ Suppression des doublons\n      ✔ Tri et filtres pour faciliter la recherche des données pertinentes",
       "icon_3": {
         "url": "/participative-icon.png",
         "alt": "Icone participative"
       },
       "subtitle_3": "La gouvernance de Panoramax",
-      "text_3": "Panoramax, ce n’est pas 1,2 ou 3 membres majoritaires, mais une multiplicité d’acteurs qui participent tous aux décisions de la communauté.\n\n<strong>Qui prend les décisions?</strong>\nLa communauté est ouverte à tout individu ou organisation souhaitant contribuer. Parmi les membres :\n✔ Les collectivités, agglomérations, départements, régions, et membres de l’AITF (Association des Ingénieurs territoriaux de France)\n✔ Les réseaux de distribution (distributeurs d’électricité, eau, traîtement des déchets)\n✔ OpenStreetMap, écosystème de carte ouverte et collaborative du monde \n✔ l'IGN (Institut national de l'information géographique et forestière)\n✔ les acteurs privés, éditeurs de logiciel ou data solutions. \n\nVous souhaitez participer à nos échanges?\n<a href='https://forum.geocommuns.fr/t/gouvernance-panoramax-atelier-du-6-12-2022/410/13' target='_blank' rel='noopener'>C’est par ici</a>, sur le forum du géocommun",
+      "text_3": "Panoramax, ce n’est pas 1,2 ou 3 membres majoritaires, mais une multiplicité d’acteurs qui participent tous aux décisions de la communauté.\n\n<strong>Qui prend les décisions?</strong>\nLa communauté est ouverte à tout individu ou organisation souhaitant contribuer. Parmi les membres :\n✔ Les collectivités, agglomérations, départements, régions, et membres de l’AITF (Association des Ingénieurs territoriaux de France)\n✔ Les réseaux de distribution (distributeurs d’électricité, eau, traîtement des déchets)\n✔ OpenStreetMap, écosystème de carte ouverte et collaborative du monde \n✔ l'IGN (Institut national de l'information géographique et forestière)\n✔ les acteurs privés, éditeurs de logiciel ou data solutions. \n\nVous souhaitez participer à nos échanges?\n<a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>C’est par ici</a>, sur le forum du géocommun",
       "icon_4": {
         "url": "/four-icon.png",
         "alt": "Icone main quatre"
       },
       "subtitle_4": "4 phases pour concevoir un service numérique utile ",
-      "text_4": "\n<img src='/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-commun' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développements, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
+      "text_4": "\n<img src='/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développement, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
       "subtitle_team": "L'équipe Panoramax",
       "panoramax_text": "Panoramax - Base vues immersives libres",
       "team": {
         "member_1": {
           "name": "Adrien Pavie",
           "work": "Géomaticien / Développeur",
-          "image_url": "/panier-avide.png",
+          "image_url": "/adrien.jpg",
           "image_alt": "Photo du membre de l'équipe Adrien Pavie"
         },
         "member_2": {

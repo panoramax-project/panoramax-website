@@ -243,8 +243,10 @@ const teamData = <TeamData[]>[
 .team-image {
   margin-bottom: 3rem;
   height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   text-align: center;
+  object-fit: cover;
 }
 .team-name {
   font-family: SourceSansPro-SemiBold;
