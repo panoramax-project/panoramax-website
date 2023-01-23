@@ -48,4 +48,10 @@ const props = defineProps<Props>()
     font-size: 1.8rem;
   }
 }
+@media (max-width: 500px) {
+  .entry-join-us:nth-child(2){
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
 </style>
