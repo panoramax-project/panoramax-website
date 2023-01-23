@@ -49,7 +49,7 @@ const props = defineProps<Props>()
   }
 }
 @media (max-width: 500px) {
-  .entry-join-us:nth-child(2){
+  .entry-join-us:nth-child(2) {
     margin-right: initial;
     margin-left: initial;
   }
