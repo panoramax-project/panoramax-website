@@ -125,7 +125,7 @@
       <h2 class="home-section-title">
         {{ $t('pages.home.communityTitle') }}
       </h2>
-      <ul class="wrapper-list">
+      <ul class="wrapper-list community-list">
         <li v-for="community in communities" :key="community.alt">
           <img
             :src="community.url"
@@ -249,6 +249,10 @@ const communities = <Image[]>[
   {
     url: t('pages.home.communityLogo_5.url'),
     alt: t('pages.home.communityLogo_5.alt')
+  },
+  {
+    url: t('pages.home.communityLogo_6.url'),
+    alt: t('pages.home.communityLogo_6.alt')
   }
 ]
 </script>
@@ -452,6 +456,9 @@ const communities = <Image[]>[
     flex-direction: column;
     align-items: center;
   }
+  .community-list {
+    flex-direction: row;
+  }
   .home-section-description {
     width: 100%;
   }
@@ -485,6 +492,18 @@ const communities = <Image[]>[
   }
   .home-section-description {
     font-size: 1.5rem;
+  }
+  .logo-community {
+    height: 4rem;
+  }
+  .community-list li {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-list {
+    flex-wrap: wrap;
   }
 }
 </style>

@@ -106,6 +106,10 @@
       "communityLogo_5": {
         "url": "/carto-cite-logo.png",
         "alt": "Logo Carto Cité"
+      },
+      "communityLogo_6": {
+        "url": "/valparisis-logo.jpeg",
+        "alt": "Logo Val Parisis"
       }
     },
     "about": {
