@@ -8,6 +8,10 @@
         :title="faq.title"
         :text="faq.text"
       />
+      <div class="entry-summary">
+        <h2 class="title">{{ $t('pages.faq.summary_title') }}</h2>
+        <p v-html="$t('pages.faq.summary_text')" class="summary-text"></p>
+      </div>
       <p class="author-text">{{ $t('pages.faq.authors') }}</p>
     </section>
   </main>
@@ -52,6 +56,22 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
 .author-text {
   white-space: pre-wrap;
   font-style: italic;
+}
+.entry-summary {
+  border: 0.1rem solid var(--violet);
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+}
+.title {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 2.2rem;
+  color: var(--blue-dark);
+  margin-bottom: 2rem;
+}
+.summary-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 @media (max-width: 1324px) {
   .page-faq,

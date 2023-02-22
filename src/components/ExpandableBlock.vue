@@ -29,7 +29,7 @@ const isOpen = ref<boolean>(false)
 }
 .title {
   font-family: SourceSansPro-SemiBold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--blue-dark);
   margin-right: 2rem;
 }
@@ -45,7 +45,7 @@ const isOpen = ref<boolean>(false)
   width: 100%;
 }
 .article-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   white-space: pre-wrap;
   padding-left: 1.5rem;
@@ -61,10 +61,11 @@ const isOpen = ref<boolean>(false)
   max-height: 100rem;
 }
 .is-open .image-chevron {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: transform, 0.2s;
 }
 .image-chevron {
+  transform: rotate(180deg);
   transition: transform, 0.6s;
   height: 3rem;
 }
