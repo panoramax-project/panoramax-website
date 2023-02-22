@@ -2,18 +2,22 @@
   <NavBar></NavBar>
   <main class="page-faq">
     <h1 class="main-title">{{ $t('pages.faq.title') }}</h1>
+    <section class="section">
+      <h2 class="title">{{ $t('pages.faq.introduction_title') }}</h2>
+      <p v-html="$t('pages.faq.introduction_text')" class="summary-text"></p>
+    </section>
     <section>
       <ExpandableBlock
         v-for="faq in faqs"
         :title="faq.title"
         :text="faq.text"
       />
-      <div class="entry-summary">
-        <h2 class="title">{{ $t('pages.faq.summary_title') }}</h2>
-        <p v-html="$t('pages.faq.summary_text')" class="summary-text"></p>
-      </div>
-      <p class="author-text">{{ $t('pages.faq.authors') }}</p>
     </section>
+    <section class="section summary">
+      <h2 class="title">{{ $t('pages.faq.summary_title') }}</h2>
+      <p v-html="$t('pages.faq.summary_text')" class="summary-text"></p>
+    </section>
+    <p class="author-text">{{ $t('pages.faq.authors') }}</p>
   </main>
   <div class="entry-footer">
     <Footer></Footer>
@@ -57,9 +61,11 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   white-space: pre-wrap;
   font-style: italic;
 }
-.entry-summary {
-  border: 0.1rem solid var(--violet);
+.summary {
   padding: 2rem;
+  border: 0.1rem solid var(--violet);
+}
+.section {
   border-radius: 2rem;
   margin-bottom: 4rem;
 }
@@ -70,6 +76,7 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   margin-bottom: 2rem;
 }
 .summary-text {
+  white-space: pre-wrap;
   font-size: 1.8rem;
   line-height: 1.5;
 }
@@ -92,6 +99,9 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   .entry-footer {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+  .summary-text {
+    font-size: 1.6rem;
   }
 }
 </style>

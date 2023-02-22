@@ -1,7 +1,7 @@
 <template>
   <div :class="['entry-expandable', { 'is-open': isOpen }]">
     <button type="button" class="button-expandable" @click="isOpen = !isOpen">
-      <h2 class="title">{{ props.title }}</h2>
+      <h3 class="title">{{ props.title }}</h3>
       <img src="@/assets/images/chevron.png" class="image-chevron" />
     </button>
     <div class="article-wrapper">
