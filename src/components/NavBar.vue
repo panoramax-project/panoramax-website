@@ -6,9 +6,9 @@
       /></router-link>
       <ul class="header-list">
         <li>
-          <router-link to="/" class="header-link">{{
-            $t('general.nav.home')
-          }}</router-link>
+          <router-link to="/foire-aux-questions" class="header-link"
+            >{{ $t('general.nav.faq') }}
+          </router-link>
         </li>
         <li class="header-logo first-logo">
           <a href="https://mapstodon.space/@panoramax" target="_blank"
@@ -83,6 +83,9 @@
 .header-logo a:hover {
   opacity: 0.7;
   background: transparent;
+}
+.router-link-active {
+  text-decoration: underline;
 }
 @media (max-width: 1324px) {
   .header {

@@ -337,16 +337,11 @@ const teamData = <TeamData[]>[
   }
 }
 @media (max-width: 768px) {
-  .page-about {
-    padding-top: 6rem;
-  }
   .main-title {
     font-size: 3rem;
   }
   .page-about {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 6rem;
+    padding: 6rem 2rem;
   }
   .introduction,
   .article {
