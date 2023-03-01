@@ -17,7 +17,6 @@
       <h2 class="title">{{ $t('pages.faq.summary_title') }}</h2>
       <p v-html="$t('pages.faq.summary_text')" class="summary-text"></p>
     </section>
-    <p class="author-text">{{ $t('pages.faq.authors') }}</p>
   </main>
   <div class="entry-footer">
     <Footer></Footer>
