@@ -6,6 +6,14 @@
       /></router-link>
       <ul class="header-list">
         <li>
+          <a
+            href="https://panoramax.ign.fr/"
+            target="_blank"
+            class="header-link"
+            >{{ $t('general.nav.panoramax_instance') }}</a
+          >
+        </li>
+        <li>
           <router-link to="/foire-aux-questions" class="header-link"
             >{{ $t('general.nav.faq') }}
           </router-link>
@@ -93,10 +101,20 @@
     padding-left: 6rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .header {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+  .header-link {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+  }
+  .first-logo {
+    margin-left: 0rem;
+  }
+  .logo-link {
+    margin-left: 0rem;
   }
 }
 </style>
