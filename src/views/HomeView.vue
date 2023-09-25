@@ -1,5 +1,4 @@
 <template>
-  <NavBar></NavBar>
   <main class="page-home">
     <section class="header-home">
       <div class="wrapper-title">
@@ -136,9 +135,6 @@
       </ul>
     </section>
   </main>
-  <div class="entry-footer">
-    <Footer></Footer>
-  </div>
 </template>
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n'
@@ -148,8 +144,6 @@ import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import HowItWorks from '@/components/HowItWorks.vue'
 import JoinUs from '@/components/JoinUs.vue'
 import Button from '@/components/Button.vue'
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
 import type { Image } from '@/components/ImageInterface'
 
 interface HowItWorksData {
@@ -432,13 +426,9 @@ const communities = <Image[]>[
 .logo-community {
   height: 5rem;
 }
-.entry-footer {
-  padding: 0px 12%;
-}
 @media (max-width: 1324px) {
   .header-home,
-  .home-section,
-  .entry-footer {
+  .home-section {
     padding-right: 6rem;
     padding-left: 6rem;
   }
@@ -479,8 +469,7 @@ const communities = <Image[]>[
     display: none;
   }
   .header-home,
-  .home-section,
-  .entry-footer {
+  .home-section {
     padding-right: 2rem;
     padding-left: 2rem;
   }

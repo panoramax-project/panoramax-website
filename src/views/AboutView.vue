@@ -1,5 +1,4 @@
 <template>
-  <NavBar></NavBar>
   <main class="page-about">
     <h1 class="main-title">{{ $t('pages.about.title') }}</h1>
     <div class="wrapper-introduction">
@@ -54,14 +53,9 @@
       </article>
     </section>
   </main>
-  <div class="entry-footer">
-    <Footer></Footer>
-  </div>
 </template>
 
 <script lang="ts" setup>
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
 import { useI18n } from 'vue-i18n'
 import type { Image } from '@/components/ImageInterface'
 
@@ -216,9 +210,6 @@ const teamData = <TeamData[]>[
   line-height: 1.5;
   white-space: pre-wrap;
 }
-.entry-footer {
-  padding: 0px 15rem;
-}
 .team-list {
   margin-top: 4rem;
   display: flex;
@@ -315,10 +306,6 @@ const teamData = <TeamData[]>[
     padding-right: 20rem;
     padding-left: 20rem;
   }
-  .entry-footer {
-    padding-right: 6rem;
-    padding-left: 6rem;
-  }
 }
 @media (max-width: 1024px) {
   .page-about {
@@ -345,10 +332,6 @@ const teamData = <TeamData[]>[
   }
   .introduction,
   .article {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-  .entry-footer {
     padding-right: 2rem;
     padding-left: 2rem;
   }

@@ -1,5 +1,4 @@
 <template>
-  <NavBar></NavBar>
   <main class="page-faq">
     <h1 class="main-title">{{ $t('pages.faq.title') }}</h1>
     <section class="section">
@@ -18,16 +17,11 @@
       <p v-html="$t('pages.faq.summary_text')" class="summary-text"></p>
     </section>
   </main>
-  <div class="entry-footer">
-    <Footer></Footer>
-  </div>
 </template>
 
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
 import ExpandableBlock from '@/components/ExpandableBlock.vue'
 
 const { tm } = useI18n()
@@ -53,9 +47,6 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   line-height: 1;
   margin-bottom: 5rem;
 }
-.entry-footer {
-  padding: 0px 15rem;
-}
 .author-text {
   white-space: pre-wrap;
   font-style: italic;
@@ -80,8 +71,7 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   line-height: 1.5;
 }
 @media (max-width: 1324px) {
-  .page-faq,
-  .entry-footer {
+  .page-faq {
     padding-right: 6rem;
     padding-left: 6rem;
   }
@@ -94,8 +84,7 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   .main-title {
     font-size: 3rem;
   }
-  .page-faq,
-  .entry-footer {
+  .page-faq {
     padding-right: 2rem;
     padding-left: 2rem;
   }
