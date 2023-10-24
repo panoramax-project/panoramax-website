@@ -1,50 +1,46 @@
 {
   "general": {
+    "panoramax_title": "Panoramax",
     "nav": {
-      "about": "À propos",
-      "faq": "FAQ",
-      "panoramax_instance": "Instance Panoramax",
-      "alt_mastodon": "Logo Mastodon",
-      "alt_linkedin": "Logo linkedin",
-      "alt_twitter": "Logo twitter"
+      "about": "À propos de Panoramax",
+      "faq": "Foire aux questions",
+      "panoramax_instance": "Les instances",
+      "contact": "Nous contacter",
+      "instance_ign": "Instance IGN",
+      "instance_osm": "Instance OSM"
     },
     "footer": {
-      "panoramax_title": "Panoramax",
       "resources_title": "Ressources",
       "follow_title": "Suivez-nous",
       "credits_title": "Crédits images Flaticon",
-      "home_subtitle": "Accueil",
-      "about_subtitle": "À propos",
+      "faq_subtitle": "Foire aux questions",
+      "photos_subtitle": "Catalogue de photos",
+      "ign_subtitle": "Instance IGN",
+      "osm_subtitle": "Instance OSM",
       "forum_subtitle": "Forum",
       "agenda_subtitle": "Agenda",
       "github_subtitle": "Contribuer sur Github",
       "twitter_subtitle": "Twitter",
       "mastodon_subtitle": "Mastodon",
       "linkedin_subtitle": "LinkedIn",
-      "credit_mail_subtitle": "Email icône créée par Those Icons",
-      "credit_decentralize_subtitle": "Décentralisé icône créée par Freepik",
-      "credit_participative_subtitle": "Participation icône créée par itim2101",
-      "credit_quatre_subtitle": "Quatre icône créée par Pixel perfect",
-      "credit_common_subtitle": "Product icône créée par Uniconlabs",
       "ay11": "Accessibilité : non conforme"
     }
   },
   "pages": {
     "home": {
-      "title": "Panoramax",
-      "titleSecondPart": "L’alternative libre pour photo-cartographier les territoires",
-      "subtitleImage": "Un aperçu de Panoramax",
-      "illustrationAlt": "Illustration cartographique",
-      "discoverProject": "DÉCOUVRIR LE PROJET",
-      "howItWorksTitle": "Comment ça marche ?",
-      "howItWorksDescription": "Panoramax fédère les initiatives (des collectivités, des contributeurs OSM, de l’IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
+      "title": "L’alternative libre pour photo-cartographier les territoires",
+      "description": "Panoramax recense les prises de vue et permet de visualiser les lieux visibles depuis la voie publique. Porté par la Fabrique des géocommuns de l’IGN, Panoramax propose une alternative aux offres privées de type « street view », en faisant de cet outil un commun numérique.",
+      "more_images_button": "Voir les photos",
+      "illustration_alt": "Illustration cartographique",
+      "howItWorks_title": "Comment ça marche ?",
+      "howItWorks_description": "Panoramax fédère les initiatives (des collectivités, des contributeurs OSM, de l’IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
       "howItWorks_1": {
         "title": "Un geocommun",
         "description_1": "Des photos de terrain (360° ou non) accessibles à tous",
         "description_2": "Des standards et des règles d’utilisation et de contribution",
         "description_3": "Des bonnes pratiques et des outils pour favoriser les usages",
         "image": {
-          "url": "/common-icon.png",
+          "url": "common-icon.svg",
           "alt": "Image de mise en commun"
         }
       },
@@ -54,7 +50,7 @@
         "description_2": "Un principe commun d’ouverture des données ",
         "description_3": "Des licences d’utilisation libre propres aux instances ",
         "image": {
-          "url": "/usecases-icon.png",
+          "url": "usecases-icon.svg",
           "alt": "Image d'usages"
         }
       },
@@ -64,52 +60,77 @@
         "description_2": "Des moments d’échanges ouverts à tous les membres de la communauté",
         "description_3": "Une multiplicité d’acteurs pour assurer la pérennité du projet",
         "image": {
-          "url": "/participative-icon.png",
+          "url": "participative-icon.svg",
           "alt": "Image de gestion participative"
         }
       },
-      "joinUsTitle": "Rejoignez-nous !",
-      "joinUsDescription": "Vous souhaitez participer ou vous tenir informé ? C'est par ici",
-      "joinUsLink": {
+      "metrics_title": "Une communauté grandissante",
+      "metrics_1": {
+        "number": "10",
+        "text": "millions",
+        "description": "de photos sur Panoramax"
+      },
+      "metrics_2": {
+        "number": "90 000",
+        "text": "km",
+        "description": "de distance couverte"
+      },
+      "metrics_3": {
+        "number": "137",
+        "text": "contributeurs",
+        "description": "issues de plusieurs structures"
+      },
+      "instance_title": "Les instances déjà en ligne",
+      "instance_description": "Les instances blabla lorem blabl lorem blabla lorem blabal lorem Les instances blabla lorem blabl lorem blabla lorem blabal lorem",
+      "instance_explore": "Explorer →",
+      "instance_contribute": "Contribuer →",
+      "instance_logo_osm_alt": "Logo Open Street Map",
+      "instance_logo_ign_alt": "Logo IGN",
+      "discover_title": "Découvrez Panoramax",
+      "discover_description": "Déplacez vous dans le module ci-dessous",
+      "discover_description_end": "Ou accédez à notre catalogue complet de photo ici :",
+      "joinUs_title": "Rejoignez-nous !",
+      "joinUs_description": "Vous souhaitez participer ou vous tenir informé ? C'est par ici",
+      "joinUs_link": {
         "title": "Une question, une remarque ?\n Contactez-nous"
       },
-      "joinUsButton_1": {
+      "joinUs_button_1": {
         "title": "Participez à la communauté",
         "text": "Accéder au forum",
         "url": "https://forum.geocommuns.fr/c/panoramax/6"
       },
-      "joinUsButton_2": {
+      "joinUs_button_2": {
         "title": "Prochain évènement Panoramax",
         "text": "Voir l'agenda complet",
         "event_link_text": "en visio",
         "event_text_1": "Temps d'échange mensuel",
-        "event_text_2": ": 12/06/23 - 17h",
+        "event_text_2": "Le 12/06/2023 - 17h",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
-      "iconMailAlt": "Icon d'email",
-      "communityTitle": "La communauté Panoramax",
-      "communityLogo_1": {
+      "community_description": "Ils contribuent au rayonnement de Panoramax",
+      "community_title": "La communauté Panoramax",
+      "community_logo_1": {
         "url": "/beta-gouv-logo.png",
         "alt": "Logo de beta.gouv"
       },
-      "communityLogo_2": {
+      "community_logo_2": {
         "url": "/ign-logo.png",
         "alt": "Logo de l'IGN"
       },
-      "communityLogo_3": {
+      "community_logo_3": {
         "url": "/fabrique-logo.jpg",
         "alt": "Logo de la Fabrique des communs"
       },
-      "communityLogo_4": {
+      "community_logo_4": {
         "url": "/osm-logo.png",
         "alt": "Logo OpenStreetMap France"
       },
-      "communityLogo_5": {
+      "community_logo_5": {
         "url": "/carto-cite-logo.png",
         "alt": "Logo Carto Cité"
       },
-      "communityLogo_6": {
+      "community_logo_6": {
         "url": "/valparisis-logo.jpeg",
         "alt": "Logo Val Parisis"
       }

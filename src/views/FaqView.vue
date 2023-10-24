@@ -41,9 +41,9 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   padding: 10rem 12%;
 }
 .main-title {
-  font-family: SourceSansPro-Bold;
+  font-family: SFPro-Bold;
   font-size: 5rem;
-  color: var(--violet-dark);
+  color: var(--blue-dark);
   line-height: 1;
   margin-bottom: 5rem;
 }
@@ -60,7 +60,7 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   margin-bottom: 4rem;
 }
 .title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 2.2rem;
   color: var(--blue-dark);
   margin-bottom: 2rem;

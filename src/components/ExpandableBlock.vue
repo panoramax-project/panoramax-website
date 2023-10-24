@@ -2,7 +2,7 @@
   <div :class="['entry-expandable', { 'is-open': isOpen }]">
     <button type="button" class="button-expandable" @click="isOpen = !isOpen">
       <h3 class="title">{{ props.title }}</h3>
-      <img src="@/assets/images/chevron.png" class="image-chevron" />
+      <img src="@/assets/images/chevron.svg" class="image-chevron" />
     </button>
     <div class="article-wrapper">
       <p v-html="props.text" class="article-text"></p>
@@ -28,7 +28,7 @@ const isOpen = ref<boolean>(false)
   margin-bottom: 3rem;
 }
 .title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 2rem;
   color: var(--blue-dark);
   margin-right: 2rem;
@@ -67,7 +67,7 @@ const isOpen = ref<boolean>(false)
 .image-chevron {
   transform: rotate(180deg);
   transition: transform, 0.6s;
-  height: 3rem;
+  height: 1.5rem;
 }
 .toto {
   list-style-position: inside;

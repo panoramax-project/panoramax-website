@@ -3,6 +3,7 @@ import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import router from './router'
 import fr from './locales/fr.json'
+import 'geovisio/build/index.css'
 
 import './assets/main.css'
 
