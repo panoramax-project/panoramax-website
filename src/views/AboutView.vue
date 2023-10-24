@@ -3,11 +3,6 @@
     <h1 class="main-title">{{ $t('pages.about.title') }}</h1>
     <div class="wrapper-introduction">
       <div class="wrapper-image-top">
-        <img
-          src="@/assets/images/carousel-street-view.jpg"
-          :alt="$t('pages.home.illustration_alt')"
-          class="image-top-about"
-        />
         <div class="credit-wrapper">
           <p class="credit-title">Crédit IGN - 2022</p>
         </div>
