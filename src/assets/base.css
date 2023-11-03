@@ -9,10 +9,12 @@ html {
 :root {
   --white: #ffffff;
   --black: #181818;
-  --blue-dark: #0c1d2e;
+  --blue-dark: #0A1F69;
+  --grey-dark: #3E3E3E;
+  --grey: #f5f5f5;
   --blue-ligth: #f6fafe;
-  --violet: #4945ff;
-  --violet-dark: #1d1b84;
+  --blue-semi-ligth: #D7DFFC;
+  --violet: #2954E9;
   --yellow: #fdf474;
 }
 
@@ -24,29 +26,34 @@ html {
   position: relative;
 }
 @font-face {
-  font-family: 'SourceSansPro';
-  src: local('SourceSansPro'),
-    url(./fonts/SourceSansPro/SourceSansPro-Regular.ttf) format('truetype');
+  font-family: 'SFPro';
+  src: local('SFPro'),
+    url(./fonts/SFPro/sf-pro-text-regular.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'SourceSansPro-Black';
-  src: local('SourceSansPro-Black'),
-    url(./fonts/SourceSansPro/SourceSansPro-Black.ttf) format('truetype');
+  font-family: 'SFPro-Black';
+  src: local('SFPro-Black'),
+  url(./fonts/SFPro/SF-Pro-Display-Black.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: local('SourceSansPro-Bold'),
-    url(./fonts/SourceSansPro/SourceSansPro-Bold.ttf) format('truetype');
+  font-family: 'SFPro-Heavy';
+  src: local('SFPro-Heavy'),
+  url(./fonts/SFPro/SF-Pro-Display-Heavy.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'SourceSansPro-SemiBold';
-  src: local('SourceSansPro-SemiBold'),
-    url(./fonts/SourceSansPro/SourceSansPro-SemiBold.ttf) format('truetype');
+  font-family: 'SFPro-Bold';
+  src: local('SFPro-Bold'),
+  url(./fonts/SFPro/sf-pro-text-bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'SFPro-SemiBold';
+  src: local('SFPro-SemiBold'),
+  url(./fonts/SFPro/sf-pro-text-semibold.ttf) format('truetype');
 }
 body {
   min-height: 100vh;
   line-height: 1.2;
-  font-family: SourceSansPro, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: SFPro, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
   font-size: 1.5rem;

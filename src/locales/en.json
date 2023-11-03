@@ -35,7 +35,7 @@
       "howItWorks_title": "Comment ça marche ?",
       "howItWorks_description": "Panoramax fédère les initiatives (des collectivités, des contributeurs OSM, de l’IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
       "howItWorks_1": {
-        "title": "Un géocommun",
+        "title": "Un geocommun",
         "description_1": "Des photos de terrain (360° ou non) accessibles à tous",
         "description_2": "Des standards et des règles d’utilisation et de contribution",
         "description_3": "Des bonnes pratiques et des outils pour favoriser les usages",
@@ -47,8 +47,8 @@
       "howItWorks_2": {
         "title": "Un hébergement flexible",
         "description_1": "Une fédération avec des solutions adaptées aux usages de chacun : instance commune ou auto-hébergée",
-        "description_2": "Un principe commun d’ouverture des données",
-        "description_3": "Des licences d’utilisation libres propres aux instances",
+        "description_2": "Un principe commun d’ouverture des données ",
+        "description_3": "Des licences d’utilisation libre propres aux instances ",
         "image": {
           "url": "usecases-icon.svg",
           "alt": "Image d'usages"
@@ -56,7 +56,7 @@
       },
       "howItWorks_3": {
         "title": "Une gouvernance commune",
-        "description_1": "Des processus ouverts de décision",
+        "description_1": "Des processus ouverts de décisions",
         "description_2": "Des moments d’échanges ouverts à tous les membres de la communauté",
         "description_3": "Une multiplicité d’acteurs pour assurer la pérennité du projet",
         "image": {
@@ -78,18 +78,17 @@
       "metrics_3": {
         "number": "137",
         "text": "contributeurs",
-        "description": "issus de plusieurs structures"
+        "description": "issues de plusieurs structures"
       },
-      "instance_title": "Les instances ouvertes",
-      "instance_description": "Les instances de l'IGN et OSM France sont accessibles à tous. Les données déposées sur l'instance de l'IGN sont publiées sous la licence etalab-2.0, et celles sur l'instance d'OSM France sous licence CC-BY-SA-4.0.",
+      "instance_title": "Les instances déjà en ligne",
+      "instance_description": "Les instances blabla lorem blabl lorem blabla lorem blabal lorem Les instances blabla lorem blabl lorem blabla lorem blabal lorem",
       "instance_explore": "Explorer →",
       "instance_contribute": "Contribuer →",
       "instance_logo_osm_alt": "Logo Open Street Map",
       "instance_logo_ign_alt": "Logo IGN",
       "discover_title": "Découvrez Panoramax",
-      "discover_description": "Déplacez vous dans la visionneuse ci-dessous",
-      "discover_description_end": "Ou accédez à notre catalogue complet :",
-      "discover_more_images_button": "Voir les photos",
+      "discover_description": "Déplacez vous dans le module ci-dessous",
+      "discover_description_end": "Ou accédez à notre catalogue complet de photo ici :",
       "joinUs_title": "Rejoignez-nous !",
       "joinUs_description": "Vous souhaitez participer ou vous tenir informé ? C'est par ici",
       "joinUs_link": {
@@ -103,36 +102,36 @@
       "joinUs_button_2": {
         "title": "Prochain évènement Panoramax",
         "text": "Voir l'agenda complet",
-        "event_link_text": "en visio sur Jitsi",
+        "event_link_text": "en visio",
         "event_text_1": "Temps d'échange mensuel",
-        "event_text_2": "Le 13/11/2023 à 17h",
+        "event_text_2": "Le 12/06/2023 - 17h",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
       "community_description": "Ils contribuent au rayonnement de Panoramax",
       "community_title": "La communauté Panoramax",
       "community_logo_1": {
-        "url": "beta-gouv-logo.png",
+        "url": "/panoramax-website-dev/beta-gouv-logo.png",
         "alt": "Logo de beta.gouv"
       },
       "community_logo_2": {
-        "url": "ign-logo.png",
+        "url": "/panoramax-website-dev/ign-logo.png",
         "alt": "Logo de l'IGN"
       },
       "community_logo_3": {
-        "url": "fabrique-logo.jpg",
+        "url": "/panoramax-website-dev/fabrique-logo.jpg",
         "alt": "Logo de la Fabrique des communs"
       },
       "community_logo_4": {
-        "url": "osm-logo.png",
+        "url": "/panoramax-website-dev/osm-logo.png",
         "alt": "Logo OpenStreetMap France"
       },
       "community_logo_5": {
-        "url": "carto-cite-logo.png",
+        "url": "/panoramax-website-dev/carto-cite-logo.png",
         "alt": "Logo Carto Cité"
       },
       "community_logo_6": {
-        "url": "valparisis-logo.jpeg",
+        "url": "/panoramax-website-dev/valparisis-logo.jpeg",
         "alt": "Logo Val Parisis"
       }
     },

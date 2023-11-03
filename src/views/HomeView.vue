@@ -5,45 +5,141 @@
         <h1 class="main-title">
           {{ $t('pages.home.title') }}
         </h1>
-        <h2 class="main-title-second">
-          {{ $t('pages.home.titleSecondPart') }}
-        </h2>
+        <p class="main-description">{{ $t('pages.home.description') }}</p>
+        <Link
+          :text="$t('pages.home.more_images_button')"
+          look="button button--blue link-top"
+          url="/photos"
+        />
       </div>
       <img
-        src="@/assets/images/map-fr.png"
-        :alt="$t('pages.home.illustrationAlt')"
+        src="@/assets/images/person-taking-photo.jpg"
+        :alt="$t('pages.home.illustration_alt')"
+        loading="lazy"
+        class="image-top-home"
+      />
+      <img
+        src="@/assets/images/upload-person.jpg"
+        :alt="$t('pages.home.illustration_alt')"
+        loading="lazy"
+        class="image-top-home"
+      />
+      <img
+        src="@/assets/images/view.jpg"
+        :alt="$t('pages.home.illustration_alt')"
+        loading="lazy"
         class="image-top-home"
       />
     </section>
     <section class="home-section">
       <h2 class="home-section-title">
-        {{ $t('pages.home.howItWorksTitle') }}
+        {{ $t('pages.home.howItWorks_title') }}
       </h2>
       <p class="home-section-description">
-        {{ $t('pages.home.howItWorksDescription') }}
+        {{ $t('pages.home.howItWorks_description') }}
       </p>
-      <ol class="wrapper-list">
+      <ol class="wrapper-list wrapper-how-it-works">
         <HowItWorks
           v-for="howItWork in howItWorks"
           :key="howItWork.title"
           :title="howItWork.title"
           :description="howItWork.description"
           :image="howItWork.image"
-        ></HowItWorks>
+        />
       </ol>
     </section>
     <section class="home-section">
-      <div class="joinus-section">
+      <h2 class="home-section-title metrics-title">
+        {{ $t('pages.home.metrics_title') }}
+      </h2>
+      <ol class="wrapper-list wrapper-metrics">
+        <Metrics
+          v-for="metric in metrics"
+          :key="metric.number"
+          :number="metric.number"
+          :text="metric.text"
+          :description="metric.description"
+        />
+      </ol>
+    </section>
+    <section class="home-section instances-section">
+      <h2 class="home-section-title">
+        {{ $t('pages.home.instance_title') }}
+      </h2>
+      <p class="home-section-description">
+        {{ $t('pages.home.instance_description') }}
+      </p>
+      <ol class="wrapper-list">
+        <Instance
+          url="https://panoramax.ign.fr/"
+          :image="{
+            url: 'ign-logo.svg',
+            alt: $t('pages.home.instance_logo_ign_alt')
+          }"
+        />
+        <Instance
+          url="https://panoramax.openstreetmap.fr/"
+          :image="{
+            url: 'osm-logo.svg',
+            alt: $t('pages.home.instance_logo_osm_alt')
+          }"
+        />
+      </ol>
+    </section>
+    <section class="home-section catalogue-section">
+      <h2 class="home-section-title">
+        {{ $t('pages.home.discover_title') }}
+      </h2>
+      <p class="home-section-description">
+        {{ $t('pages.home.discover_description') }}
+      </p>
+      <div id="viewer" class="entry-viewer"></div>
+      <p class="home-section-description home-section-description-catalogue">
+        {{ $t('pages.home.discover_description_end') }}
+      </p>
+      <div class="entry-button-catalogue">
+        <Link
+          :text="$t('pages.home.discover_more_images_button')"
+          look="button button--blue"
+          url="/photos"
+        />
+      </div>
+    </section>
+    <section class="home-section community-list">
+      <h2 class="home-section-title">
+        {{ $t('pages.home.community_title') }}
+      </h2>
+      <p class="home-section-description">
+        {{ $t('pages.home.community_description') }}
+      </p>
+      <ul class="wrapper-list">
+        <li v-for="community in communities" :key="community.alt">
+          <img
+            :src="img(community.url)"
+            :alt="community.alt"
+            loading="lazy"
+            class="logo-community"
+          />
+        </li>
+      </ul>
+    </section>
+    <section class="home-section">
+      <div>
         <h2 class="home-section-title">
-          {{ $t('pages.home.joinUsTitle') }}
+          {{ $t('pages.home.joinUs_title') }}
         </h2>
         <p class="home-section-description">
-          {{ $t('pages.home.joinUsDescription') }}
+          {{ $t('pages.home.joinUs_description') }}
         </p>
         <ul class="wrapper-list">
-          <JoinUs :title="joinUsLink.title">
+          <JoinUs :title="joinUs_link.title">
             <div slot="content" class="wrapper-button">
-              <img src="@/assets/images/mail.png" alt="" class="image-mail" />
+              <img
+                src="@/assets/images/mail-icon.svg"
+                loading="lazy"
+                alt=""
+                class="image-mail"
+              />
               <a href="mailto:panoramax@panoramax.fr" class="mail-link"
                 >panoramax@panoramax.fr</a
               >
@@ -60,92 +156,56 @@
                   v-if="joinUsButton.event_text_1"
                   class="wrapper-event-link"
                 >
-                  <span>{{ joinUsButton.event_text_1 }}</span>
-                  <a
-                    :href="joinUsButton.event_link_url"
-                    target="_blank"
-                    class="event-link"
-                    >{{ joinUsButton.event_link_text }}</a
-                  >
-                  <span>{{ joinUsButton.event_text_2 }}</span>
+                  <div>
+                    <img
+                      src="@/assets/images/calendar-icon.svg"
+                      loading="lazy"
+                      alt=""
+                      class="image-mail"
+                    />
+                    <span>{{ joinUsButton.event_text_2 }}</span>
+                  </div>
+                  <div>
+                    <span>{{ joinUsButton.event_text_1 }}</span>
+                    <a
+                      :href="joinUsButton.event_link_url"
+                      target="_blank"
+                      class="event-link"
+                      >{{ joinUsButton.event_link_text }}</a
+                    >
+                  </div>
                 </div>
-                <Button
+                <Link
                   :text="joinUsButton.text"
                   :url="joinUsButton.url"
-                  look="yellow"
+                  look="button button--blue"
                   type="external"
-                ></Button>
+                  target="_blank"
+                />
               </div>
             </div>
           </JoinUs>
         </ul>
       </div>
     </section>
-    <section class="home-section">
-      <h2 class="home-section-title">{{ $t('pages.home.subtitleImage') }}</h2>
-      <Carousel class="home-carousel">
-        <Slide :key="1">
-          <img
-            class="carousel__item"
-            src="@/assets/images/carousel-geovisio.jpg"
-            :alt="$t('pages.home.iconMailAlt')"
-          />
-          <div class="credit-wrapper">
-            <p class="credit-title">Crédit Geovisio - 2022</p>
-          </div>
-        </Slide>
-        <Slide :key="2">
-          <img
-            class="carousel__item"
-            src="@/assets/images/carousel-street-view.jpg"
-            :alt="$t('pages.home.iconMailAlt')"
-          />
-          <div class="credit-wrapper">
-            <p class="credit-title">Crédit IGN - 2022</p>
-          </div>
-        </Slide>
-        <Slide :key="3">
-          <img
-            class="carousel__item"
-            src="@/assets/images/carousel-immersive-view-street.jpg"
-            :alt="$t('pages.home.iconMailAlt')"
-          />
-          <div class="credit-wrapper">
-            <p class="credit-title">Crédit Geovisio - 2022</p>
-          </div>
-        </Slide>
-        <template #addons>
-          <Navigation />
-          <Pagination />
-        </template>
-      </Carousel>
-    </section>
-    <section class="home-section community-list">
-      <h2 class="home-section-title">
-        {{ $t('pages.home.communityTitle') }}
-      </h2>
-      <ul class="wrapper-list community-list">
-        <li v-for="community in communities" :key="community.alt">
-          <img
-            :src="community.url"
-            :alt="community.alt"
-            class="logo-community"
-          />
-        </li>
-      </ul>
-    </section>
   </main>
 </template>
 <script lang="ts" setup>
+import { onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import 'vue3-carousel/dist/carousel.css'
-
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+import { Viewer } from 'geovisio'
+import Link from '@/components/Link.vue'
 import HowItWorks from '@/components/HowItWorks.vue'
+import Metrics from '@/components/Metrics.vue'
+import Instance from '@/components/Instance.vue'
 import JoinUs from '@/components/JoinUs.vue'
-import Button from '@/components/Button.vue'
 import type { Image } from '@/components/ImageInterface'
-
+let viewer = ref()
+interface MetricsData {
+  number: string
+  text: string
+  description: string
+}
 interface HowItWorksData {
   title: string
   description: string[]
@@ -163,6 +223,24 @@ interface joinUsData extends Partial<JoinUsEventData> {
   url: string
 }
 const { t } = useI18n()
+
+const metrics = <MetricsData[]>[
+  {
+    number: t('pages.home.metrics_1.number'),
+    text: t('pages.home.metrics_1.text'),
+    description: t('pages.home.metrics_1.description')
+  },
+  {
+    number: t('pages.home.metrics_2.number'),
+    text: t('pages.home.metrics_2.text'),
+    description: t('pages.home.metrics_2.description')
+  },
+  {
+    number: t('pages.home.metrics_3.number'),
+    text: t('pages.home.metrics_3.text'),
+    description: t('pages.home.metrics_3.description')
+  }
+]
 
 const howItWorks = <HowItWorksData[]>[
   {
@@ -202,143 +280,192 @@ const howItWorks = <HowItWorksData[]>[
     }
   }
 ]
-const joinUsLink = <joinUsData>{
-  title: t('pages.home.joinUsLink.title'),
-  text: t('pages.home.joinUsLink.text'),
-  url: t('pages.home.joinUsLink.url')
+const joinUs_link = <joinUsData>{
+  title: t('pages.home.joinUs_link.title')
 }
 const joinUsButtons = <joinUsData[]>[
   {
-    title: t('pages.home.joinUsButton_1.title'),
-    text: t('pages.home.joinUsButton_1.text'),
-    url: t('pages.home.joinUsButton_1.url')
+    title: t('pages.home.joinUs_button_1.title'),
+    text: t('pages.home.joinUs_button_1.text'),
+    url: t('pages.home.joinUs_button_1.url')
   },
   {
-    title: t('pages.home.joinUsButton_2.title'),
-    text: t('pages.home.joinUsButton_2.text'),
-    url: t('pages.home.joinUsButton_2.url'),
-    event_text_1: t('pages.home.joinUsButton_2.event_text_1'),
-    event_text_2: t('pages.home.joinUsButton_2.event_text_2'),
-    event_link_text: t('pages.home.joinUsButton_2.event_link_text'),
-    event_link_url: t('pages.home.joinUsButton_2.event_link_url')
+    title: t('pages.home.joinUs_button_2.title'),
+    text: t('pages.home.joinUs_button_2.text'),
+    url: t('pages.home.joinUs_button_2.url'),
+    event_text_1: t('pages.home.joinUs_button_2.event_text_1'),
+    event_text_2: t('pages.home.joinUs_button_2.event_text_2'),
+    event_link_text: t('pages.home.joinUs_button_2.event_link_text'),
+    event_link_url: t('pages.home.joinUs_button_2.event_link_url')
   }
 ]
 const communities = <Image[]>[
   {
-    url: t('pages.home.communityLogo_1.url'),
-    alt: t('pages.home.communityLogo_1.alt')
+    url: t('pages.home.community_logo_1.url'),
+    alt: t('pages.home.community_logo_1.alt')
   },
   {
-    url: t('pages.home.communityLogo_2.url'),
-    alt: t('pages.home.communityLogo_2.alt')
+    url: t('pages.home.community_logo_2.url'),
+    alt: t('pages.home.community_logo_2.alt')
   },
   {
-    url: t('pages.home.communityLogo_3.url'),
-    alt: t('pages.home.communityLogo_3.alt')
+    url: t('pages.home.community_logo_3.url'),
+    alt: t('pages.home.community_logo_3.alt')
   },
   {
-    url: t('pages.home.communityLogo_4.url'),
-    alt: t('pages.home.communityLogo_4.alt')
+    url: t('pages.home.community_logo_4.url'),
+    alt: t('pages.home.community_logo_4.alt')
   },
   {
-    url: t('pages.home.communityLogo_5.url'),
-    alt: t('pages.home.communityLogo_5.alt')
+    url: t('pages.home.community_logo_5.url'),
+    alt: t('pages.home.community_logo_5.alt')
   },
   {
-    url: t('pages.home.communityLogo_6.url'),
-    alt: t('pages.home.communityLogo_6.alt')
+    url: t('pages.home.community_logo_6.url'),
+    alt: t('pages.home.community_logo_6.alt')
   }
 ]
+
+onMounted(() => {
+  viewer.value = new Viewer(
+    'viewer', // Div ID
+    'https://api.panoramax.xyz/api',
+    { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0' }
+  )
+})
+
+function img(name: string): string {
+  return new URL(`../assets/images/${name}`, import.meta.url).toString()
+}
 </script>
 <style scoped>
 .page-home {
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 .header-home {
-  height: 50vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: var(--blue-ligth);
-  padding: 4rem 12%;
+  position: relative;
 }
 .wrapper-title {
-  display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
-}
-.wrapper-button-top {
-  width: fit-content;
-  margin-top: 4rem;
-}
-.image-top-home {
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 1;
+  width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 4rem;
-  background-color: var(--violet);
-}
-.main-title {
   display: flex;
   flex-direction: column;
-  margin-right: 2rem;
-  font-family: SourceSansPro-Black;
-  font-size: 7rem;
-  color: var(--violet-dark);
-  line-height: 1;
+  justify-content: center;
+  background: linear-gradient(90deg, #0a1f69 -20%, rgba(10, 31, 105, 0) 100%);
+  padding-left: 8%;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  width: 60rem;
+  margin-bottom: 2rem;
+}
+.main-description {
+  width: 60rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.main-title-second {
-  font-family: SourceSansPro-SemiBold;
-  font-size: 3rem;
-  line-height: 1;
+.image-top-home {
+  width: 33.33%;
+  object-fit: contain;
 }
 .home-section {
   position: relative;
   border-radius: 4rem;
-  margin-top: 10rem;
-  padding: 0rem 12%;
+  padding: 0rem 8% 4rem;
 }
+section:nth-child(even) {
+  padding-right: calc(8% + 6rem);
+  padding-left: calc(8% + 6rem);
+}
+.catalogue-section {
+  padding-right: calc(8% + 6rem);
+  padding-left: calc(8% + 6rem);
+}
+.metrics-title {
+  border-top: 0.1rem solid var(--grey);
+}
+
 .home-section-title {
   text-align: center;
-  font-family: SourceSansPro-Black;
-  font-size: 3rem;
-  color: var(--violet-dark);
+  font-family: SFPro-Bold;
+  font-size: 2.8rem;
+  color: var(--blue-dark);
   padding-right: 2rem;
   padding-left: 2rem;
+  padding-top: 3rem;
 }
 .home-section-description {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: 50%;
   margin: 1rem auto 3rem;
+  color: var(--grey-dark);
 }
 .wrapper-list {
   display: flex;
   justify-content: center;
 }
-.joinus-section {
-  position: relative;
-  border: 0.1rem solid var(--violet-dark);
-  border-radius: 2rem;
-  padding: 0 2rem 2rem;
+.wrapper-metrics {
+  margin-top: 2rem;
+}
+.instances-section {
+  background-color: var(--blue-dark);
+  border-radius: 0;
+  padding-bottom: 3rem;
+}
+.instances-section .home-section-description {
+  color: var(--white);
+}
+.instances-section .home-section-title {
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+.home-section-description-catalogue {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.entry-viewer {
+  border-radius: inherit;
+  overflow: hidden;
+  height: 50rem;
+}
+.entry-button-catalogue {
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.1rem solid var(--grey);
+  padding-bottom: 3rem;
 }
 .wrapper-event-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1rem;
 }
 .wrapper-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 1.6rem;
 }
 .wrapper-button {
   display: flex;
   align-items: center;
   width: fit-content;
+  color: var(--grey-dark);
 }
 .event-link {
   text-decoration: underline;
-  color: var(--violet-dark);
+  color: var(--blue-dark);
   margin-left: 0.5rem;
 }
 .event-link:hover {
@@ -346,75 +473,27 @@ const communities = <Image[]>[
   text-decoration: none;
 }
 .mail-link {
-  color: var(--violet-dark);
-  text-decoration: none;
-  font-size: 1.8rem;
+  color: var(--grey-dark);
+  font-size: 1.6rem;
+  text-decoration: underline;
 }
 .mail-link:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-.joinus-section .home-section-title {
-  position: absolute;
-  top: -2.5rem;
-  right: 0;
-  left: 0;
-  margin: auto;
-  background-color: var(--white);
-  width: fit-content;
-}
+
 .joinus-section .home-section-description {
   margin-top: 3rem;
   padding-right: 2rem;
   padding-left: 2rem;
 }
 .image-mail {
-  height: 3rem;
+  height: 1.5rem;
   margin-right: 0.5rem;
-  margin-top: 0.5rem;
 }
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel__viewport {
-  border-radius: 4rem;
-}
-.credit-wrapper {
-  position: absolute;
-  background-color: var(--white);
-  min-width: 15rem;
-  padding: 1rem 1.5rem 0.5rem;
-  border-radius: 1rem;
-  right: 2rem;
-  bottom: 5rem;
-  text-align: left;
-}
-.credit-title {
-  font-family: SourceSansPro-SemiBold;
-  margin-bottom: 0.5rem;
-}
-.home-carousel ::v-deep(.carousel__next) {
-  height: 8rem;
-  width: 8rem;
-  font-size: 8rem;
-  color: var(--white);
-}
-.home-carousel ::v-deep(.carousel__prev) {
-  height: 8rem;
-  width: 8rem;
-  font-size: 8rem;
-  color: var(--white);
-}
-.home-carousel {
-  margin-top: 2rem;
+.community-list .wrapper-list {
+  border-bottom: 0.1rem solid var(--grey);
+  padding-bottom: 3rem;
 }
 .community-list .home-section-title {
   margin-bottom: 2rem;
@@ -422,77 +501,92 @@ const communities = <Image[]>[
 .community-list li {
   margin-right: 2rem;
   margin-left: 2rem;
+  width: 16.66%;
 }
 .logo-community {
-  height: 5rem;
-}
-@media (max-width: 1324px) {
-  .header-home,
-  .home-section {
-    padding-right: 6rem;
-    padding-left: 6rem;
-  }
+  height: 6rem;
 }
 @media (max-width: 1024px) {
-  .header-home {
-    height: initial;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
-  }
-  .image-top-home {
-    height: 30rem;
-  }
   .wrapper-list {
     flex-direction: column;
     align-items: center;
   }
-  .community-list {
+  .instances-section .wrapper-list,
+  .community-list .wrapper-list {
     flex-direction: row;
-  }
-  .home-section-description {
-    width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .wrapper-title,
-  .main-title,
-  .main-title-second {
-    width: 100%;
+  .header-home {
+    flex-direction: column;
   }
-  .main-title {
-    font-size: 4rem;
+  .wrapper-title {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 31, 105, 0.6) 0%,
+      rgba(10, 31, 105, 0) 100%
+    );
   }
-  .main-title-second {
-    font-size: 2rem;
+  .instances-section .wrapper-list,
+  .community-list .wrapper-list {
+    flex-direction: column;
   }
   .image-top-home {
-    display: none;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
   }
-  .header-home,
-  .home-section {
+  .main-title,
+  .home-section-title {
+    font-size: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-description,
+  .home-section-description,
+  .wrapper-content {
+    font-size: 1.2rem;
+  }
+  .main-title,
+  .main-description {
+    width: 100%;
+  }
+  .wrapper-title {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .home-section,
+  section:nth-child(even),
+  .catalogue-section {
     padding-right: 2rem;
     padding-left: 2rem;
   }
-  .home-section {
-    margin-top: 6rem;
-  }
-  .home-section-title {
-    font-size: 2.4rem;
+  .catalogue-section {
+    padding-bottom: 0;
   }
   .home-section-description {
-    font-size: 1.5rem;
+    width: 100%;
+  }
+  .entry-viewer {
+    height: 35rem;
+  }
+  .community-list .wrapper-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .community-list .wrapper-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin: 0;
+  }
+  .link-top {
+    width: 100%;
+    margin-top: 2.5rem;
   }
   .logo-community {
-    height: 4rem;
-  }
-  .community-list li {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
-}
-@media (max-width: 500px) {
-  .wrapper-list {
-    flex-wrap: wrap;
+    height: 5rem;
   }
 }
 </style>

@@ -2,179 +2,200 @@
   <footer class="footer">
     <div class="footer-wrapper">
       <div class="footer-block">
-        <p class="block-title">{{ $t('general.footer.panoramax_title') }}</p>
+        <p class="block-title">{{ $t('general.panoramax_title') }}</p>
         <ul class="footer-list">
-          <li>
-            <router-link to="/" class="footer-link">{{
-              $t('general.footer.home_subtitle')
-            }}</router-link>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.faq_subtitle')"
+              url="/foire-aux-questions"
+              look="link--white"
+            />
           </li>
-          <li>
-            <router-link to="/a-propos" class="footer-link">{{
-              $t('general.footer.about_subtitle')
-            }}</router-link>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.photos_subtitle')"
+              url="/photos"
+              look="link--white"
+            />
+          </li>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.ign_subtitle')"
+              url="https://panoramax.ign.fr/"
+              type="external"
+              target="_blank"
+              look="link--white"
+            />
+          </li>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.osm_subtitle')"
+              url="https://panoramax.openstreetmap.fr/"
+              type="external"
+              target="_blank"
+              look="link--white"
+            />
           </li>
         </ul>
       </div>
       <div class="footer-block">
         <p class="block-title">{{ $t('general.footer.resources_title') }}</p>
         <ul class="footer-list">
-          <li>
-            <a
-              href="https://forum.geocommuns.fr/c/panoramax/6"
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.forum_subtitle')"
+              url="https://forum.geocommuns.fr/c/panoramax/6"
+              type="external"
               target="_blank"
-              class="footer-link"
-              >{{ $t('general.footer.forum_subtitle') }}</a
-            >
+              look="link--white"
+            />
           </li>
-          <li>
-            <a
-              href="https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.agenda_subtitle')"
+              url="https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+              type="external"
               target="_blank"
-              class="footer-link"
-              >{{ $t('general.footer.agenda_subtitle') }}</a
-            >
+              look="link--white"
+            />
           </li>
-          <li>
-            <a
-              href="https://github.com/panoramax-project/panoramax-website"
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.github_subtitle')"
+              url="https://github.com/panoramax-project/panoramax-website"
+              type="external"
               target="_blank"
-              class="footer-link"
-              >{{ $t('general.footer.github_subtitle') }}</a
-            >
+              look="link--white"
+            />
           </li>
         </ul>
       </div>
       <div class="footer-block">
         <p class="block-title">{{ $t('general.footer.follow_title') }}</p>
-        <ul class="footer-list">
-          <li>
-            <a
-              href="https://twitter.com/panoramax_"
+        <ul class="footer-list rs-list">
+          <li class="footer-list-item">
+            <Link
+              url="https://twitter.com/panoramax_"
+              type="external"
               target="_blank"
-              class="footer-link"
-              >{{ $t('general.footer.twitter_subtitle') }}</a
+              look="link--white"
             >
+              <template v-slot:image>
+                <img
+                  src="@/assets/images/x-logo.svg"
+                  loading="lazy"
+                  alt=""
+                  class="logo"
+                />
+              </template>
+            </Link>
           </li>
-          <li>
-            <a
-              href="https://mapstodon.space/@panoramax"
+          <li class="footer-list-item">
+            <Link
+              url="https://mapstodon.space/@panoramax"
+              type="external"
               target="_blank"
-              class="footer-link"
-              >{{ $t('general.footer.mastodon_subtitle') }}</a
+              look="link--white"
             >
+              <template v-slot:image>
+                <img
+                  src="@/assets/images/mastodon-logo.svg"
+                  loading="lazy"
+                  alt=""
+                  class="logo"
+                />
+              </template>
+            </Link>
           </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/groups/12741355/"
+          <li class="footer-list-item">
+            <Link
+              url="https://www.linkedin.com/groups/12741355/"
+              type="external"
               target="_blank"
-              class="footer-link"
-              >{{ $t('general.footer.linkedin_subtitle') }}</a
+              look="link--white"
             >
+              <template v-slot:image>
+                <img
+                  src="@/assets/images/linkedin-logo.svg"
+                  loading="lazy"
+                  alt=""
+                  class="logo"
+                />
+              </template>
+            </Link>
           </li>
         </ul>
       </div>
       <div class="footer-block">
-        <p class="block-title">{{ $t('general.footer.credits_title') }}</p>
         <ul class="footer-list">
-          <li>
-            <a
-              href="https://www.flaticon.com/fr/icones-gratuites/email"
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.credits_title')"
+              url="https://www.flaticon.com/fr/"
+              type="external"
               target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-link"
-              >{{ $t('general.footer.credit_mail_subtitle') }}</a
-            >
+              look="link--white"
+            />
           </li>
-          <li>
-            <a
-              href="https://www.flaticon.com/fr/icones-gratuites/decentralise"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-link"
-              >{{ $t('general.footer.credit_decentralize_subtitle') }}</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.flaticon.com/fr/icones-gratuites/participation"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-link"
-              >{{ $t('general.footer.credit_participative_subtitle') }}</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.flaticon.com/free-icons/product"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-link"
-              >{{ $t('general.footer.credit_common_subtitle') }}</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.flaticon.com/fr/auteurs/pixel-perfect"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-link"
-              >{{ $t('general.footer.credit_quatre_subtitle') }}</a
-            >
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.ay11')"
+              url="/accessibilite"
+              look="link--white"
+            />
           </li>
         </ul>
       </div>
     </div>
-    <router-link to="/accessibilite" class="footer-link">{{
-      $t('general.footer.ay11')
-    }}</router-link>
   </footer>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Link from '@/components/Link.vue'
+</script>
 
 <style scoped>
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2rem;
+  padding: 3rem 12rem;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  font-size: 1.6rem;
+  height: 17.8rem;
 }
 .footer-wrapper {
   display: flex;
-  justify-content: center;
-  border-top: 0.1rem solid rgba(29, 27, 132, 0.3);
 }
 .footer-block {
-  margin: 2rem;
+  width: 25%;
+}
+.footer-list-item {
+  width: fit-content;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+.rs-list {
+  display: flex;
 }
 .block-title {
-  font-family: SourceSansPro-SemiBold;
-  font-size: 18px;
+  font-family: SFPro-SemiBold;
+  margin-bottom: 2rem;
 }
-.footer-list {
-  padding-top: 1rem;
-  font-size: 16px;
+.logo {
+  height: 2rem;
 }
-.footer-link {
-  text-decoration: none;
-  color: var(--violet-dark);
-  font-size: 1.8rem;
-}
-.footer-link:hover {
-  background-color: transparent;
-  text-decoration: underline;
+.rs-list .logo {
+  margin-right: 2rem;
 }
 @media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 2rem 0;
+    height: initial;
+  }
   .footer-wrapper {
     flex-wrap: wrap;
-    justify-content: initial;
-    padding-bottom: 4rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
   }
   .footer-block {
-    margin: 2rem 2rem 0 0;
+    width: 50%;
+    margin-bottom: 2rem;
   }
 }
 </style>

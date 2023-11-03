@@ -1,9 +1,12 @@
 <template>
   <li class="entry-how-it-works">
     <div class="head">
-      <div class="image-wrapper">
-        <img :src="props.image.url" :alt="props.image.alt" class="image" />
-      </div>
+      <img
+        :src="img(props.image.url)"
+        :alt="props.image.alt"
+        loading="lazy"
+        class="image"
+      />
       <h3 class="title">{{ props.title }}</h3>
     </div>
     <div
@@ -11,7 +14,12 @@
       :key="text"
       class="description-wrapper"
     >
-      <img src="@/assets/images/check-icon.png" alt="" class="check-icon" />
+      <img
+        src="@/assets/images/check-icon.svg"
+        alt=""
+        loading="lazy"
+        class="check-icon"
+      />
       <p class="description">
         {{ text }}
       </p>
@@ -27,6 +35,10 @@ interface Props {
   image: Image
 }
 const props = defineProps<Props>()
+
+function img(name: string): string {
+  return new URL(`../assets/images/${name}`, import.meta.url).toString()
+}
 </script>
 
 <style scoped>
@@ -34,7 +46,7 @@ const props = defineProps<Props>()
   display: flex;
   flex-direction: column;
   border-radius: 2rem;
-  padding: 4rem;
+  padding: 2rem;
   width: 33%;
   background-color: var(--blue-ligth);
 }
@@ -47,24 +59,20 @@ const props = defineProps<Props>()
   flex-direction: column;
   justify-content: center;
 }
-.image-wrapper {
-  padding: 1rem;
-  background-color: var(--white);
-  width: fit-content;
-  border-radius: 50%;
-}
 .image {
   width: 6rem;
 }
 .title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 2.4rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: var(--violet);
 }
 .description-wrapper {
   display: flex;
   margin-bottom: 1rem;
+  color: var(--grey-dark);
 }
 .description {
   white-space: pre-line;
@@ -73,7 +81,6 @@ const props = defineProps<Props>()
 .check-icon {
   height: 2rem;
   margin-right: 1rem;
-  margin-top: 0.5rem;
 }
 @media (max-width: 1024px) {
   .entry-how-it-works:nth-child(2) {
@@ -87,10 +94,30 @@ const props = defineProps<Props>()
 }
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .entry-how-it-works {
     padding: 3rem;
+  }
+  .entry-how-it-works:last-child {
+    margin-bottom: 0;
+  }
+  .head {
+    flex-direction: row;
+    justify-content: initial;
+    margin-bottom: 1rem;
+  }
+  .image {
+    margin-right: 1rem;
+    width: 4rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .entry-how-it-works {
+    padding: 2rem;
   }
 }
 </style>

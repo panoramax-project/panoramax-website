@@ -111,13 +111,13 @@ hr {
 }
 h1 {
   font-size: 5rem;
-  color: var(--violet-dark);
+  color: var(--blue-dark);
   line-height: 1;
   margin-bottom: 5rem;
 }
 h2 {
   font-size: 3rem;
-  color: var(--violet-dark);
+  color: var(--blue-dark);
 }
 @media (max-width: 1324px) {
   .entry-page {

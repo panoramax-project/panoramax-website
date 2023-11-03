@@ -3,11 +3,6 @@
     <h1 class="main-title">{{ $t('pages.about.title') }}</h1>
     <div class="wrapper-introduction">
       <div class="wrapper-image-top">
-        <img
-          src="@/assets/images/carousel-street-view.jpg"
-          :alt="$t('pages.home.illustrationAlt')"
-          class="image-top-about"
-        />
         <div class="credit-wrapper">
           <p class="credit-title">Crédit IGN - 2022</p>
         </div>
@@ -21,6 +16,7 @@
             v-if="article.icon"
             :src="article.icon.url"
             :alt="article.icon.alt"
+            loading="lazy"
             class="icon-image"
           />
           <h2 class="article-title" v-if="article.subtitle">
@@ -32,6 +28,7 @@
           v-if="article.image"
           :src="article.image.url"
           :alt="article.image.alt"
+          loading="lazy"
           class="article-image"
         />
       </article>
@@ -44,6 +41,7 @@
             <img
               :src="team.image_url"
               :alt="team.image_alt"
+              loading="lazy"
               class="team-image"
             />
             <span class="team-name">{{ team.name }}</span>
@@ -156,9 +154,9 @@ const teamData = <TeamData[]>[
   padding: 10rem 12%;
 }
 .main-title {
-  font-family: SourceSansPro-Bold;
+  font-family: SFPro-Bold;
   font-size: 5rem;
-  color: var(--violet-dark);
+  color: var(--blue-dark);
   line-height: 1;
   margin-bottom: 5rem;
 }
@@ -195,7 +193,7 @@ const teamData = <TeamData[]>[
   background-color: var(--blue-ligth);
 }
 .article-title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 2.4rem;
 }
 .article-image {
@@ -222,7 +220,7 @@ const teamData = <TeamData[]>[
   align-items: center;
   padding: 3rem 3rem 5rem;
   margin-right: 2rem;
-  border: 0.1rem solid var(--violet-dark);
+  border: 0.1rem solid var(--blue-dark);
   border-radius: 2rem;
   width: calc(33% - 1.1rem);
   margin-bottom: 2rem;
@@ -240,7 +238,7 @@ const teamData = <TeamData[]>[
   object-fit: cover;
 }
 .team-name {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   margin-bottom: 0.5rem;
   font-size: 1.8rem;
   text-align: center;
@@ -259,7 +257,7 @@ const teamData = <TeamData[]>[
   text-align: left;
 }
 .credit-title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }

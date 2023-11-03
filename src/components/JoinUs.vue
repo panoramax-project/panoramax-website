@@ -23,18 +23,19 @@ const props = defineProps<Props>()
   border-radius: 2rem;
   margin-top: 0;
   margin-bottom: 2rem;
-  padding: 2rem 2rem 4rem;
+  padding: 2rem;
 }
 .entry-join-us:nth-child(2) {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 .title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
   white-space: pre;
+  color: var(--violet);
 }
 
 @media (max-width: 1024px) {
@@ -46,8 +47,6 @@ const props = defineProps<Props>()
   .title {
     font-size: 1.8rem;
   }
-}
-@media (max-width: 500px) {
   .entry-join-us:nth-child(2) {
     margin-right: initial;
     margin-left: initial;

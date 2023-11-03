@@ -38,12 +38,12 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10rem 12%;
+  padding: 10rem 20%;
 }
 .main-title {
-  font-family: SourceSansPro-Bold;
-  font-size: 5rem;
-  color: var(--violet-dark);
+  font-family: SFPro-Bold;
+  font-size: 3.5rem;
+  color: var(--blue-dark);
   line-height: 1;
   margin-bottom: 5rem;
 }
@@ -53,14 +53,14 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
 }
 .summary {
   padding: 2rem;
-  border: 0.1rem solid var(--violet);
+  border: 0.1rem solid var(--blue-dark);
 }
 .section {
   border-radius: 2rem;
   margin-bottom: 4rem;
 }
 .title {
-  font-family: SourceSansPro-SemiBold;
+  font-family: SFPro-SemiBold;
   font-size: 2.2rem;
   color: var(--blue-dark);
   margin-bottom: 2rem;
@@ -72,8 +72,8 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
 }
 @media (max-width: 1324px) {
   .page-faq {
-    padding-right: 6rem;
-    padding-left: 6rem;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }
 
@@ -82,14 +82,14 @@ const faqs = computed<FaqData[]>(() => tm('pages.faq.blocks'))
     padding-top: 6rem;
   }
   .main-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .page-faq {
     padding-right: 2rem;
     padding-left: 2rem;
   }
   .summary-text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 </style>
