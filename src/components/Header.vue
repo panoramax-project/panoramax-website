@@ -19,6 +19,13 @@
         </Link>
       </div>
       <ul :class="['header-list', { displayed }]">
+        <li class="list-item">
+          <Link
+            :text="$t('general.nav.photos')"
+            url="photos"
+            look="link--blue"
+          />
+        </li>
         <li class="list-item instance-item">
           <span class="desktop">{{
             $t('general.nav.panoramax_instance')

@@ -3,6 +3,7 @@
     "panoramax_title": "Panoramax",
     "nav": {
       "about": "À propos de Panoramax",
+      "photos": "Voir les photos",
       "faq": "Foire aux questions",
       "panoramax_instance": "Les instances",
       "contact": "Nous contacter",
@@ -76,7 +77,7 @@
         "description": "de distance couverte"
       },
       "metrics_3": {
-        "number": "137",
+        "number": "118",
         "text": "contributeurs",
         "description": "issus de plusieurs structures"
       },
