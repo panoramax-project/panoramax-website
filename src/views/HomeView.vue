@@ -132,59 +132,59 @@
           {{ $t('pages.home.joinUs_description') }}
         </p>
         <ul class="wrapper-list">
-          <JoinUs :title="joinUs_link.title">
-            <div slot="content" class="wrapper-button">
-              <img
-                src="@/assets/images/mail-icon.svg"
-                loading="lazy"
-                alt=""
-                class="image-mail"
-              />
-              <a href="mailto:panoramax@panoramax.fr" class="mail-link"
-                >panoramax@panoramax.fr</a
-              >
-            </div>
-          </JoinUs>
-          <JoinUs
-            v-for="joinUsButton in joinUsButtons"
-            :key="joinUsButton.title"
-            :title="joinUsButton.title"
-          >
-            <div slot="content" class="wrapper-button">
-              <div class="wrapper-content">
-                <div
-                  v-if="joinUsButton.event_text_1"
-                  class="wrapper-event-link"
-                >
-                  <div>
-                    <img
-                      src="@/assets/images/calendar-icon.svg"
-                      loading="lazy"
-                      alt=""
-                      class="image-mail"
-                    />
-                    <span>{{ joinUsButton.event_text_2 }}</span>
-                  </div>
-                  <div>
-                    <span>{{ joinUsButton.event_text_1 }}</span>
-                    <a
-                      :href="joinUsButton.event_link_url"
-                      target="_blank"
-                      class="event-link"
-                      >{{ joinUsButton.event_link_text }}</a
-                    >
-                  </div>
-                </div>
-                <Link
-                  :text="joinUsButton.text"
-                  :url="joinUsButton.url"
-                  look="button button--blue"
-                  type="external"
-                  target="_blank"
+          <li class="list-join-us">
+            <JoinUs :title="joinUs_link.title">
+              <div slot="content" class="wrapper-button">
+                <img
+                  src="@/assets/images/mail-icon.svg"
+                  loading="lazy"
+                  alt=""
+                  class="image-mail"
                 />
+                <a href="mailto:panoramax@panoramax.fr" class="mail-link"
+                  >panoramax@panoramax.fr</a
+                >
               </div>
-            </div>
-          </JoinUs>
+            </JoinUs>
+          </li>
+          <li v-for="joinUsButton in joinUsButtons" class="list-join-us">
+            <JoinUs :key="joinUsButton.title" :title="joinUsButton.title">
+              <div slot="content" class="wrapper-button">
+                <div class="wrapper-content">
+                  <div
+                    v-if="joinUsButton.event_text_1"
+                    class="wrapper-event-link"
+                  >
+                    <div>
+                      <img
+                        src="@/assets/images/calendar-icon.svg"
+                        loading="lazy"
+                        alt=""
+                        class="image-mail"
+                      />
+                      <span>{{ joinUsButton.event_text_2 }}</span>
+                    </div>
+                    <div>
+                      <span>{{ joinUsButton.event_text_1 }}</span>
+                      <a
+                        :href="joinUsButton.event_link_url"
+                        target="_blank"
+                        class="event-link"
+                        >{{ joinUsButton.event_link_text }}</a
+                      >
+                    </div>
+                  </div>
+                  <Link
+                    :text="joinUsButton.text"
+                    :url="joinUsButton.url"
+                    look="button button--blue"
+                    type="external"
+                    target="_blank"
+                  />
+                </div>
+              </div>
+            </JoinUs>
+          </li>
         </ul>
       </div>
     </section>
@@ -407,9 +407,9 @@ section:nth-child(even) {
 .home-section-description {
   text-align: center;
   font-size: 1.6rem;
+  color: var(--grey-dark);
   width: 50%;
   margin: 1rem auto 3rem;
-  color: var(--grey-dark);
 }
 .wrapper-list {
   display: flex;
@@ -506,6 +506,13 @@ section:nth-child(even) {
 .logo-community {
   height: 6rem;
 }
+.list-join-us {
+  width: 33%;
+}
+.list-join-us:nth-child(2) {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 @media (max-width: 1024px) {
   .wrapper-list {
     flex-direction: column;
@@ -514,6 +521,9 @@ section:nth-child(even) {
   .instances-section .wrapper-list,
   .community-list .wrapper-list {
     flex-direction: row;
+  }
+  .list-join-us {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -581,12 +591,12 @@ section:nth-child(even) {
     width: 33%;
     margin: 0;
   }
-  .link-top {
-    width: 100%;
-    margin-top: 2.5rem;
-  }
   .logo-community {
     height: 5rem;
+  }
+  .list-join-us:nth-child(2) {
+    margin-right: initial;
+    margin-left: initial;
   }
 }
 </style>

@@ -4,9 +4,10 @@
     "nav": {
       "about": "À propos de Panoramax",
       "photos": "Voir les photos",
+      "contribute": "Comment participer ?",
       "faq": "Foire aux questions",
       "panoramax_instance": "Les instances",
-      "contact": "Nous contacter",
+      "contact": "Contact",
       "instance_ign": "Instance IGN",
       "instance_osm": "Instance OSM"
     },
@@ -30,15 +31,15 @@
   "pages": {
     "home": {
       "title": "L’alternative libre pour photo-cartographier les territoires",
-      "description": "Panoramax est une ressource numérique permettant la mise en commun et l'exploitation de photos de terrain. Toute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax. Ces données sont ensuite librement accessibles et réutilisables par tous.",
+      "description": "Panoramax est une ressource numérique permettant la mise en commun et l'exploitation de photos de terrain. Toute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax. Ces données sont ensuite librement accessibles et réutilisables",
       "more_images_button": "Voir le catalogue de photos",
       "illustration_alt": "Illustration cartographique",
       "howItWorks_title": "Comment ça marche ?",
-      "howItWorks_description": "Panoramax fédère les initiatives (des collectivités, des contributeurs OSM, de l’IGN...) pour favoriser l'émergence d'un géocommun de bases de vues immersives.",
+      "howItWorks_description": "Panoramax fédère les initiatives d'une large communauté (collectivités, contributeurs OSM, IGN, services publics) participant au géocommun de bases de vues de terrain.",
       "howItWorks_1": {
         "title": "Un géocommun",
-        "description_1": "Des photos de terrain (360° ou non) accessibles à tous",
-        "description_2": "Des standards et des règles d’utilisation et de contribution",
+        "description_1": "Des photos de terrain (360° ou non) accessibles à toutes et tous",
+        "description_2": "Des standards ouverts et des licences de ré-utilisation libres",
         "description_3": "Des bonnes pratiques et des outils pour favoriser les usages",
         "image": {
           "url": "common-icon.svg",
@@ -46,20 +47,20 @@
         }
       },
       "howItWorks_2": {
-        "title": "Un hébergement flexible",
-        "description_1": "Une fédération avec des solutions adaptées aux usages de chacun : instance commune ou auto-hébergée",
-        "description_2": "Un principe commun d’ouverture des données",
-        "description_3": "Des licences d’utilisation libres propres aux instances",
+        "title": "Une architecture décentralisée et ouverte",
+        "description_1": "Des services mutualisés ou auto-hébergés, adaptés aux usages de chacun",
+        "description_2": "Un protocole commun et ouvert d'accès aux catalogues",
+        "description_3": "Un catalogue commun d'images",
         "image": {
           "url": "usecases-icon.svg",
           "alt": "Image d'usages"
         }
       },
       "howItWorks_3": {
-        "title": "Une gouvernance commune",
-        "description_1": "Des processus ouverts de décision",
-        "description_2": "Des moments d’échanges ouverts à tous les membres de la communauté",
-        "description_3": "Une multiplicité d’acteurs pour assurer la pérennité du projet",
+        "title": "Une gouvernance ouverte",
+        "description_1": "Une diversité d’acteurs impliqués",
+        "description_2": "Des moments d’échanges réguliers entre les membres de la communauté",
+        "description_3": "Des processus de décisions ouverts",
         "image": {
           "url": "participative-icon.svg",
           "alt": "Image de gestion participative"
@@ -82,7 +83,7 @@
         "description": "issus de plusieurs structures"
       },
       "instance_title": "Les instances ouvertes",
-      "instance_description": "Les instances de l'IGN et OSM France sont accessibles à tous. Les données déposées sur l'instance de l'IGN sont publiées sous la licence etalab-2.0, et celles sur l'instance d'OSM France sous licence CC-BY-SA-4.0.",
+      "instance_description": "Les instances de l'IGN et OSM France sont accessibles en ligne. Les données déposées sur l'instance de l'IGN sont publiées sous la licence etalab-2.0, et celles sur l'instance d'OSM France sous licence CC-BY-SA-4.0.",
       "instance_explore": "Explorer →",
       "instance_contribute": "Contribuer →",
       "instance_logo_osm_alt": "Logo Open Street Map",
@@ -105,8 +106,8 @@
         "title": "Prochain évènement Panoramax",
         "text": "Voir l'agenda complet",
         "event_link_text": "en visio sur Jitsi",
-        "event_text_1": "GT CNIG vues immersives et de terrain",
-        "event_text_2": "Le 27/11/2023 à 14h30",
+        "event_text_1": "Temps d'échange mensuel",
+        "event_text_2": "Le 13/11/2023 à 17h",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
@@ -211,7 +212,7 @@
     "faq": {
       "title": "Foire aux Questions : Panoramax & anonymisation",
       "introduction_title": "C'est quoi Panoramax ?",
-      "introduction_text": "Panoramax est une plateforme qui recense les prises de vue et permet de visualiser en ligne les lieux visibles depuis la voie publique. Portée par la Fabrique des géocommuns de l’IGN, la plateforme a vocation à proposer une alternative aux offres privées de type « street view », en faisant de cet outil un commun numérique.\n\nToute personne peut prendre des photographies des lieux afin d’alimenter la base de données de Panoramax. Ces données sont ensuite diffusées en ligne via une plateforme. Elles sont librement accessibles et réutilisables.\nIl y a des enjeux juridiques autour de ces données, et c’est dans cette FAQ que nous répondons à certaines de vos questions sur ce sujet.",
+      "introduction_text": "Panoramax est un commun numérique qui recense les prises de vue et permet de visualiser en ligne les lieux visibles depuis la voie publique. Portée par la Fabrique des géocommuns de l’IGN, la plateforme a vocation à proposer une alternative aux offres privées de type « street view », en faisant de cet outil un commun numérique.\n\nToute personne peut prendre des photographies des lieux afin d’alimenter la base de données de Panoramax. Ces données sont ensuite diffusées en ligne via une plateforme. Elles sont librement accessibles et réutilisables.\nIl y a des enjeux juridiques autour de ces données, et c’est dans cette FAQ que nous répondons à certaines de vos questions sur ce sujet.",
       "blocks": [
         {
           "title": "Ai-je le droit de verser des photographies sur lesquelles il y a des personnes dans une instance Panoramax?",
@@ -244,6 +245,62 @@
       ],
       "summary_title": "En synthèse, Panoramax apporte des solutions pour encadrer les cas pré-cités grâce à :",
       "summary_text": "<ul style='list-style-position:inside; list-style-type: circle;'><li>L’anonymisation automatique via le floutage des visages, les plaques d’immatriculation et tout autre élément permettant d’identifier – même indirectement – une personne.</li><li>La possibilité de signalement des contenus qui pourraient porter atteinte aux droits des personnes que ce soit en matière de vie privée, de propriété ou de propriété intellectuelle.</li></ul>\nCette foire aux questions est accessible pour l’ensemble des parties prenantes à Panoramax, et mise à jour régulièrement."
+    },
+    "contribute": {
+      "main_title": "L'initiative Panoramax",
+      "main_description": "Panoramax est un commun numérique libre permettant le partage et l'exploitation de photos de terrain.\nToute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax.\nCes données sont ensuite librement accessibles et réutilisables.",
+      "subtitle_contribute": "Comment contribuer ?",
+      "contribute_title_photos": "1. Prendre des photos",
+      "contribute_title_upload": "2. Charger vos photos",
+      "contribute_title_map": "3. Exploitez les photos",
+      "contribute_desc_photos": "Prenez des photos - 360° ou non - avec un simple smartphone ou tout autre appareil plus sophistiqué.",
+      "contribute_desc_upload": "Envoyez et partagez vos photos sur l'instance de votre choix, comme panoramax.ign.fr ou panoramax.openstreetmap.fr.",
+      "contribute_desc_map": "Découvrez et utilisez les photos partagées par la communauté à travers le catalogue fédéré, et exploitez-les pour vos besoins métiers.",
+      "contribute_alt_photos": "Illustration d'une personne qui prend une photo",
+      "contribute_alt_upload": "Illustration d'une personne qui charge des photos",
+      "contribute_alt_map": "Illustration d'une carte",
+      "subtitle_guide": "Guide des bonnes pratiques de prise de vue",
+      "guide_alt_img": "Une photo de prise de vue de bonne qualité",
+      "guide_alt_img_saturated": "Une photo de prise de vue de mauvaise qualité",
+      "guide_alt_like": "Une icon pource vers le haut",
+      "guide_alt_unlike": "Une icon pource vers le bas",
+      "guide_desc": "Aujourd'hui, aucun critère de qualité de photo n'est requis pour publier sur Panoramax et toutes les photos sont acceptées. Pour que les photos soient le plus facilement exploitable possible, pensez tout de même à vous assurer de leur niveau de qualité. Voici un exemple illustré d'une belle image (à gauche) versus une image dégradée (à droite). Pour plus de détails, <a href='https://forum.geocommuns.fr/t/les-tutoriels-pour-contribuer-a-panoramax/1015' target='_blank' rel='noopener'>consultez notre guide des bonnes pratiques</a>.",
+      "subtitle_how_to_use": "Comment utiliser les photos ?",
+      "use_title_viewer": "Visionneuse",
+      "use_title_api": "API",
+      "use_title_detect": "Détection d'objets sur une photo",
+      "use_desc_viewer": "Explorez l'ensemble des photos Panoramax via <a href='/photos'>la visionneuse web de Panoramax.fr</a> (mais aussi panoramax.ign.fr ou panoramax.openstreetmap.fr)",
+      "use_desc_api": "Accédez aux photos en plein résolution et à leurs métadonnées à l'aide de notre API Web, conforme aux standards <a href='https://ogcapi.ogc.org/features/' target='_blank'>\"OGC Feature\"</a> et <a href='https://stacspec.org/en' target='_blank'>\"STAC\"</a>.",
+      "use_desc_detect": "À l'aide de l'intelligence artificielle, il est possible de détecter et de classer des objets visibles sur les images, comme les panneaux routiers ou le mobilier urbain. Des données d'exemple seront prochainement disponibles sous licence ouverte.",
+      "use_alt_viewer": "Illustration d'un oeil qui représente une visionneuse",
+      "use_alt_api": "Illustration d'une machinerie digitale qui représente une API'",
+      "use_alt_detect": "Illustration d'une détection d'objet",
+      "subtitle_how_to_contribute": "Comment s'impliquer dans la communauté ?",
+      "how_to_contribute_link": {
+        "title": "Ateliers gouvernance",
+        "description": "Échanges pour décider collaborativement du pilotage du projet."
+      },
+      "how_to_contribute_button_1": {
+        "title": "Le forum des Géocommuns",
+        "text": "Accéder au forum",
+        "description": "L'espace de discussion privilégié de la communauté Panoramax, ouvert à toutes et tous.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_2": {
+        "title": "Groupe de travail CNIG",
+        "text": "Accéder",
+        "description": "Lieu de définition du standard de collecte et diffusion des photos.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_3": {
+        "title": "Temps d'échanges",
+        "text": "Voir l'agenda complet",
+        "event_link_text": "en visio sur Jitsi",
+        "event_text_1": "Temps d'échange mensuel tous les 2e lundi du mois à 17h",
+        "event_text_2": "Le 11/12/2023 à 17h",
+        "event_link_url": "https://meet.jit.si/panoramax",
+        "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+      }
     }
   }
 }

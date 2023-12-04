@@ -7,6 +7,7 @@
           url="/"
           look="link--blue"
           class="instance-logo"
+          @click.native="displayed = !displayed"
         >
           <template v-slot:image>
             <img
@@ -24,6 +25,7 @@
             :text="$t('general.nav.photos')"
             url="photos"
             look="link--blue"
+            @click.native="displayed = !displayed"
           />
         </li>
         <li class="list-item instance-item">
@@ -74,9 +76,18 @@
         </li>
         <li class="list-item">
           <Link
+            :text="$t('general.nav.contribute')"
+            url="comment-participer-a-panoramax"
+            look="link--blue"
+            @click.native="displayed = !displayed"
+          />
+        </li>
+        <li class="list-item">
+          <Link
             :text="$t('general.nav.faq')"
             url="foire-aux-questions"
             look="link--blue"
+            @click.native="displayed = !displayed"
           />
         </li>
         <li class="list-item">
@@ -176,13 +187,20 @@ const displayed = ref<boolean>(true)
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
     padding: 0;
   }
   .nav {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
     position: relative;
-    padding: 1.5rem 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .burger {
     display: block;

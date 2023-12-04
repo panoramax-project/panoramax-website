@@ -1,15 +1,24 @@
 <template>
-  <li class="entry-join-us">
+  <div class="entry-join-us">
     <h3 class="title">{{ props.title }}</h3>
+    <p v-if="props.description" class="description">
+      {{ props.description }}
+    </p>
     <slot></slot>
-  </li>
+  </div>
 </template>
 
 <script lang="ts" setup>
-interface Props {
-  title: string
-}
-const props = defineProps<Props>()
+const props = defineProps({
+  title: {
+    type: String,
+    default: null
+  },
+  description: {
+    type: String,
+    default: null
+  }
+})
 </script>
 
 <style scoped>
@@ -18,17 +27,14 @@ const props = defineProps<Props>()
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33%;
   background-color: var(--blue-ligth);
   border-radius: 2rem;
   margin-top: 0;
   margin-bottom: 2rem;
   padding: 2rem;
+  height: 100%;
 }
-.entry-join-us:nth-child(2) {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
+
 .title {
   font-family: SFPro-SemiBold;
   font-size: 1.8rem;
@@ -37,19 +43,13 @@ const props = defineProps<Props>()
   white-space: pre;
   color: var(--violet);
 }
-
-@media (max-width: 1024px) {
-  .entry-join-us {
-    width: 100%;
-  }
+.description {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .title {
     font-size: 1.8rem;
-  }
-  .entry-join-us:nth-child(2) {
-    margin-right: initial;
-    margin-left: initial;
   }
 }
 </style>

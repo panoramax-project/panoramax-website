@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import FaqView from '../views/FaqView.vue'
+import ContributeView from '../views/ContributeView.vue'
 import Ay11View from '../views/Ay11View.vue'
 import PicturesView from '../views/PicturesView.vue'
 
@@ -17,6 +18,11 @@ const router = createRouter({
       path: '/foire-aux-questions',
       name: 'faq',
       component: FaqView
+    },
+    {
+      path: '/comment-participer-a-panoramax',
+      name: 'contribute',
+      component: ContributeView
     },
     {
       path: '/a-propos',
