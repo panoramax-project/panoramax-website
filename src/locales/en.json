@@ -4,6 +4,7 @@
     "nav": {
       "about": "About Panoramax",
       "photos": "See the pictures",
+      "contribute": "How to contribute ?",
       "faq": "F.A.Q",
       "panoramax_instance": "Instances",
       "contact": "Contact us",
@@ -105,8 +106,8 @@
         "title": "Next Panoramax event",
         "text": "See full calendar",
         "event_link_text": "on Jitsi",
-        "event_text_1": "GT CNIG immersive and field views",
-        "event_text_2": "27-nov-2023 at 14:30 (CET)",
+        "event_text_1": "Monthly exchange time",
+        "event_text_2": "11-dec-2023 at 17:00 (CET)",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
@@ -241,6 +242,62 @@
       ],
       "summary_title": "In short, Panoramax provides solutions for the above-mentioned cases through :",
       "summary_text": "<ul style='list-style-position:inside; list-style-type: circle;'><li>Automatic anonymization through blurring of faces, license plates and any other element that could - even indirectly - identify a person.</li><li>The ability to report content that may infringe on people's privacy, property or intellectual property rights.</li></ul>\nThis FAQ is available to all Panoramax stakeholders, and is updated regularly."
+    },
+    "contribute": {
+      "main_title": "The Panoramax initiative",
+      "main_description": "Panoramax is a platform that lists photos taken and allows you to view places visible from public roads online. Supported by the IGN Geocommuns Factory, the platform aims to offer an alternative to private “street view” type offers, by making this tool a digital commons. Anyone can take photographs of the places in order to populate the Panoramax database. This data is then distributed online via a platform. They are freely accessible and reusable.",
+      "subtitle_contribute": "How to contribute ?",
+      "contribute_title_photos": "1. Take pictures",
+      "contribute_title_upload": "2. Upload your pictures",
+      "contribute_title_map": "3. Exploit pictures",
+      "contribute_desc_photos": "Take pictures - 360° or not - with a simple smartphone or any other more sophisticated device.",
+      "contribute_desc_upload": "Upload, store and share your photos on the instance of your choice, such as panoramax.ign.fr or panoramax.openstreetmap.fr.",
+      "contribute_desc_map": "Discover and use photos shared by the community in the federated catalog, and exploit them for your business needs.",
+      "contribute_alt_photos": "Illustration of a person taking a photo",
+      "contribute_alt_upload": "Illustration of a person uploading photos",
+      "contribute_alt_map": "Illustration of a map",
+      "subtitle_guide": "Guide to good practices",
+      "guide_alt_img": "A good quality photo",
+      "guide_alt_img_saturated": "A bad quality photo",
+      "guide_alt_like": "A like icon",
+      "guide_alt_unlike": "An unlike icon",
+      "guide_desc": "To make the photos as easily usable as possible, remember to ensure their level of quality. Here is an illustrated example of a beautiful image (left) versus a degraded image (right). For more details, <a href='https://forum.geocommuns.fr/t/les-tutoriels-pour-contribuer-a-panoramax/1015' target='_blank' rel='noopener'>see our best practices guide</a>.",
+      "subtitle_how_to_use": "How to use photos ?",
+      "use_title_viewer": "Photo viewer",
+      "use_title_api": "API",
+      "use_title_detect": "Detecting objects in a photo",
+      "use_desc_viewer": "Browse photos through our interactive web viewer and explore our entire photo catalog.",
+      "use_desc_api": "Access photo data and metadata using our web API, compliant with \"OGC Feature\" and \"STAC\" standards.",
+      "use_desc_detect": "Using artificial intelligence, we find and classify objects visible in images, such as road signs or street furniture. This data will soon be available to everyone, free of charge and under an open license.",
+      "use_alt_viewer": "Illustration of an eye which represents a viewer",
+      "use_alt_api": "Illustration of a digital machinery which represents an API'",
+      "use_alt_detect": "Illustration of object detection",
+      "subtitle_how_to_contribute": "How to get involved in the community ?",
+      "how_to_contribute_link": {
+        "title": "Governance workshops",
+        "description": "Discussions to collaboratively decide on the management of the project."
+      },
+      "how_to_contribute_button_1": {
+        "title": "The Geocommons forum",
+        "text": "Go to the forum",
+        "description": "The privileged discussion space of the Panoramax community, open to everyone.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_2": {
+        "title": "CNIG working group",
+        "text": "Go",
+        "description": "Location for defining the standard for collecting and distributing photos.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_3": {
+        "title": "Discussion time",
+        "text": "See the full agenda",
+        "event_link_text": "on visio on Jitsi",
+        "event_text_1": "Monthly exchange time every 2nd Monday of the month at 5 p.m.",
+        "event_text_2": "11-dec-2023 at 17:00 (CET)",
+        "event_link_url": "https://meet.jit.si/panoramax",
+        "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+      }
     }
   }
 }
