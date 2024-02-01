@@ -70,7 +70,7 @@
       "metrics_1": {
         "number": "10",
         "text": "millions",
-        "description": "pictures on Panoramxx"
+        "description": "pictures on Panoramax"
       },
       "metrics_2": {
         "number": "90 000",
@@ -82,7 +82,7 @@
         "text": "contributors",
         "description": "from several types of structures"
       },
-      "instance_title": "Opeb instances",
+      "instance_title": "Open instances",
       "instance_description": "The IGN and OSM France instances are accessible to all. Data deposited on the IGN instance are published under the etalab-2.0 license, and those on the OSM France instance under the CC-BY-SA-4.0 license.",
       "instance_explore": "Explore →",
       "instance_contribute": "Contribute →",
