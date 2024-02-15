@@ -79,6 +79,7 @@
               type="external"
               target="_blank"
               look="link--white"
+              rel="me"
             >
               <template v-slot:image>
                 <img
@@ -96,6 +97,7 @@
               type="external"
               target="_blank"
               look="link--white"
+              rel="me"
             >
               <template v-slot:image>
                 <img
@@ -113,6 +115,7 @@
               type="external"
               target="_blank"
               look="link--white"
+              rel="me"
             >
               <template v-slot:image>
                 <img
