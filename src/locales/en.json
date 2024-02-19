@@ -22,6 +22,7 @@
       "forum_subtitle": "Forum",
       "agenda_subtitle": "Calendar",
       "github_subtitle": "Contribute on Github",
+      "gitlab_subtitle": "The gitlab of the instances",
       "twitter_subtitle": "Twitter",
       "mastodon_subtitle": "Mastodon",
       "linkedin_subtitle": "LinkedIn",
@@ -70,7 +71,7 @@
       "metrics_1": {
         "number": "10",
         "text": "millions",
-        "description": "pictures on Panoramxx"
+        "description": "pictures on Panoramax"
       },
       "metrics_2": {
         "number": "90 000",
@@ -112,6 +113,28 @@
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
       "community_description": "They contribute to Panoramax",
+      "media_title": "They talk about us",
+      "media_description": "These articles talk about Panoramax",
+      "media_logo_1": {
+        "url": "e1-logo.png",
+        "alt": "Logo of the site Europe 1",
+        "link": "https://www.europe1.fr/emissions/initiative-a-impact/panoramax-lalternative-libre-et-souveraine-a-street-view-4229690"
+      },
+      "media_logo_2": {
+        "url": "next-logo.png",
+        "alt": "Logo of the site Next Link",
+        "link": "https://next.ink/125818/panoramax-lalternative-libre-et-francaise-a-google-street-view/"
+      },
+      "media_logo_3": {
+        "url": "good-tech-logo.png",
+        "alt": "Logo of the site Goodtech",
+        "link": "https://goodtech.info/panoramax-alternative-libre-a-street-view/"
+      },
+      "media_logo_4": {
+        "url": "acteurs-publics-logo.png",
+        "alt": "Logo of the site Acteurs Publics",
+        "link": "https://acteurspublics.fr/articles/pour-saffranchir-de-google-street-view-letat-joue-collectif"
+      },
       "community_title": "Panoramax community",
       "community_logo_1": {
         "url": "beta-gouv-logo.png",
@@ -302,6 +325,46 @@
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       }
+    },
+    "useCases": {
+      "main_title": "Why contribute to Panoramax ?",
+      "main_description": "Panoramax est un commun numérique libre permettant le partage et l'exploitation de photos de terrain.\nToute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax.\nCes données sont ensuite librement accessibles et réutilisables.",
+      "alt_main_image": "Field image showing numerous Panoramax use cases",
+      "subtitle_use_cases": "A lot of use cases",
+      "useCase_1": {
+        "title": "The example of the community of Val Parisis",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "mairie-icon.svg",
+          "alt": "Icon representing an official building"
+        }
+      },
+      "useCase_2": {
+        "title": "Detection of disabled places",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "desactive-icon.svg",
+          "alt": "Icon representing a disabled sign"
+        }
+      },
+      "useCase_3": {
+        "title": "Traffic sign detection",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "panneaux-routiers-icon.svg",
+          "alt": "Road sign icon"
+        }
+      },
+      "useCase_4": {
+        "title": "L'accès par API à différents types de points d'intérêts",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "api-white.svg",
+          "alt": "API icon"
+        }
+      },
+      "other_use_cases_title": "Many other possibilities",
+      "other_use_cases_desc": "Many other use cases are possible and to be imagined by a whole host of stakeholders: communities, urban areas, network managers, etc.\n  Panoramax photos have, for example, been integrated into a <a href='https://cartes.app/' target='_blank' rel='noopener'>third-party website</a>.\n  Finally, Panoramax is not limited to taking photos from the road but also applies to riverways, forests, hiking trails, etc."
     }
   }
 }

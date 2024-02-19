@@ -49,6 +49,21 @@
       </ol>
     </section>
     <section class="home-section">
+      <h2 class="home-section-title">
+        {{ $t('pages.home.why_title') }}
+      </h2>
+      <p class="home-section-description">
+        {{ $t('pages.home.why_description') }}
+      </p>
+      <div class="entry-button">
+        <Link
+          :text="$t('pages.home.why_button')"
+          look="button button--blue"
+          url="/cas-d-usage"
+        />
+      </div>
+    </section>
+    <section class="home-section">
       <h2 class="home-section-title metrics-title">
         {{ $t('pages.home.metrics_title') }}
       </h2>
@@ -97,7 +112,7 @@
       <p class="home-section-description home-section-description-catalogue">
         {{ $t('pages.home.discover_description_end') }}
       </p>
-      <div class="entry-button-catalogue">
+      <div class="entry-button catalogue">
         <Link
           :text="$t('pages.home.discover_more_images_button')"
           look="button button--blue"
@@ -120,6 +135,31 @@
             loading="lazy"
             class="logo-community"
           />
+        </li>
+      </ul>
+    </section>
+    <section class="home-section media-list">
+      <h2 class="home-section-title">
+        {{ $t('pages.home.media_title') }}
+      </h2>
+      <p class="home-section-description">
+        {{ $t('pages.home.media_description') }}
+      </p>
+      <ul class="wrapper-list">
+        <li v-for="media in medias" :key="media.alt">
+          <a
+            :href="media.link"
+            target="_blank"
+            rel="noopener"
+            class="media-link"
+          >
+            <img
+              :src="img(media.url)"
+              :alt="media.alt"
+              loading="lazy"
+              class="logo-community"
+            />
+          </a>
         </li>
       </ul>
     </section>
@@ -330,6 +370,29 @@ const communities = <Image[]>[
   }
 ]
 
+const medias = <Image[]>[
+  {
+    url: t('pages.home.media_logo_1.url'),
+    alt: t('pages.home.media_logo_1.alt'),
+    link: t('pages.home.media_logo_1.link')
+  },
+  {
+    url: t('pages.home.media_logo_2.url'),
+    alt: t('pages.home.media_logo_2.alt'),
+    link: t('pages.home.media_logo_2.link')
+  },
+  {
+    url: t('pages.home.media_logo_3.url'),
+    alt: t('pages.home.media_logo_3.alt'),
+    link: t('pages.home.media_logo_3.link')
+  },
+  {
+    url: t('pages.home.media_logo_4.url'),
+    alt: t('pages.home.media_logo_4.alt'),
+    link: t('pages.home.media_logo_4.link')
+  }
+]
+
 onMounted(() => {
   viewer.value = new Viewer(
     'viewer', // Div ID
@@ -443,9 +506,11 @@ section:nth-child(even) {
   overflow: hidden;
   height: 50rem;
 }
-.entry-button-catalogue {
+.entry-button {
   display: flex;
   justify-content: center;
+}
+.catalogue {
   border-bottom: 0.1rem solid var(--grey);
   padding-bottom: 3rem;
 }
@@ -507,6 +572,14 @@ section:nth-child(even) {
   margin-left: 2rem;
   width: 16.66%;
 }
+.media-list li {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.media-link:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
 .logo-community {
   height: 6rem;
 }
@@ -528,6 +601,12 @@ section:nth-child(even) {
   }
   .list-join-us {
     width: 100%;
+  }
+  .media-list li {
+    margin-top: 2rem;
+  }
+  .media-list li:first-child {
+    margin-top: 0;
   }
 }
 @media (max-width: 768px) {

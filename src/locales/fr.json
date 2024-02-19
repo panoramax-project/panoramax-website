@@ -5,6 +5,7 @@
       "about": "À propos de Panoramax",
       "photos": "Voir les photos",
       "contribute": "Comment participer ?",
+      "use_cases": "Pourquoi contribuer ?",
       "faq": "Foire aux questions",
       "panoramax_instance": "Les instances",
       "contact": "Contact",
@@ -22,6 +23,7 @@
       "forum_subtitle": "Forum",
       "agenda_subtitle": "Agenda",
       "github_subtitle": "Contribuer sur Github",
+      "gitlab_subtitle": "Le Gitlab des instances",
       "twitter_subtitle": "Twitter",
       "mastodon_subtitle": "Mastodon",
       "linkedin_subtitle": "LinkedIn",
@@ -66,9 +68,12 @@
           "alt": "Image de gestion participative"
         }
       },
+      "why_title": "Pourquoi contribuer à Panoramax ?",
+      "why_description": "Panoramax permet la contribution et la réutilisation de photos de terrain pour de nombreux cas d'usage comme : la gestion du mobilier urbain et des voiries, l'identification des panneaux de signalisation etc.",
+      "why_button": "Voir les cas d'usage",
       "metrics_title": "Une communauté grandissante",
       "metrics_1": {
-        "number": "10",
+        "number": "14",
         "text": "millions",
         "description": "de photos sur Panoramax"
       },
@@ -111,8 +116,30 @@
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
-      "community_description": "Ils contribuent au rayonnement de Panoramax",
+      "media_title": "Ils parlent de nous",
+      "media_description": "Ces articles parlent de Panoramax (en bien \uD83D\uDE0A)",
+      "media_logo_1": {
+        "url": "e1-logo.png",
+        "alt": "Logo du site Europe 1",
+        "link": "https://www.europe1.fr/emissions/initiative-a-impact/panoramax-lalternative-libre-et-souveraine-a-street-view-4229690"
+      },
+      "media_logo_2": {
+        "url": "next-logo.png",
+        "alt": "Logo du site Next Link",
+        "link": "https://next.ink/125818/panoramax-lalternative-libre-et-francaise-a-google-street-view/"
+      },
+      "media_logo_3": {
+        "url": "good-tech-logo.png",
+        "alt": "Logo du site Goodtech",
+        "link": "https://goodtech.info/panoramax-alternative-libre-a-street-view/"
+      },
+      "media_logo_4": {
+        "url": "acteurs-publics-logo.png",
+        "alt": "Logo du site Acteurs Publics",
+        "link": "https://acteurspublics.fr/articles/pour-saffranchir-de-google-street-view-letat-joue-collectif"
+      },
       "community_title": "La communauté Panoramax",
+      "community_description": "Ils contribuent au rayonnement de Panoramax",
       "community_logo_1": {
         "url": "beta-gouv-logo.png",
         "alt": "Logo de beta.gouv"
@@ -305,6 +332,46 @@
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       }
+    },
+    "useCases": {
+      "main_title": "Pourquoi contribuer à Panoramax ?",
+      "main_description": "Panoramax est un commun numérique libre permettant le partage et l'exploitation de photos de terrain.\nToute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax.\nCes données sont ensuite librement accessibles et réutilisables.",
+      "alt_main_image": "Image de terrain montrant de nombreux cas d'usages de Panoramax",
+      "subtitle_use_cases": "De nombreux cas d'usage déjà possibles",
+      "useCase_1": {
+        "title": "L'exemple de la collectivité de Val Parisis",
+        "description": "Val Parisis contribue à Panoramax et a pour ambition d'effectuer une transition complète de Mapillary à Panoramax. La collectivité a déjà de nombreux cas d'usages liés à la publication et l'utilisation de photos :\n• mise à jour des données métiers (stationnement, voirie, etc..)\n• contrôle du avant/après des zones de travaux\n• contrôle des plans topographiques livrés par les prestataires\n • contrôle du PCRS vecteur livrés\n• etc\n <a href='https://cartes.app/' target='_blank' rel='noopener'>Retrouvez ici</a> pourquoi Val Parisi utilise Panoramax.",
+        "image": {
+          "url": "mairie-icon.svg",
+          "alt": "Icone représentant un bâtiment officiel"
+        }
+      },
+      "useCase_2": {
+        "title": "La détection des places handicapées",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "desactive-icon.svg",
+          "alt": "Icone représentant un panneaux handicapé"
+        }
+      },
+      "useCase_3": {
+        "title": "La détection des panneaux",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "panneaux-routiers-icon.svg",
+          "alt": "Icone représentant des panneaux de signalisation"
+        }
+      },
+      "useCase_4": {
+        "title": "L'accès par API à différents types de points d'intérêts",
+        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "image": {
+          "url": "api-white.svg",
+          "alt": "Icone représentant une API"
+        }
+      },
+      "other_use_cases_title": "Beaucoup d'autres possibilités",
+      "other_use_cases_desc": "De nombreux autres cas d'usages sont possibles et à immaginer par tout un tas d'acteurs : collectivités, aglomérations, gestionnaires de réseaux etc.\n Les photos de Panoramax ont par exemple été intégrées au sein d'un <a href='https://cartes.app/' target='_blank' rel='noopener'>site web tierce</a>.\n Enfin Panoramax ne se limite pas à la prise de photo depuis la route mais s'applique également aux voies fluviales, aux fôrets, chemins de randonnées etc."
     }
   }
 }

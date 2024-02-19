@@ -68,6 +68,15 @@
               look="link--white"
             />
           </li>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.gitlab_subtitle')"
+              url="https://gitlab.com/geovisio"
+              type="external"
+              target="_blank"
+              look="link--white"
+            />
+          </li>
         </ul>
       </div>
       <div class="footer-block">

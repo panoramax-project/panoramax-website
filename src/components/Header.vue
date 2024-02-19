@@ -84,6 +84,14 @@
         </li>
         <li class="list-item">
           <Link
+            :text="$t('general.nav.use_cases')"
+            url="cas-d-usage"
+            look="link--blue"
+            @click.native="displayed = !displayed"
+          />
+        </li>
+        <li class="list-item">
+          <Link
             :text="$t('general.nav.faq')"
             url="foire-aux-questions"
             look="link--blue"
@@ -187,7 +195,7 @@ const displayed = ref<boolean>(true)
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1324px) {
   .header {
     padding: 0;
   }
@@ -196,7 +204,7 @@ const displayed = ref<boolean>(true)
     padding-left: 2rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav {
     position: relative;
     padding-top: 1.5rem;
