@@ -49,21 +49,6 @@
       </ol>
     </section>
     <section class="home-section">
-      <h2 class="home-section-title">
-        {{ $t('pages.home.why_title') }}
-      </h2>
-      <p class="home-section-description">
-        {{ $t('pages.home.why_description') }}
-      </p>
-      <div class="entry-button">
-        <Link
-          :text="$t('pages.home.why_button')"
-          look="button button--blue"
-          url="/cas-d-usage"
-        />
-      </div>
-    </section>
-    <section class="home-section">
       <h2 class="home-section-title metrics-title">
         {{ $t('pages.home.metrics_title') }}
       </h2>
@@ -240,6 +225,8 @@ import Metrics from '@/components/Metrics.vue'
 import Instance from '@/components/Instance.vue'
 import JoinUs from '@/components/JoinUs.vue'
 import type { Image } from '@/components/ImageInterface'
+import { getSecondMondayDate } from '../utils/index'
+
 let viewer = ref()
 interface MetricsData {
   number: string
@@ -334,7 +321,9 @@ const joinUsButtons = <joinUsData[]>[
     text: t('pages.home.joinUs_button_2.text'),
     url: t('pages.home.joinUs_button_2.url'),
     event_text_1: t('pages.home.joinUs_button_2.event_text_1'),
-    event_text_2: t('pages.home.joinUs_button_2.event_text_2'),
+    event_text_2: t('pages.home.joinUs_button_2.event_text_2', {
+      date: getSecondMondayDate()
+    }),
     event_link_text: t('pages.home.joinUs_button_2.event_link_text'),
     event_link_url: t('pages.home.joinUs_button_2.event_link_url')
   }

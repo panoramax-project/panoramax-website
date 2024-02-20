@@ -84,14 +84,6 @@
         </li>
         <li class="list-item">
           <Link
-            :text="$t('general.nav.use_cases')"
-            url="cas-d-usage"
-            look="link--blue"
-            @click.native="displayed = !displayed"
-          />
-        </li>
-        <li class="list-item">
-          <Link
             :text="$t('general.nav.faq')"
             url="foire-aux-questions"
             look="link--blue"

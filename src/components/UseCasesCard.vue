@@ -21,7 +21,7 @@
 import type { Image } from '@/components/ImageInterface'
 interface Props {
   title: string
-  description: string[]
+  description: string
   image: Image
 }
 const props = defineProps<Props>()

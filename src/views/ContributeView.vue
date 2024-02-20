@@ -221,6 +221,7 @@
 import JoinUs from '@/components/JoinUs.vue'
 import Link from '@/components/Link.vue'
 import { useI18n } from 'vue-i18n'
+import { getSecondMondayDate } from '@/utils'
 const { t } = useI18n()
 interface HowToContributeEventData {
   event_text_1: string
@@ -256,7 +257,12 @@ const how_to_contribute_buttons = <HowToContributeData[]>[
     text: t('pages.contribute.how_to_contribute_button_3.text'),
     url: t('pages.contribute.how_to_contribute_button_3.url'),
     event_text_1: t('pages.contribute.how_to_contribute_button_3.event_text_1'),
-    event_text_2: t('pages.contribute.how_to_contribute_button_3.event_text_2'),
+    event_text_2: t(
+      'pages.contribute.how_to_contribute_button_3.event_text_2',
+      {
+        date: getSecondMondayDate()
+      }
+    ),
     event_link_text: t(
       'pages.contribute.how_to_contribute_button_3.event_link_text'
     ),

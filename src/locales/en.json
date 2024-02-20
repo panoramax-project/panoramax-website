@@ -108,7 +108,7 @@
         "text": "See full calendar",
         "event_link_text": "on Jitsi",
         "event_text_1": "Monthly exchange time",
-        "event_text_2": "11-dec-2023 at 17:00 (CET)",
+        "event_text_2": "{date} at 17:00 (CET)",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
@@ -321,7 +321,7 @@
         "text": "See the full agenda",
         "event_link_text": "on visio on Jitsi",
         "event_text_1": "Monthly exchange time every 2nd Monday of the month at 5 p.m.",
-        "event_text_2": "11-dec-2023 at 17:00 (CET)",
+        "event_text_2": "{date} at 17:00 (CET)",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       }

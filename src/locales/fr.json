@@ -78,12 +78,12 @@
         "description": "de photos sur Panoramax"
       },
       "metrics_2": {
-        "number": "90 000",
+        "number": "150 000",
         "text": "km",
         "description": "de distance couverte"
       },
       "metrics_3": {
-        "number": "118",
+        "number": "206",
         "text": "contributeurs",
         "description": "issus de plusieurs structures"
       },
@@ -112,7 +112,7 @@
         "text": "Voir l'agenda complet",
         "event_link_text": "en visio sur Jitsi",
         "event_text_1": "Temps d'échange mensuel tous les 2e lundi du mois à 17h",
-        "event_text_2": "Le 11/12/2023 à 17h",
+        "event_text_2": "Le {date} à 17h",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
@@ -328,7 +328,7 @@
         "text": "Voir l'agenda complet",
         "event_link_text": "en visio sur Jitsi",
         "event_text_1": "Temps d'échange mensuel tous les 2e lundi du mois à 17h",
-        "event_text_2": "Le 11/12/2023 à 17h",
+        "event_text_2": "Le {date} à 17h",
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       }

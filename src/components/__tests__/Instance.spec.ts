@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
 import Instance from '../Instance.vue'
@@ -13,7 +13,6 @@ const i18n = createI18n({
     fr
   }
 })
-
 describe('Instance', () => {
   describe('Template', () => {
     it('Should render the component with all the goods wordings', () => {
