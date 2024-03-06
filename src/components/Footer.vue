@@ -14,7 +14,23 @@
           <li class="footer-list-item">
             <Link
               :text="$t('general.footer.photos_subtitle')"
-              url="/photos"
+              url="https://api.panoramax.xyz/"
+              type="external"
+              target="_blank"
+              look="link--white"
+            />
+          </li>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.contribute')"
+              url="/comment-participer-a-panoramax"
+              look="link--white"
+            />
+          </li>
+          <li class="footer-list-item">
+            <Link
+              :text="$t('general.footer.use_cases')"
+              url="/cas-d-usage"
               look="link--white"
             />
           </li>
@@ -171,7 +187,7 @@ import Link from '@/components/Link.vue'
   background-color: var(--blue-dark);
   color: var(--white);
   font-size: 1.6rem;
-  height: 17.8rem;
+  height: 21rem;
 }
 .footer-wrapper {
   display: flex;

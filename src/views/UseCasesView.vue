@@ -8,7 +8,7 @@
         {{ $t('pages.useCases.main_description') }}
       </p>
       <img
-        src="@/assets/images/use-case.jpg"
+        src="@/assets/images/use-case.png"
         loading="lazy"
         :alt="$t('pages.useCases.alt_main_image')"
         class="img-use-cases"
@@ -31,13 +31,6 @@
           />
         </li>
       </ul>
-      <h3 class="other-use-case-title">
-        {{ $t('pages.useCases.other_use_cases_title') }}
-      </h3>
-      <p
-        v-html="$t('pages.useCases.other_use_cases_desc')"
-        class="main-description"
-      ></p>
     </section>
   </main>
 </template>
@@ -124,9 +117,6 @@ const useCases = <UseCaseData[]>[
 .img-use-cases {
   width: 100%;
   border-radius: 3rem;
-}
-.other-use-case-title {
-  margin-bottom: 2rem;
 }
 @media (max-width: 1324px) {
   .section {

@@ -18,6 +18,8 @@
       "credits_title": "Crédits images Flaticon",
       "faq_subtitle": "Foire aux questions",
       "photos_subtitle": "Catalogue de photos",
+      "contribute": "Comment participer ?",
+      "use_cases": "Pourquoi contribuer ?",
       "ign_subtitle": "Instance IGN",
       "osm_subtitle": "Instance OSM",
       "forum_subtitle": "Forum",
@@ -335,43 +337,41 @@
     },
     "useCases": {
       "main_title": "Pourquoi contribuer à Panoramax ?",
-      "main_description": "Panoramax est un commun numérique libre permettant le partage et l'exploitation de photos de terrain.\nToute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax.\nCes données sont ensuite librement accessibles et réutilisables.",
+      "main_description": "La prise de photos de terrain est le meilleur moyen de capter un maximum d'informations en peu de temps et à moindre frais.\nEn versant ses photos dans un pot commun, on évite de nombreux déplacements pour toutes les personnes avec qui on les partage.\nChacun profite ainsi des versements des autres ce qui génère une économie d'échelle par l'effet de réseau car une photo partagée pourra être réutilisée de nombreuses fois pour des usages très variés.\n\nEn voici quelques-uns...",
       "alt_main_image": "Image de terrain montrant de nombreux cas d'usages de Panoramax",
       "subtitle_use_cases": "De nombreux cas d'usage déjà possibles",
       "useCase_1": {
         "title": "L'exemple de la collectivité de Val Parisis",
-        "description": "Val Parisis contribue à Panoramax et a pour ambition d'effectuer une transition complète de Mapillary à Panoramax. La collectivité a déjà de nombreux cas d'usages liés à la publication et l'utilisation de photos :\n• mise à jour des données métiers (stationnement, voirie, etc..)\n• contrôle du avant/après des zones de travaux\n• contrôle des plans topographiques livrés par les prestataires\n • contrôle du PCRS vecteur livrés\n• etc\n <a href='https://cartes.app/' target='_blank' rel='noopener'>Retrouvez ici</a> pourquoi Val Parisi utilise Panoramax.",
+        "description": "Val Parisis contribue à Panoramax et a pour ambition d'effectuer une transition complète de Mapillary à Panoramax. La collectivité a déjà de nombreux cas d'usages liés à la publication et l'utilisation de photos :\n• mise à jour des données métiers (stationnement, voirie, etc..)\n• contrôle du avant/après des zones de travaux\n• contrôle des plans topographiques livrés par les prestataires\n • contrôle du PCRS vecteur livrés\n• etc",
         "image": {
           "url": "mairie-icon.svg",
           "alt": "Icone représentant un bâtiment officiel"
         }
       },
       "useCase_2": {
-        "title": "La détection des places handicapées",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
-        "image": {
-          "url": "desactive-icon.svg",
-          "alt": "Icone représentant un panneaux handicapé"
-        }
-      },
-      "useCase_3": {
         "title": "La détection des panneaux",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "description": "La capacité à détecter les panneaux de signalisation à partir des photos de Panoramax permet par exemple à l'IGN ou OpenStreetMap d'améliorer les données géographiques associées aux données routières: limites de vitesse, interdictions de toutes nature.\nCette détection permet aussi de repérer par exemple les stationnements PMR et d'alimenter des applications aidant les personnes handicapées.",
         "image": {
           "url": "panneaux-routiers-icon.svg",
           "alt": "Icone représentant des panneaux de signalisation"
         }
       },
-      "useCase_4": {
+      "useCase_3": {
         "title": "L'accès par API à différents types de points d'intérêts",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "description": "L'API de Panoramax permet à tout sites ou applications d'intégrer facilement à titre d'illustration une photo d'un lieu ou d'un point d'intérêt.\n\nC'est ce que fait par exemple <a href='https://cartes.app/' target='_blank' rel='noopener'>cartes.app</a>",
         "image": {
           "url": "api-white.svg",
           "alt": "Icone représentant une API"
         }
       },
-      "other_use_cases_title": "Beaucoup d'autres possibilités",
-      "other_use_cases_desc": "De nombreux autres cas d'usages sont possibles et à immaginer par tout un tas d'acteurs : collectivités, aglomérations, gestionnaires de réseaux etc.\n Les photos de Panoramax ont par exemple été intégrées au sein d'un <a href='https://cartes.app/' target='_blank' rel='noopener'>site web tierce</a>.\n Enfin Panoramax ne se limite pas à la prise de photo depuis la route mais s'applique également aux voies fluviales, aux fôrets, chemins de randonnées etc."
+      "useCase_4": {
+        "title": "Là où on va, on n'a pas besoin de route",
+        "description": "Pourquoi se limiter au domaine routier ?\nPhoto-cartographier les cours d'eau, les paysages, l'intérieur de forêts, compléter les photos de jour avec des photos de nuit c'est permettre des usages inédits et innovants.\nL'étude des berges, le dessous des ponts, l'état de l'éclairage public... tout ceci peut aussi se faire avec Panoramax !",
+        "image": {
+          "url": "river.svg",
+          "alt": "Icone représentant un fleuve"
+        }
+      }
     }
   }
 }

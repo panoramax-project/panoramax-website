@@ -9,7 +9,9 @@
         <Link
           :text="$t('pages.home.more_images_button')"
           look="button button--blue link-top"
-          url="/photos"
+          url="https://api.panoramax.xyz/"
+          type="external"
+          target="_blank"
         />
       </div>
       <img
@@ -47,6 +49,21 @@
           :image="howItWork.image"
         />
       </ol>
+    </section>
+    <section class="home-section">
+      <h2 class="home-section-title">
+        {{ $t('pages.home.why_title') }}
+      </h2>
+      <p class="home-section-description">
+        {{ $t('pages.home.why_description') }}
+      </p>
+      <div class="entry-button">
+        <Link
+          :text="$t('pages.home.why_button')"
+          look="button button--blue"
+          url="/cas-d-usage"
+        />
+      </div>
     </section>
     <section class="home-section">
       <h2 class="home-section-title metrics-title">
@@ -101,7 +118,9 @@
         <Link
           :text="$t('pages.home.discover_more_images_button')"
           look="button button--blue"
-          url="/photos"
+          url="https://api.panoramax.xyz/"
+          type="external"
+          target="_blank"
         />
       </div>
     </section>

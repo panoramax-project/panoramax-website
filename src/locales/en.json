@@ -5,6 +5,7 @@
       "about": "About Panoramax",
       "photos": "See the pictures",
       "contribute": "How to contribute ?",
+      "use_cases": "Why contribute ?",
       "faq": "F.A.Q",
       "panoramax_instance": "Instances",
       "contact": "Contact us",
@@ -17,6 +18,8 @@
       "credits_title": "Flaticon images",
       "faq_subtitle": "F.A.Q",
       "photos_subtitle": "Photo catalog",
+      "contribute": "How to contribute ?",
+      "use_cases": "Why contribute ?",
       "ign_subtitle": "IGN instance",
       "osm_subtitle": "OSM instance",
       "forum_subtitle": "Forum",
@@ -67,6 +70,9 @@
           "alt": "Participative management image"
         }
       },
+      "why_title": "Why contribute to Panoramax ?",
+      "why_description": "Panoramax allows the contribution and reuse of field photos for many use cases such as: management of street furniture and roads, identification of traffic signs, etc.",
+      "why_button": "See the use cases",
       "metrics_title": "A growing community",
       "metrics_1": {
         "number": "10",
@@ -112,7 +118,6 @@
         "event_link_url": "https://meet.jit.si/panoramax",
         "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
       },
-      "community_description": "They contribute to Panoramax",
       "media_title": "They talk about us",
       "media_description": "These articles talk about Panoramax",
       "media_logo_1": {
@@ -136,6 +141,7 @@
         "link": "https://acteurspublics.fr/articles/pour-saffranchir-de-google-street-view-letat-joue-collectif"
       },
       "community_title": "Panoramax community",
+      "community_description": "They contribute to Panoramax",
       "community_logo_1": {
         "url": "beta-gouv-logo.png",
         "alt": "Logo de beta.gouv"
@@ -261,7 +267,10 @@
           "title": "What to do if copyrighted works are present in photographs ?",
           "text": "<u>Step 1 : Check whether the photograph contains original artwork</u><ul style='list-style-position:inside; list-style-type: circle;'><li>on the public highway, there may be elements that are protected by copyright if their originality can be demonstrated. These include, for example, works of the mind such as architecture, street furniture, sculptures, posters and so on.</li></ul>\n<u>Step 2</u> : If this is the case, the author of an original work must give his or her consent for it to be photographed and distributed online.\nCaution: There is an exception, if the photograph falls within the panorama exception, which is the case when : <ul style='list-style-position:inside; list-style-type: circle;'><li>the photographer is an individual acting <b>in his or her own name</b> - not on behalf of a public or private organization ;</li><li>the works depicted in the photograph are architectures and sculptures that are permanently <b>present</b> on the public highway ;</li><li>the photographs <b>are not intended for commercial use</b>;</li><li>If you comply with these three conditions, you can distribute the photo on Panoramax without the author's consent.</li></ul>"
         },
-
+        {
+          "title": "Can monuments be photographed and broadcast on Panoramax?",
+          "text": "Yes, it is possible to take photos of monuments and broadcast them on Panoramax.\n1) <u>What French law says</u>:<ul style='list-style-position: inside; list-style-type: circle;'><li>Concerning the distribution of such photographs, article L 621-42 of the Heritage Code provides that: <i>“The use for commercial purposes of the image of the buildings which constitute the national domains, on any medium, is subject to the prior authorization of the manager of the relevant part of the national domain »</i></li><li>These national domains are listed by decree.< /li>The Elysée, the Louvre and the Chambord estate are national domains.</li><li>The provision of images of these buildings via Panoramax does not constitute use for commercial purposes, it is therefore possible by default. </li></ul>\n<b>Attention</b>: As the Panoramax data distribution license authorizes any person to use the data for commercial purposes, it is up to the producer images distributed on Panoramax to ensure that you have obtained authorization to use these images for commercial purposes.\nFor these particular cases, frequently asked questions for re-users could be offered later on the Panoramax site."
+        },
         {
           "title": "Do photographers need their consent to distribute their images on the platform?",
           "text": "1) <u>What French law says</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>contributors who take photographs for the Panoramax database may hold intellectual property rights on the photographs. In fact, a photograph may be protected by copyright if it is original.</li><li>However, it should be stressed that the originality of photographs is difficult to demonstrate. Originality can be characterized according to the photographer's choices in terms of composition, framing, angle, light, contrast and color.</ul></li>\n2) <u>What Panoramax does</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>In view of these criteria and the tool itself, the originality of photographs made available on Panoramax seems difficult to demonstrate. There are therefore two possible scenarios : <ul style='list-style-position:inside; list-style-type: disc; margin-left: 2.5rem;'><li>If originality cannot be demonstrated, the photographs will not be covered by copyright.</li><li>On the other hand, if originality is demonstrated, Panoramax must have the rights to the photographs in order to distribute them within the framework of the platform made available.</li></ul><li>On the Panoramax / IGN instance, the license used is the Open License, which includes a concession of rights to the reuser..</li><li>NB : a document of recommendations on how to take photographs in order to standardize shots as much as possible is currently being studied.</li></ul>"
@@ -333,38 +342,36 @@
       "subtitle_use_cases": "A lot of use cases",
       "useCase_1": {
         "title": "The example of the community of Val Parisis",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "description": "Val Parisis contributes to Panoramax and aims to make a complete transition from Mapillary to Panoramax. The community already has numerous use cases linked to the publication and use of photos:\n• update up-to-date business data (parking, roads, etc.)\n• before/after control of work zones\n• control of topographical plans delivered by service providers\n • control of vector PCRS delivered\n• etc",
         "image": {
           "url": "mairie-icon.svg",
           "alt": "Icon representing an official building"
         }
       },
       "useCase_2": {
-        "title": "Detection of disabled places",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "title": "Traffic sign detection",
+        "description": "The ability to detect road signs from Panoramax photos allows, for example, IGN or OpenStreetMap to improve geographic data associated with road data: speed limits, prohibitions of all kinds.\nThis detection also makes it possible to identify, for example, PRM parking lots and to power applications helping disabled people.",
         "image": {
-          "url": "desactive-icon.svg",
-          "alt": "Icon representing a disabled sign"
+          "url": "panneaux-routiers-icon.svg",
+          "alt": "Icon representing roads signs"
         }
       },
       "useCase_3": {
-        "title": "Traffic sign detection",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
-        "image": {
-          "url": "panneaux-routiers-icon.svg",
-          "alt": "Road sign icon"
-        }
-      },
-      "useCase_4": {
-        "title": "L'accès par API à différents types de points d'intérêts",
-        "description": "Des photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous es photos de terrain (360° ou non) accessibles à toutes et tous",
+        "title": "API access to different types of points of interest",
+        "description": "The Panoramax API allows any site or application to easily integrate a photo of a place or point of interest as an illustration.\n\nThis is what example <a href='https://cartes.app/' target='_blank' rel='noopener'>cartes.app</a>",
         "image": {
           "url": "api-white.svg",
           "alt": "API icon"
         }
       },
-      "other_use_cases_title": "Many other possibilities",
-      "other_use_cases_desc": "Many other use cases are possible and to be imagined by a whole host of stakeholders: communities, urban areas, network managers, etc.\n  Panoramax photos have, for example, been integrated into a <a href='https://cartes.app/' target='_blank' rel='noopener'>third-party website</a>.\n  Finally, Panoramax is not limited to taking photos from the road but also applies to riverways, forests, hiking trails, etc."
+      "useCase_4": {
+        "title": "Where we're going, we don't need a road",
+        "description": "Why limit yourself to the road domain?\nPhoto-mapping waterways, landscapes, the interior of forests, complementing day photos with night photos allows new and innovative uses .\nThe study of the banks, the underside of bridges, the state of public lighting... all this can also be done with Panoramax!",
+        "image": {
+          "url": "river.svg",
+          "alt": "River icon"
+        }
+      }
     }
   }
 }

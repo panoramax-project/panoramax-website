@@ -23,7 +23,9 @@
         <li class="list-item">
           <Link
             :text="$t('general.nav.photos')"
-            url="photos"
+            url="https://api.panoramax.xyz/"
+            type="external"
+            target="_blank"
             look="link--blue"
             @click.native="displayed = !displayed"
           />
@@ -78,6 +80,14 @@
           <Link
             :text="$t('general.nav.contribute')"
             url="comment-participer-a-panoramax"
+            look="link--blue"
+            @click.native="displayed = !displayed"
+          />
+        </li>
+        <li class="list-item">
+          <Link
+            :text="$t('general.nav.use_cases')"
+            url="cas-d-usage"
             look="link--blue"
             @click.native="displayed = !displayed"
           />
