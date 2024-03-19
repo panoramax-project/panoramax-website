@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
     "build-only": "vite build",
-    "deploy": "yarn build && cd ./dist && cp index.html 404.html && cd .. && cp -R dist docs && rm -r dist",
+    "deploy": "yarn build && cd ./dist && cp index.html 404.html",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "format": "prettier .  --write"
