@@ -1,0 +1,377 @@
+{
+  "general": {
+    "panoramax_title": "Panoramax",
+    "nav": {
+      "about": "À propos de Panoramax",
+      "photos": "Voir les photos",
+      "contribute": "Comment participer ?",
+      "use_cases": "Pourquoi contribuer ?",
+      "faq": "Foire aux questions",
+      "panoramax_instance": "Les instances",
+      "contact": "Contact",
+      "instance_ign": "Instance IGN",
+      "instance_osm": "Instance OSM"
+    },
+    "footer": {
+      "resources_title": "Ressources",
+      "follow_title": "Suivez-nous",
+      "credits_title": "Crédits images Flaticon",
+      "faq_subtitle": "Foire aux questions",
+      "photos_subtitle": "Catalogue de photos",
+      "contribute": "Comment participer ?",
+      "use_cases": "Pourquoi contribuer ?",
+      "ign_subtitle": "Instance IGN",
+      "osm_subtitle": "Instance OSM",
+      "forum_subtitle": "Forum",
+      "agenda_subtitle": "Agenda",
+      "github_subtitle": "Contribuer sur Github",
+      "gitlab_subtitle": "Le Gitlab des instances",
+      "twitter_subtitle": "Twitter",
+      "mastodon_subtitle": "Mastodon",
+      "linkedin_subtitle": "LinkedIn",
+      "ay11": "Accessibilité : non conforme"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "L’alternative libre pour photo-cartographier les territoires",
+      "description": "Panoramax est une ressource numérique permettant la mise en commun et l'exploitation de photos de terrain. Toute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax. Ces données sont ensuite librement accessibles et réutilisables",
+      "more_images_button": "Voir le catalogue de photos",
+      "illustration_alt": "Illustration cartographique",
+      "howItWorks_title": "Comment ça marche ?",
+      "howItWorks_description": "Panoramax fédère les initiatives d'une large communauté (collectivités, contributeurs OSM, IGN, services publics) participant au géocommun de bases de vues de terrain.",
+      "howItWorks_1": {
+        "title": "Un géocommun",
+        "description_1": "Des photos de terrain (360° ou non) accessibles à toutes et tous",
+        "description_2": "Des standards ouverts et des licences de ré-utilisation libres",
+        "description_3": "Des bonnes pratiques et des outils pour favoriser les usages",
+        "image": {
+          "url": "common-icon.svg",
+          "alt": "Image de mise en commun"
+        }
+      },
+      "howItWorks_2": {
+        "title": "Une architecture décentralisée et ouverte",
+        "description_1": "Des services mutualisés ou auto-hébergés, adaptés aux usages de chacun",
+        "description_2": "Un protocole commun et ouvert d'accès aux catalogues",
+        "description_3": "Un catalogue commun d'images",
+        "image": {
+          "url": "usecases-icon.svg",
+          "alt": "Image d'usages"
+        }
+      },
+      "howItWorks_3": {
+        "title": "Une gouvernance ouverte",
+        "description_1": "Une diversité d’acteurs impliqués",
+        "description_2": "Des moments d’échanges réguliers entre les membres de la communauté",
+        "description_3": "Des processus de décisions ouverts",
+        "image": {
+          "url": "participative-icon.svg",
+          "alt": "Image de gestion participative"
+        }
+      },
+      "why_title": "Pourquoi contribuer à Panoramax ?",
+      "why_description": "Panoramax permet la contribution et la réutilisation de photos de terrain pour de nombreux cas d'usage comme : la gestion du mobilier urbain et des voiries, l'identification des panneaux de signalisation etc.",
+      "why_button": "Voir les cas d'usage",
+      "metrics_title": "Une communauté grandissante",
+      "metrics_1": {
+        "number": "14",
+        "text": "millions",
+        "description": "de photos sur Panoramax"
+      },
+      "metrics_2": {
+        "number": "150 000",
+        "text": "km",
+        "description": "de distance couverte"
+      },
+      "metrics_3": {
+        "number": "206",
+        "text": "contributeurs",
+        "description": "issus de plusieurs structures"
+      },
+      "instance_title": "Les instances ouvertes",
+      "instance_description": "Les instances de l'IGN et OSM France sont accessibles en ligne. Les données déposées sur l'instance de l'IGN sont publiées sous la licence etalab-2.0, et celles sur l'instance d'OSM France sous licence CC-BY-SA-4.0.",
+      "instance_explore": "Explorer →",
+      "instance_contribute": "Contribuer →",
+      "instance_logo_osm_alt": "Logo Open Street Map",
+      "instance_logo_ign_alt": "Logo IGN",
+      "discover_title": "Découvrez Panoramax",
+      "discover_description": "Déplacez vous dans la visionneuse ci-dessous",
+      "discover_description_end": "Ou accédez à notre catalogue complet :",
+      "discover_more_images_button": "Voir les photos",
+      "joinUs_title": "Rejoignez-nous !",
+      "joinUs_description": "Vous souhaitez participer ou vous tenir informé ? C'est par ici",
+      "joinUs_link": {
+        "title": "Une question, une remarque ?\n Contactez-nous"
+      },
+      "joinUs_button_1": {
+        "title": "Participez à la communauté",
+        "text": "Accéder au forum",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "joinUs_button_2": {
+        "title": "Prochain évènement Panoramax",
+        "text": "Voir l'agenda complet",
+        "event_link_text": "en visio sur Jitsi",
+        "event_text_1": "Temps d'échange mensuel tous les 2e lundi du mois à 17h",
+        "event_text_2": "Le {date} à 17h",
+        "event_link_url": "https://meet.jit.si/panoramax",
+        "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+      },
+      "media_title": "Ils parlent de nous",
+      "media_description": "Ces articles parlent de Panoramax (en bien \uD83D\uDE0A)",
+      "media_logo_1": {
+        "url": "e1-logo.png",
+        "alt": "Logo du site Europe 1",
+        "link": "https://www.europe1.fr/emissions/initiative-a-impact/panoramax-lalternative-libre-et-souveraine-a-street-view-4229690"
+      },
+      "media_logo_2": {
+        "url": "next-logo.png",
+        "alt": "Logo du site Next Link",
+        "link": "https://next.ink/125818/panoramax-lalternative-libre-et-francaise-a-google-street-view/"
+      },
+      "media_logo_3": {
+        "url": "good-tech-logo.png",
+        "alt": "Logo du site Goodtech",
+        "link": "https://goodtech.info/panoramax-alternative-libre-a-street-view/"
+      },
+      "media_logo_4": {
+        "url": "acteurs-publics-logo.png",
+        "alt": "Logo du site Acteurs Publics",
+        "link": "https://acteurspublics.fr/articles/pour-saffranchir-de-google-street-view-letat-joue-collectif"
+      },
+      "community_title": "La communauté Panoramax",
+      "community_description": "Ils contribuent au rayonnement de Panoramax",
+      "community_logo_1": {
+        "url": "beta-gouv-logo.png",
+        "alt": "Logo de beta.gouv"
+      },
+      "community_logo_2": {
+        "url": "ign-logo.png",
+        "alt": "Logo de l'IGN"
+      },
+      "community_logo_3": {
+        "url": "fabrique-logo.jpg",
+        "alt": "Logo de la Fabrique des communs"
+      },
+      "community_logo_4": {
+        "url": "osm-logo.png",
+        "alt": "Logo OpenStreetMap France"
+      },
+      "community_logo_5": {
+        "url": "carto-cite-logo.png",
+        "alt": "Logo Carto Cité"
+      },
+      "community_logo_6": {
+        "url": "valparisis-logo.jpeg",
+        "alt": "Logo Val Parisis"
+      },
+      "community_logo_7": {
+        "url": "code-lutin-logo.png",
+        "alt": "Logo Code Lutin"
+      }
+    },
+    "about": {
+      "title": "À propos de Panoramax",
+      "introduction": "Vérifier l’état des voiries, inventorier le mobilier urbain ou bien préparer une intervention sur un réseau de distribution...\n\n<strong>Chaque année, des centaines de milliers de kilomètres sont parcourus par les agents territoriaux et des réseaux de distribution.</strong>",
+      "subtitle_1": "\uD83D\uDCA1 La solution pour réduire et faciliter ces déplacements ?",
+      "text_1": "<strong>L’utilisation de bases de photos immersives.</strong> Mais les propositions existantes sont insuffisantes :\nzones rurales non couvertes, données anciennes et obsolètes, non libres de droits, potentiellement payantes, entre les mains d’acteurs privés capables de changer les règles à tout moment...\n\n<strong>Panoramax, c’est l’alternative libre, indépendante et ouverte, pour photo-cartographier nos territoires</strong>",
+      "image_1": {
+        "url": "/carousel-immersive-view-street.jpg",
+        "alt": "Photo de vue"
+      },
+      "icon_2": {
+        "url": "/common-icon.png",
+        "alt": "Icone de géocommun"
+      },
+      "subtitle_2": "Le géocommun Panoramax",
+      "text_2": "Les différentes communautés (<a href='https://www.aitf.fr/' target='_blank' rel='noopener'>AITF</a>, <a href='https://www.openstreetmap.fr/' target='_blank' rel='noopener'>OSM</a>, Gestionnaires de réseaux, IGN, etc.) bouillonnent d’initiatives, mais sans voir l’émergence d’une réelle alternative aux modèles propriétaires de “streetview”.\n<strong>Panoramax fédère ces inititatives au sein du géocommun.</strong>\n\n<strong>\uD83D\uDC49 Une base de photos de rues, 360° ou non, ouverte et indépendante  :</strong> \n      ✔ Les contributeurs alimentent, gèrent et partagent les photos \n      ✔ L’hébergement des données est flexible : les membres de la communauté ont le choix de les stocker sur leur instance ou bien sur l’instance commune. \n\n<strong>\uD83D\uDC49 Des standards et des règles d’utilisation définies par la communauté :</strong> \n      ✔ Des standards techniques définis par la communauté pour le stockage et la publication de photos \n      ✔ <a href='https://forum.geocommuns.fr/t/licences-pour-panoramax-atelier-du-5-12-2022/409/17' target='_blank' rel='noopener'>Une licence</a> - toujours libre - par instance\n\n<strong>\uD83D\uDC49 Des outils et des bonnes pratiques pour favoriser les usages :</strong> \n      ✔ <a href='https://forum.geocommuns.fr/t/floutage-anonymisation/106' target='_blank' rel='noopener'>Floutage automatisé pour anonymiser les véhicules et les personnes.</a>\n      ✔ Suppression des doublons\n      ✔ Tri et filtres pour faciliter la recherche des données pertinentes",
+      "icon_3": {
+        "url": "/participative-icon.png",
+        "alt": "Icone participative"
+      },
+      "subtitle_3": "La gouvernance de Panoramax",
+      "text_3": "Panoramax, ce n’est pas 1,2 ou 3 membres majoritaires, mais une multiplicité d’acteurs qui participent tous aux décisions de la communauté.\n\n<strong>Qui prend les décisions?</strong>\nLa communauté est ouverte à tout individu ou organisation souhaitant contribuer. Parmi les membres :\n✔ Les collectivités, agglomérations, départements, régions, et membres de l’AITF (Association des Ingénieurs territoriaux de France)\n✔ Les réseaux de distribution (distributeurs d’électricité, eau, traîtement des déchets)\n✔ OpenStreetMap, écosystème de carte ouverte et collaborative du monde \n✔ l'IGN (Institut national de l'information géographique et forestière)\n✔ les acteurs privés, éditeurs de logiciel ou data solutions. \n\nVous souhaitez participer à nos échanges?\n<a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>C’est par ici</a>, sur le forum du géocommun",
+      "icon_4": {
+        "url": "/four-icon.png",
+        "alt": "Icone main quatre"
+      },
+      "subtitle_4": "4 phases pour concevoir un service numérique utile ",
+      "text_4": "\n<img src='/graphic.jpg':alt='Graphique illustrant les différentes phases du projet Panoramax' style='width:100%'/>\n<i>Méthode des startups d’état de la DINUM (Direction interministérielle du numérique) / Beta.gouv</i>\n\n<strong>Où en sommes-nous ?</strong> \nSuite à la phase d’investigation menée par l’intrapreneuse de l’IGN, Camille Salou, le premier comité d’investissement a validé le projet qui poursuit actuellement sa phase de construction au sein de <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, à l’aide d’une petite équipe en charge de son développement.\n\nLa prochaine étape ? Un prototype qui sera conçu et testé par la communauté d’ici la fin du mois d’avril 2023.\n\nEt après? A l’issue de 12 mois de développement, de partages et de mises en commun, il sera décidé de son entrée en phase d’accélération, puis de sa consolidation pour assurer la sortie du programme.",
+      "subtitle_team": "L'équipe Panoramax",
+      "panoramax_text": "Panoramax - Base vues immersives libres",
+      "team": {
+        "member_1": {
+          "name": "Adrien Pavie",
+          "work": "Géomaticien / Développeur",
+          "image_url": "/adrien.jpg",
+          "image_alt": "Photo du membre de l'équipe Adrien Pavie"
+        },
+        "member_2": {
+          "name": "Antoine Desbordes",
+          "work": "Développeur backend",
+          "image_url": "/antoine.jpg",
+          "image_alt": "Photo du membre de l'équipe Antoine Desbodes"
+        },
+        "member_3": {
+          "name": "Camille Salou",
+          "work": "Intrapreneuse",
+          "image_url": "/csalou.png",
+          "image_alt": "Photo du membre de l'équipe Camille Salou"
+        },
+        "member_4": {
+          "name": "Christian Quest",
+          "work": "Datatouilleur / Product Owner",
+          "image_url": "/christian-quest.jpg",
+          "image_alt": "Photo du membre de l'équipe Christian Quest"
+        },
+        "member_5": {
+          "name": "Jean Andreani",
+          "work": "Développeur frontend",
+          "image_url": "/logo-generique.jpeg",
+          "image_alt": "Photo du membre de l'équipe Jean Andreani"
+        },
+        "member_6": {
+          "name": "Mathilde Ferrey",
+          "work": "Responsable Déploiement",
+          "image_url": "/mferrey.jpeg",
+          "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
+        }
+      }
+    },
+    "pictures": {
+      "title": "Le catalogue de toutes les photos Panoramax"
+    },
+    "faq": {
+      "title": "Foire aux Questions : Panoramax & anonymisation",
+      "introduction_title": "C'est quoi Panoramax ?",
+      "introduction_text": "Panoramax est un commun numérique qui recense les prises de vue et permet de visualiser en ligne les lieux visibles depuis la voie publique. Portée par la Fabrique des géocommuns de l’IGN, la plateforme a vocation à proposer une alternative aux offres privées de type « street view », en faisant de cet outil un commun numérique.\n\nToute personne peut prendre des photographies des lieux afin d’alimenter la base de données de Panoramax. Ces données sont ensuite diffusées en ligne via une plateforme. Elles sont librement accessibles et réutilisables.\nIl y a des enjeux juridiques autour de ces données, et c’est dans cette FAQ que nous répondons à certaines de vos questions sur ce sujet.",
+      "blocks": [
+        {
+          "title": "Ai-je le droit de verser des photographies sur lesquelles il y a des personnes dans une instance Panoramax?",
+          "text": "1) <u>Ce que dit le droit français</u> :\n  Chaque personne détient un droit à l’image. Ce droit à l’image s’appuie à la fois sur le droit au respect de la vie privée et à la protection des données personnelles. Si vous prenez en photographie un lieu et qu’une ou plusieurs personnes se trouvent là, il y a deux solutions possibles :\n<ul style='list-style-position:inside; list-style-type: circle;'><li>Si la ou les personnes sont identifiables c’est-à-dire qu’il est possible de reconnaitre de qui il s’agit alors il est nécessaire d’obtenir leur accord ou à défaut d’anonymiser les données (par ex. en floutant le visage de la personne);</li><li>Si la ou les personnes ne sont pas identifiables (ex. il n’est pas possible de les reconnaitre) alors il n’est pas nécessaire d’obtenir leur accord, ni d’anonymiser les données.</li></ul>\n2) <u>Ce que fait Panoramax</u> : Les visages des personnes sont floutés automatiquement sur l’instance Panoramax. Vous n’avez donc aucune intervention supplémentaire à réaliser lorsque vous versez vos photographies sur Panoramax."
+        },
+        {
+          "title": "Que dois-je faire si aucune personne n’est présente sur la photographie, mais d’autres éléments peuvent permettre de les identifier?",
+          "text": "1) <u>Ce que dit le droit français</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>L’image d’une maison visible depuis la rue ou d’une voiture garée sur un parking public n’est pas à elle seule pas une donnée personnelle au sens de l’article 4 du RGPD. En effet, même si ces biens ont sûrement un propriétaire ou des usagers, ils ne permettent pas à eux seuls de ré-identifier une personne.</li><li><b>Attention</b> : La présence d’éléments complémentaires peut néanmoins donner des indications sur l’identité d’une personne. Par exemple, si la plaque d’immatriculation visible sur une voiture, ou si les prénom et nom d’une personne sont visibles sur la boîte aux lettres d’une maison. Ce sont bien des données personnelles puisqu’ils permettent d’identifier directement ou indirectement une ou plusieurs personnes.</li>\n</ul>2) <u>Ce que fait Panoramax</u> :Tout comme les personnes, les plaques d’immatriculation sont automatiquement floutées sur Panoramax. Tout élément supplémentaire à flouter pourra être signalé sur la plateforme."
+        },
+        {
+          "title": "Un particulier peut-il en m’empêcher de diffuser une photographie qui représente son bien sur Panoramax ?",
+          "text": "1) <u>Ce que dit le droit français</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>Le propriétaire d’un bien peut s’opposer à la diffusion de la photographie uniquement si cette diffusion lui cause un trouble anormal de jouissance. C’est le cas par exemple si la diffusion d’une image provoque une affluence touristique sur un site particulier.</li><li>Dans le cas d’une diffusion d’une photographie sur un outil de visualisation de la voie publique, on considère que le risque de trouble au propriétaire du bien est faible.</li><li>Il n’est donc pas obligatoire de flouter systématiquement les biens privés, sauf si un propriétaire en fait expressément la demande.</li></ul>\n2) <u>Ce que fait Panoramax</u> : Un particulier peut faire un signalement directement sur la plateforme pour demander un complément de floutage, s’il est justifié."
+        },
+        {
+          "title": "Y-a-t-il des bâtiments dont les photographies ne peuvent pas être diffusées pour des raisons de sécurité publique ?",
+          "text": "1) <u>Ce que dit le droit français</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>Un texte de loi (l’arrêté du 28 août 1991) interdit par principe de photographier l’intérieur ou autour des places, ouvrages, postes ou établissements militaires et maritimes ou intéressant la défense nationale, sauf si l’autorité militaire donne son autorisation.</li><li>Ces bâtiments peuvent être identifiés grâce à des signes extérieurs comme : des panneaux de signalement (par exemple : « Terrain militaire, Défense d’entrer »), la délimitation d’une zone spécifique (murs, grillages, barbelés), la présence de militaires.</li></ul>\n2) <u>Ce que fait Panoramax</u> : Ces bâtiments sont a priori floutés sur Panoramax. Tout manque peut être signalé sur la plateforme."
+        },
+        {
+          "title": "Que faire si des œuvres protégées par le droit d’auteur sont présentes sur les photographies ?",
+          "text": "<u>Étape 1 : Vérifiez si la photographie contient une œuvre originale</u><ul style='list-style-position:inside; list-style-type: circle;'><li>sur la voie publique il peut y avoir des éléments qui sont protégés par le droit d’auteur si leur originalité peut être démontrée. Ce sont, par exemple, des œuvres de l’esprit comme les architectures, le mobilier urbain, les sculptures, les affiches, etc.</li></ul>\n<u>Étape 2</u> : Si c’est le cas, l’auteur d’une œuvre originale doit donner son accord pour qu’elle soit photographiée et diffusée en ligne.\nAttention : Il existe une exception, si la photographie tombe dans l’exception de panorama, c’est le cas dès lors que : <ul style='list-style-position:inside; list-style-type: circle;'><li>le photographe est une personne physique qui agit <b>en son propre nom</b> – et non celui d’une organisation qu’elle soit publique ou privée ;</li><li>les œuvres représentées sur la photographie sont des architectures et des sculptures qui sont présentes <b>en permanence</b> sur la voie publique ;</li><li>les photographies <b>ne font pas l’objet d’un usage commercial</b>;</li><li>Si vous respectez ces trois conditions, alors vous pouvez diffuser la photo sur Panoramax, sans l’accord de l’auteur.</li></ul>"
+        },
+        {
+          "title": "Les monuments peuvent-ils être pris en photo et diffusés sur Panoramax ?",
+          "text": "Oui, il est possible de prendre des monuments en photo et les diffuser sur Panoramax.\n1) <u>Ce que dit le droit français</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>Concernant la diffusion de telles photographies, l’article L 621-42 du Code du patrimoine prévoit que : <i>« L’utilisation à des fins commerciales de l’image des immeubles qui constituent les domaines nationaux, sur tout support, est soumise à l’autorisation préalable du gestionnaire de la partie concernée du domaine national »</i></li><li>Ces domaines nationaux sont listés par décret.</li>L’Elysée, le Louvre ou encore le domaine de Chambord sont des domaines nationaux.</li><li>La mise à disposition des images de ces bâtiments via Panoramax ne constitue pas un usage à des fins commerciales, elle est donc possible par défaut.</li></ul>\n<b>Attention</b> : Comme la licence de diffusion des données de Panoramax autorise toute personne à faire usage des données à titre commercial, c’est au réalisateur des images diffusées sur Panoramax de s’assurer d’avoir obtenu l’autorisation d’utiliser ces images à titre commercial.\nPour ces cas particuliers, une foire aux questions à destination des réutilisateurs pourrait être proposée plus tard sur le site de Panoramax."
+        },
+        {
+          "title": "Faut-il le consentement des photographes pour diffuser leurs prises de vue mises à disposition sur la plateforme ?",
+          "text": "1) <u>Ce que dit le droit français</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>les contributeurs qui prennent des photographies pour alimenter la base de données de Panoramax peuvent être titulaires de droits de propriété intellectuelle sur les photographies. En effet, une photographie peut être protégée par le droit d’auteur dès lors qu’elle est originale.</li><li>Cependant, il faut souligner que l’originalité des photographies est difficile à démontrer. On peut caractériser l’originalité selon les choix du photographe en ce qui concerne la composition, le cadrage, l’angle de prise de vue, la lumière, les contrastes et de couleurs.</ul></li>\n2) <u>Ce que fait Panoramax</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>Au regard de ces critères et de l’outil lui-même, l’originalité des photographies mises à disposition sur Panoramax semble difficile à démontrer. Il y a donc deux cas de figure possibles : <ul style='list-style-position:inside; list-style-type: disc; margin-left: 2.5rem;'><li>Si l’originalité ne peut être démontrée, les photographies ne seront pas couvertes par le droit d’auteur.</li><li>En revanche, si l’originalité est bien démontrée, alors Panoramax doit disposer des droits sur les photographies afin de pouvoir les diffuser dans le cadre de la plateforme mise à disposition.</li></ul><li>Sur l’instance Panoramax / IGN, la licence utilisée est la Licence Ouverte qui embarque une concession de droits au réutilisateur.</li><li>NB : un document de recommandations sur la manière de prendre des photographies afin d’uniformiser le plus possible les prises de vue est en cours d’étude.</li></ul>"
+        }
+      ],
+      "summary_title": "En synthèse, Panoramax apporte des solutions pour encadrer les cas pré-cités grâce à :",
+      "summary_text": "<ul style='list-style-position:inside; list-style-type: circle;'><li>L’anonymisation automatique via le floutage des visages, les plaques d’immatriculation et tout autre élément permettant d’identifier – même indirectement – une personne.</li><li>La possibilité de signalement des contenus qui pourraient porter atteinte aux droits des personnes que ce soit en matière de vie privée, de propriété ou de propriété intellectuelle.</li></ul>\nCette foire aux questions est accessible pour l’ensemble des parties prenantes à Panoramax, et mise à jour régulièrement."
+    },
+    "contribute": {
+      "main_title": "L'initiative Panoramax",
+      "main_description": "Panoramax est un commun numérique libre permettant le partage et l'exploitation de photos de terrain.\nToute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax.\nCes données sont ensuite librement accessibles et réutilisables.",
+      "subtitle_contribute": "Comment contribuer ?",
+      "contribute_title_photos": "1. Prendre des photos",
+      "contribute_title_upload": "2. Charger vos photos",
+      "contribute_title_map": "3. Exploitez les photos",
+      "contribute_desc_photos": "Prenez des photos - 360° ou non - avec un simple smartphone ou tout autre appareil plus sophistiqué.",
+      "contribute_desc_upload": "Envoyez et partagez vos photos sur l'instance de votre choix, comme panoramax.ign.fr ou panoramax.openstreetmap.fr.",
+      "contribute_desc_map": "Découvrez et utilisez les photos partagées par la communauté à travers le catalogue fédéré, et exploitez-les pour vos besoins métiers.",
+      "contribute_alt_photos": "Illustration d'une personne qui prend une photo",
+      "contribute_alt_upload": "Illustration d'une personne qui charge des photos",
+      "contribute_alt_map": "Illustration d'une carte",
+      "subtitle_guide": "Guide des bonnes pratiques de prise de vue",
+      "guide_alt_img": "Une photo de prise de vue de bonne qualité",
+      "guide_alt_img_saturated": "Une photo de prise de vue de mauvaise qualité",
+      "guide_alt_like": "Une icon pource vers le haut",
+      "guide_alt_unlike": "Une icon pource vers le bas",
+      "guide_desc": "Aujourd'hui, aucun critère de qualité de photo n'est requis pour publier sur Panoramax et toutes les photos sont acceptées. Pour que les photos soient le plus facilement exploitable possible, pensez tout de même à vous assurer de leur niveau de qualité. Voici un exemple illustré d'une belle image (à gauche) versus une image dégradée (à droite). Pour plus de détails, <a href='https://forum.geocommuns.fr/t/les-tutoriels-pour-contribuer-a-panoramax/1015' target='_blank' rel='noopener'>consultez notre guide des bonnes pratiques</a>.",
+      "subtitle_how_to_use": "Comment utiliser les photos ?",
+      "use_title_viewer": "Visionneuse",
+      "use_title_api": "API",
+      "use_title_detect": "Détection d'objets sur une photo",
+      "use_desc_viewer": "Explorez l'ensemble des photos Panoramax via <a href='/photos'>la visionneuse web de Panoramax.fr</a> (mais aussi panoramax.ign.fr ou panoramax.openstreetmap.fr)",
+      "use_desc_api": "Accédez aux photos en plein résolution et à leurs métadonnées à l'aide de notre API Web, conforme aux standards <a href='https://ogcapi.ogc.org/features/' target='_blank'>\"OGC Feature\"</a> et <a href='https://stacspec.org/en' target='_blank'>\"STAC\"</a>.",
+      "use_desc_detect": "À l'aide de l'intelligence artificielle, il est possible de détecter et de classer des objets visibles sur les images, comme les panneaux routiers ou le mobilier urbain. Des données d'exemple seront prochainement disponibles sous licence ouverte.",
+      "use_alt_viewer": "Illustration d'un oeil qui représente une visionneuse",
+      "use_alt_api": "Illustration d'une machinerie digitale qui représente une API'",
+      "use_alt_detect": "Illustration d'une détection d'objet",
+      "subtitle_how_to_contribute": "Comment s'impliquer dans la communauté ?",
+      "how_to_contribute_link": {
+        "title": "Ateliers gouvernance",
+        "description": "Échanges pour décider collaborativement du pilotage du projet."
+      },
+      "how_to_contribute_button_1": {
+        "title": "Le forum des Géocommuns",
+        "text": "Accéder au forum",
+        "description": "L'espace de discussion privilégié de la communauté Panoramax, ouvert à toutes et tous.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_2": {
+        "title": "Groupe de travail CNIG",
+        "text": "Accéder",
+        "description": "Lieu de définition du standard de collecte et diffusion des photos.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_3": {
+        "title": "Temps d'échanges",
+        "text": "Voir l'agenda complet",
+        "event_link_text": "en visio sur Jitsi",
+        "event_text_1": "Temps d'échange mensuel tous les 2e lundi du mois à 17h",
+        "event_text_2": "Le {date} à 17h",
+        "event_link_url": "https://meet.jit.si/panoramax",
+        "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+      }
+    },
+    "useCases": {
+      "main_title": "Pourquoi contribuer à Panoramax ?",
+      "main_description": "La prise de photos de terrain est le meilleur moyen de capter un maximum d'informations en peu de temps et à moindre frais.\nEn versant ses photos dans un pot commun, on évite de nombreux déplacements pour toutes les personnes avec qui on les partage.\nChacun profite ainsi des versements des autres ce qui génère une économie d'échelle par l'effet de réseau car une photo partagée pourra être réutilisée de nombreuses fois pour des usages très variés.\n\nEn voici quelques-uns...",
+      "alt_main_image": "Image de terrain montrant de nombreux cas d'usages de Panoramax",
+      "subtitle_use_cases": "De nombreux cas d'usage déjà possibles",
+      "useCase_1": {
+        "title": "L'exemple de la collectivité de Val Parisis",
+        "description": "Val Parisis contribue à Panoramax et a pour ambition d'effectuer une transition complète de Mapillary à Panoramax. La collectivité a déjà de nombreux cas d'usages liés à la publication et l'utilisation de photos :\n• mise à jour des données métiers (stationnement, voirie, etc..)\n• contrôle du avant/après des zones de travaux\n• contrôle des plans topographiques livrés par les prestataires\n • contrôle du PCRS vecteur livrés\n• etc",
+        "image": {
+          "url": "mairie-icon.svg",
+          "alt": "Icone représentant un bâtiment officiel"
+        }
+      },
+      "useCase_2": {
+        "title": "La détection des panneaux",
+        "description": "La capacité à détecter les panneaux de signalisation à partir des photos de Panoramax permet par exemple à l'IGN ou OpenStreetMap d'améliorer les données géographiques associées aux données routières: limites de vitesse, interdictions de toutes nature.\nCette détection permet aussi de repérer par exemple les stationnements PMR et d'alimenter des applications aidant les personnes handicapées.",
+        "image": {
+          "url": "panneaux-routiers-icon.svg",
+          "alt": "Icone représentant des panneaux de signalisation"
+        }
+      },
+      "useCase_3": {
+        "title": "L'accès par API à différents types de points d'intérêts",
+        "description": "L'API de Panoramax permet à tout sites ou applications d'intégrer facilement à titre d'illustration une photo d'un lieu ou d'un point d'intérêt.\n\nC'est ce que fait par exemple <a href='https://cartes.app/' target='_blank' rel='noopener'>cartes.app</a>",
+        "image": {
+          "url": "api-white.svg",
+          "alt": "Icone représentant une API"
+        }
+      },
+      "useCase_4": {
+        "title": "Là où on va, on n'a pas besoin de route",
+        "description": "Pourquoi se limiter au domaine routier ?\nPhoto-cartographier les cours d'eau, les paysages, l'intérieur de forêts, compléter les photos de jour avec des photos de nuit c'est permettre des usages inédits et innovants.\nL'étude des berges, le dessous des ponts, l'état de l'éclairage public... tout ceci peut aussi se faire avec Panoramax !",
+        "image": {
+          "url": "river.svg",
+          "alt": "Icone représentant un fleuve"
+        }
+      }
+    }
+  }
+}

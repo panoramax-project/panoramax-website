@@ -1,0 +1,377 @@
+{
+  "general": {
+    "panoramax_title": "Panoramax",
+    "nav": {
+      "about": "About Panoramax",
+      "photos": "See the pictures",
+      "contribute": "How to contribute ?",
+      "use_cases": "Why contribute ?",
+      "faq": "F.A.Q",
+      "panoramax_instance": "Instances",
+      "contact": "Contact us",
+      "instance_ign": "IGN instance",
+      "instance_osm": "OSM instance"
+    },
+    "footer": {
+      "resources_title": "Ressources",
+      "follow_title": "Follow us",
+      "credits_title": "Flaticon images",
+      "faq_subtitle": "F.A.Q",
+      "photos_subtitle": "Photo catalog",
+      "contribute": "How to contribute ?",
+      "use_cases": "Why contribute ?",
+      "ign_subtitle": "IGN instance",
+      "osm_subtitle": "OSM instance",
+      "forum_subtitle": "Forum",
+      "agenda_subtitle": "Calendar",
+      "github_subtitle": "Contribute on Github",
+      "gitlab_subtitle": "The gitlab of the instances",
+      "twitter_subtitle": "Twitter",
+      "mastodon_subtitle": "Mastodon",
+      "linkedin_subtitle": "LinkedIn",
+      "ay11": "Accessibility : non compliant"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "The free alternative to photo-mapping territories",
+      "description": "Panoramax is a digital resource for sharing and exploiting field photos. Anyone can take photographs of places visible from the public highway and contribute them to the Panoramax database. This data is then freely accessible and reusable by all.",
+      "more_images_button": "View photo catalog",
+      "illustration_alt": "Map illustration",
+      "howItWorks_title": "How does it work ?",
+      "howItWorks_description": "Panoramax federates initiatives (by local authorities, OSM contributors, IGN, etc.) to promote the emergence of a geo-common of immersive view databases.",
+      "howItWorks_1": {
+        "title": "A geo-common",
+        "description_1": "Field photos (360° or not) accessible to all",
+        "description_2": "Standards and rules for use and contribution",
+        "description_3": "Best practices and tools to encourage use",
+        "image": {
+          "url": "common-icon.svg",
+          "alt": "Sharing image"
+        }
+      },
+      "howItWorks_2": {
+        "title": "Flexible hosting",
+        "description_1": "A federation with solutions tailored to each user's needs: shared or self-hosted instance",
+        "description_2": "A common principle of open data ",
+        "description_3": "Instance-specific re-use licenses ",
+        "image": {
+          "url": "usecases-icon.svg",
+          "alt": "Image of uses"
+        }
+      },
+      "howItWorks_3": {
+        "title": "Shared governance",
+        "description_1": "Open decision-making processes",
+        "description_2": "Open forums for all members of the community",
+        "description_3": "A wide range of players to ensure the project's long-term viability",
+        "image": {
+          "url": "participative-icon.svg",
+          "alt": "Participative management image"
+        }
+      },
+      "why_title": "Why contribute to Panoramax ?",
+      "why_description": "Panoramax allows the contribution and reuse of field photos for many use cases such as: management of street furniture and roads, identification of traffic signs, etc.",
+      "why_button": "See the use cases",
+      "metrics_title": "A growing community",
+      "metrics_1": {
+        "number": "10",
+        "text": "millions",
+        "description": "pictures on Panoramax"
+      },
+      "metrics_2": {
+        "number": "90 000",
+        "text": "km",
+        "description": "covered"
+      },
+      "metrics_3": {
+        "number": "137",
+        "text": "contributors",
+        "description": "from several types of structures"
+      },
+      "instance_title": "Open instances",
+      "instance_description": "The IGN and OSM France instances are accessible to all. Data deposited on the IGN instance are published under the etalab-2.0 license, and those on the OSM France instance under the CC-BY-SA-4.0 license.",
+      "instance_explore": "Explore →",
+      "instance_contribute": "Contribute →",
+      "instance_logo_osm_alt": "OpenStreetMap logo",
+      "instance_logo_ign_alt": "IGN logo",
+      "discover_title": "Discover Panoramax",
+      "discover_description": "Move to the module below",
+      "discover_description_end": "Or access the full catalog :",
+      "discover_more_images_button": "See the pictures",
+      "joinUs_title": "Join us !",
+      "joinUs_description": "Would you like to take part or keep up to date ?",
+      "joinUs_link": {
+        "title": "Questions or comments?\n Contact us"
+      },
+      "joinUs_button_1": {
+        "title": "Join the community",
+        "text": "Enter the forum",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "joinUs_button_2": {
+        "title": "Next Panoramax event",
+        "text": "See full calendar",
+        "event_link_text": "on Jitsi",
+        "event_text_1": "Monthly exchange time",
+        "event_text_2": "{date} at 17:00 (CET)",
+        "event_link_url": "https://meet.jit.si/panoramax",
+        "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+      },
+      "media_title": "They talk about us",
+      "media_description": "These articles talk about Panoramax",
+      "media_logo_1": {
+        "url": "e1-logo.png",
+        "alt": "Logo of the site Europe 1",
+        "link": "https://www.europe1.fr/emissions/initiative-a-impact/panoramax-lalternative-libre-et-souveraine-a-street-view-4229690"
+      },
+      "media_logo_2": {
+        "url": "next-logo.png",
+        "alt": "Logo of the site Next Link",
+        "link": "https://next.ink/125818/panoramax-lalternative-libre-et-francaise-a-google-street-view/"
+      },
+      "media_logo_3": {
+        "url": "good-tech-logo.png",
+        "alt": "Logo of the site Goodtech",
+        "link": "https://goodtech.info/panoramax-alternative-libre-a-street-view/"
+      },
+      "media_logo_4": {
+        "url": "acteurs-publics-logo.png",
+        "alt": "Logo of the site Acteurs Publics",
+        "link": "https://acteurspublics.fr/articles/pour-saffranchir-de-google-street-view-letat-joue-collectif"
+      },
+      "community_title": "Panoramax community",
+      "community_description": "They contribute to Panoramax",
+      "community_logo_1": {
+        "url": "beta-gouv-logo.png",
+        "alt": "Logo de beta.gouv"
+      },
+      "community_logo_2": {
+        "url": "ign-logo.png",
+        "alt": "Logo de l'IGN"
+      },
+      "community_logo_3": {
+        "url": "fabrique-logo.jpg",
+        "alt": "Logo de la Fabrique des communs"
+      },
+      "community_logo_4": {
+        "url": "osm-logo.png",
+        "alt": "Logo OpenStreetMap France"
+      },
+      "community_logo_5": {
+        "url": "carto-cite-logo.png",
+        "alt": "Logo Carto Cité"
+      },
+      "community_logo_6": {
+        "url": "valparisis-logo.jpeg",
+        "alt": "Logo Val Parisis"
+      },
+      "community_logo_7": {
+        "url": "code-lutin-logo.png",
+        "alt": "Logo Code Lutin"
+      }
+    },
+    "about": {
+      "title": "About Panoramax",
+      "introduction": "Check road conditions, inventory street furniture or prepare for work on a distribution network...\n\n<strong>Every year, hundreds of thousands of kilometers are covered by local and regional agents and distribution networks..</strong>",
+      "subtitle_1": "\uD83D\uDCA1 The solution to reduce and facilitate these journeys ?",
+      "text_1": "<strong>The use of immersive photo databases.</strong> But existing proposals are insufficient :\nrural areas not covered, old and obsolete data, not free of rights, potentially paying, in the hands of private players capable of changing the rules at any time...\n\n<strong>Panoramax is the free, independent and open alternative for photo-mapping our territories.</strong>",
+      "image_1": {
+        "url": "/carousel-immersive-view-street.jpg",
+        "alt": "View picture"
+      },
+      "icon_2": {
+        "url": "/common-icon.png",
+        "alt": "Geo-common icon"
+      },
+      "subtitle_2": "The Panoramax geo-common",
+      "text_2": "The various communities (<a href='https://www.aitf.fr/' target='_blank' rel='noopener'>AITF</a>, <a href='https://www.openstreetmap.fr/' target='_blank' rel='noopener'>OSM</a>, network operators, IGN, etc.) are bustling with activity, but no real alternative to proprietary \"streetview\" models is emerging.\n<strong>Panoramax federates these initiatives within the geocommon.</strong>\n\n<strong>\uD83D\uDC49 A database of street photos, 360° or not, open and independent  :</strong> \n      ✔ Contributors upload, manage and share photos \n      ✔ Data hosting is flexible: community members can choose to store their data on their own instance or on the shared instance.. \n\n<strong>\uD83D\uDC49 Community-defined standards and rules of use :</strong> \n      ✔ Community-defined technical standards for photo storage and publication \n      ✔ <a href='https://forum.geocommuns.fr/t/licences-pour-panoramax-atelier-du-5-12-2022/409/17' target='_blank' rel='noopener'>Licences</a> - always free - by instance\n\n<strong>\uD83D\uDC49 Tools and best practices to encourage use :</strong> \n      ✔ <a href='https://forum.geocommuns.fr/t/floutage-anonymisation/106' target='_blank' rel='noopener'>Automated blurring to anonymize vehicles and people.</a>\n      ✔ Deleting duplicates\n      ✔ Sorting and filtering for easy retrieval of relevant data",
+      "icon_3": {
+        "url": "/participative-icon.png",
+        "alt": "Icone participative"
+      },
+      "subtitle_3": "Panoramax governance",
+      "text_3": "Panoramax is not 1, 2 or 3 majority members, but a multiplicity of players who all participate in the community's decisions..\n\n<strong>Who makes the decisions?</strong>\nThe community is open to any individual or organization wishing to contribute. Members include:\n✔ Local authorities, agglomerations, departments, regions, and members of AITF (Association des Ingénieurs territoriaux de France)\n✔ Distribution networks (electricity, water, waste management distributors)\n✔ OpenStreetMap, the world's open and collaborative map ecosystem \n✔ IGN (Institut national de l'information géographique et forestière)\n✔ Private players, software or data solutions publishers. \nYou would like to take part in our discussions?\n<a href='https://forum.geocommuns.fr/c/panoramax/6' target='_blank' rel='noopener'>join us on the geocommon forum</a>,",
+      "icon_4": {
+        "url": "/four-icon.png",
+        "alt": "Icone main quatre"
+      },
+      "subtitle_4": "4 phases to design a useful digital service ",
+      "text_4": "\n<img src='/graphic.jpg':alt='Drawing illustrating the different phases of the Panoramax project' style='width:100%'/>\n<i>DINUM (Interministerial digital department) state startup method / Beta.gouv</i>\n\n<strong>Where do we stand?</strong> \nFollowing the investigation phase led by IGN intrapreneur Camille Salou, the first investment committee validated the project, which is currently pursuing its construction phase within <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, with the help of a small team in charge of its development.\nThe next step? A prototype to be designed and tested by the community by the end of April 2023. At the end of 12 months of development, sharing and pooling, it will be decided whether to enter the acceleration phase, and then to consolidate it to ensure the program's exit.",
+      "subtitle_team": "Panoramax team",
+      "panoramax_text": "Panoramax",
+      "team": {
+        "member_1": {
+          "name": "Adrien Pavie",
+          "work": "Geo dev",
+          "image_url": "/adrien.jpg",
+          "image_alt": "Photo du membre de l'équipe Adrien Pavie"
+        },
+        "member_2": {
+          "name": "Antoine Desbordes",
+          "work": "Backend dev",
+          "image_url": "/antoine.jpg",
+          "image_alt": "Photo du membre de l'équipe Antoine Desbodes"
+        },
+        "member_3": {
+          "name": "Camille Salou",
+          "work": "Intrapreneuse",
+          "image_url": "/csalou.png",
+          "image_alt": "Photo du membre de l'équipe Camille Salou"
+        },
+        "member_4": {
+          "name": "Christian Quest",
+          "work": "Product owner",
+          "image_url": "/christian-quest.jpg",
+          "image_alt": "Photo du membre de l'équipe Christian Quest"
+        },
+        "member_5": {
+          "name": "Jean Andreani",
+          "work": "Frontend dev",
+          "image_url": "/logo-generique.jpeg",
+          "image_alt": "Photo du membre de l'équipe Jean Andreani"
+        },
+        "member_6": {
+          "name": "Mathilde Ferrey",
+          "work": "Business dev",
+          "image_url": "/mferrey.jpeg",
+          "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
+        }
+      }
+    },
+    "pictures": {
+      "title": "Panoramax global photos catalog"
+    },
+    "faq": {
+      "title": "Frequently asked questions : Panoramax and anonymization",
+      "introduction_title": "What is Panoramax ?",
+      "introduction_text": "Panoramax is a platform that provides an inventory of photography and online visualization of places visible from the public highway. Supported by IGN's Fabrique des géocommuns, the platform aims to offer an alternative to private « street view » type offerings, by turning this tool into a digital commons.Anyone can take photographs of places to feed the Panoramax database. This data is then distributed online via a platform. They are freely accessible and reusable.\nThere are legal issues surrounding this data, and it's in this FAQ that we answer some of your questions on this subject..",
+      "blocks": [
+        {
+          "title": "Am I allowed to upload photographs with people in them to a Panoramax instance?",
+          "text": "1) <u>What French law says</u> :\n  Everyone has the right to an image. This right is based on both the right to privacy and the right to protection of personal data. If you take a photograph of a place and one or more people are there, there are two possible solutions :\n<ul style='list-style-position:inside; list-style-type: circle;'><li>If the person or persons are identifiable, i.e. it is possible to recognize who they are, then it is necessary to obtain their consent or, failing that, to anonymize the data (e.g. by blurring the person's face).;</li><li>If the person or persons are not identifiable (e.g. it is not possible to recognize them) then it is not necessary to obtain their consent, nor to anonymize the data.</li></ul>\n2) <u>What Panoramax does</u> : People's faces are automatically blurred on the Panoramax instance. So you don't need to do anything when you upload your photos to Panoramax.."
+        },
+        {
+          "title": "What should I do if there are no people in the photograph, but other elements can identify them?",
+          "text": "1) <u>What does French law say</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>The image of a house visible from the street or a car parked in a public parking lot is not, on its own, personal data within the meaning of Article 4 of the GDPR. Indeed, even if these assets surely have an owner or users, they alone do not allow a person to be re-identified.</li><li><b>Attention</b> : The presence of additional elements can nevertheless provide clues to a person's identity. For example, if a license plate is visible on a car, or if a person's first and last name are visible on the mailbox of a house. These are personal data, since they enable one or more people to be identified directly or indirectly.</li>\n</ul>2) <u>What Panoramax does</u> : Like people, license plates are automatically blurred on Panoramax. Any additional elements to be blurred can be reported on the platform."
+        },
+        {
+          "title": "Can a private individual prevent me from distributing a photograph of his property on Panoramax?",
+          "text": "1) <u>What does French law say</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>The owner of a property can only object to the publication of a photograph if it causes him or her an abnormal disturbance of enjoyment. This is the case, for example, if the diffusion of an image causes a tourist influx on a particular site.</li><li>In the case of dissemination of a photograph on a public viewing tool, the risk of disturbance to the owner of the property is considered to be low..</li><li>It is therefore not compulsory to systematically blur private property, unless an owner expressly requests it.</li></ul>\n2) <u>What Panoramax does</u> : Individuals can report directly to the platform to request additional blurring, if justified."
+        },
+        {
+          "title": "Are there any buildings whose photographs cannot be distributed for reasons of public safety?",
+          "text": "1) <u>What does French law say</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>A legal text (the decree of August 28, 1991) prohibits, as a matter of principle, photography in or around military and maritime places, works, stations or establishments or those of national defense interest, unless authorized by the military authority.</li><li>These buildings can be identified by external signs such as: warning signs (e.g.: \"Military land, no trespassing\"), the demarcation of a specific area (walls, fences, barbed wire), the presence of military personnel, etc.</li></ul>\n2) <u>What Panoramax does</u> : These buildings are a priori blurred on Panoramax. Any missing information can be reported on the service."
+        },
+        {
+          "title": "What to do if copyrighted works are present in photographs ?",
+          "text": "<u>Step 1 : Check whether the photograph contains original artwork</u><ul style='list-style-position:inside; list-style-type: circle;'><li>on the public highway, there may be elements that are protected by copyright if their originality can be demonstrated. These include, for example, works of the mind such as architecture, street furniture, sculptures, posters and so on.</li></ul>\n<u>Step 2</u> : If this is the case, the author of an original work must give his or her consent for it to be photographed and distributed online.\nCaution: There is an exception, if the photograph falls within the panorama exception, which is the case when : <ul style='list-style-position:inside; list-style-type: circle;'><li>the photographer is an individual acting <b>in his or her own name</b> - not on behalf of a public or private organization ;</li><li>the works depicted in the photograph are architectures and sculptures that are permanently <b>present</b> on the public highway ;</li><li>the photographs <b>are not intended for commercial use</b>;</li><li>If you comply with these three conditions, you can distribute the photo on Panoramax without the author's consent.</li></ul>"
+        },
+        {
+          "title": "Can monuments be photographed and broadcast on Panoramax?",
+          "text": "Yes, it is possible to take photos of monuments and broadcast them on Panoramax.\n1) <u>What French law says</u>:<ul style='list-style-position: inside; list-style-type: circle;'><li>Concerning the distribution of such photographs, article L 621-42 of the Heritage Code provides that: <i>“The use for commercial purposes of the image of the buildings which constitute the national domains, on any medium, is subject to the prior authorization of the manager of the relevant part of the national domain »</i></li><li>These national domains are listed by decree.< /li>The Elysée, the Louvre and the Chambord estate are national domains.</li><li>The provision of images of these buildings via Panoramax does not constitute use for commercial purposes, it is therefore possible by default. </li></ul>\n<b>Attention</b>: As the Panoramax data distribution license authorizes any person to use the data for commercial purposes, it is up to the producer images distributed on Panoramax to ensure that you have obtained authorization to use these images for commercial purposes.\nFor these particular cases, frequently asked questions for re-users could be offered later on the Panoramax site."
+        },
+        {
+          "title": "Do photographers need their consent to distribute their images on the platform?",
+          "text": "1) <u>What French law says</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>contributors who take photographs for the Panoramax database may hold intellectual property rights on the photographs. In fact, a photograph may be protected by copyright if it is original.</li><li>However, it should be stressed that the originality of photographs is difficult to demonstrate. Originality can be characterized according to the photographer's choices in terms of composition, framing, angle, light, contrast and color.</ul></li>\n2) <u>What Panoramax does</u> :<ul style='list-style-position:inside; list-style-type: circle;'><li>In view of these criteria and the tool itself, the originality of photographs made available on Panoramax seems difficult to demonstrate. There are therefore two possible scenarios : <ul style='list-style-position:inside; list-style-type: disc; margin-left: 2.5rem;'><li>If originality cannot be demonstrated, the photographs will not be covered by copyright.</li><li>On the other hand, if originality is demonstrated, Panoramax must have the rights to the photographs in order to distribute them within the framework of the platform made available.</li></ul><li>On the Panoramax / IGN instance, the license used is the Open License, which includes a concession of rights to the reuser..</li><li>NB : a document of recommendations on how to take photographs in order to standardize shots as much as possible is currently being studied.</li></ul>"
+        }
+      ],
+      "summary_title": "In short, Panoramax provides solutions for the above-mentioned cases through :",
+      "summary_text": "<ul style='list-style-position:inside; list-style-type: circle;'><li>Automatic anonymization through blurring of faces, license plates and any other element that could - even indirectly - identify a person.</li><li>The ability to report content that may infringe on people's privacy, property or intellectual property rights.</li></ul>\nThis FAQ is available to all Panoramax stakeholders, and is updated regularly."
+    },
+    "contribute": {
+      "main_title": "The Panoramax initiative",
+      "main_description": "Panoramax is a platform that lists photos taken and allows you to view places visible from public roads online. Supported by the IGN Geocommuns Factory, the platform aims to offer an alternative to private “street view” type offers, by making this tool a digital commons. Anyone can take photographs of the places in order to populate the Panoramax database. This data is then distributed online via a platform. They are freely accessible and reusable.",
+      "subtitle_contribute": "How to contribute ?",
+      "contribute_title_photos": "1. Take pictures",
+      "contribute_title_upload": "2. Upload your pictures",
+      "contribute_title_map": "3. Exploit pictures",
+      "contribute_desc_photos": "Take pictures - 360° or not - with a simple smartphone or any other more sophisticated device.",
+      "contribute_desc_upload": "Upload, store and share your photos on the instance of your choice, such as panoramax.ign.fr or panoramax.openstreetmap.fr.",
+      "contribute_desc_map": "Discover and use photos shared by the community in the federated catalog, and exploit them for your business needs.",
+      "contribute_alt_photos": "Illustration of a person taking a photo",
+      "contribute_alt_upload": "Illustration of a person uploading photos",
+      "contribute_alt_map": "Illustration of a map",
+      "subtitle_guide": "Guide to good practices",
+      "guide_alt_img": "A good quality photo",
+      "guide_alt_img_saturated": "A bad quality photo",
+      "guide_alt_like": "A like icon",
+      "guide_alt_unlike": "An unlike icon",
+      "guide_desc": "To make the photos as easily usable as possible, remember to ensure their level of quality. Here is an illustrated example of a beautiful image (left) versus a degraded image (right). For more details, <a href='https://forum.geocommuns.fr/t/les-tutoriels-pour-contribuer-a-panoramax/1015' target='_blank' rel='noopener'>see our best practices guide</a>.",
+      "subtitle_how_to_use": "How to use photos ?",
+      "use_title_viewer": "Photo viewer",
+      "use_title_api": "API",
+      "use_title_detect": "Detecting objects in a photo",
+      "use_desc_viewer": "Browse photos through our interactive web viewer and explore our entire photo catalog.",
+      "use_desc_api": "Access photo data and metadata using our web API, compliant with \"OGC Feature\" and \"STAC\" standards.",
+      "use_desc_detect": "Using artificial intelligence, we find and classify objects visible in images, such as road signs or street furniture. This data will soon be available to everyone, free of charge and under an open license.",
+      "use_alt_viewer": "Illustration of an eye which represents a viewer",
+      "use_alt_api": "Illustration of a digital machinery which represents an API'",
+      "use_alt_detect": "Illustration of object detection",
+      "subtitle_how_to_contribute": "How to get involved in the community ?",
+      "how_to_contribute_link": {
+        "title": "Governance workshops",
+        "description": "Discussions to collaboratively decide on the management of the project."
+      },
+      "how_to_contribute_button_1": {
+        "title": "The Geocommons forum",
+        "text": "Go to the forum",
+        "description": "The privileged discussion space of the Panoramax community, open to everyone.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_2": {
+        "title": "CNIG working group",
+        "text": "Go",
+        "description": "Location for defining the standard for collecting and distributing photos.",
+        "url": "https://forum.geocommuns.fr/c/panoramax/6"
+      },
+      "how_to_contribute_button_3": {
+        "title": "Discussion time",
+        "text": "See the full agenda",
+        "event_link_text": "on visio on Jitsi",
+        "event_text_1": "Monthly exchange time every 2nd Monday of the month at 5 p.m.",
+        "event_text_2": "{date} at 17:00 (CET)",
+        "event_link_url": "https://meet.jit.si/panoramax",
+        "url": "https://cryptpad.fr/calendar/#/2/calendar/view/WKKDBDTk8kWe5-lm+Z9jLksbn9hkKDRE2dVNj4AKEZk/"
+      }
+    },
+    "useCases": {
+      "main_title": "Why contribute to Panoramax ?",
+      "main_description": "Panoramax est un commun numérique libre permettant le partage et l'exploitation de photos de terrain.\nToute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax.\nCes données sont ensuite librement accessibles et réutilisables.",
+      "alt_main_image": "Field image showing numerous Panoramax use cases",
+      "subtitle_use_cases": "A lot of use cases",
+      "useCase_1": {
+        "title": "The example of the community of Val Parisis",
+        "description": "Val Parisis contributes to Panoramax and aims to make a complete transition from Mapillary to Panoramax. The community already has numerous use cases linked to the publication and use of photos:\n• update up-to-date business data (parking, roads, etc.)\n• before/after control of work zones\n• control of topographical plans delivered by service providers\n • control of vector PCRS delivered\n• etc",
+        "image": {
+          "url": "mairie-icon.svg",
+          "alt": "Icon representing an official building"
+        }
+      },
+      "useCase_2": {
+        "title": "Traffic sign detection",
+        "description": "The ability to detect road signs from Panoramax photos allows, for example, IGN or OpenStreetMap to improve geographic data associated with road data: speed limits, prohibitions of all kinds.\nThis detection also makes it possible to identify, for example, PRM parking lots and to power applications helping disabled people.",
+        "image": {
+          "url": "panneaux-routiers-icon.svg",
+          "alt": "Icon representing roads signs"
+        }
+      },
+      "useCase_3": {
+        "title": "API access to different types of points of interest",
+        "description": "The Panoramax API allows any site or application to easily integrate a photo of a place or point of interest as an illustration.\n\nThis is what example <a href='https://cartes.app/' target='_blank' rel='noopener'>cartes.app</a>",
+        "image": {
+          "url": "api-white.svg",
+          "alt": "API icon"
+        }
+      },
+      "useCase_4": {
+        "title": "Where we're going, we don't need a road",
+        "description": "Why limit yourself to the road domain?\nPhoto-mapping waterways, landscapes, the interior of forests, complementing day photos with night photos allows new and innovative uses .\nThe study of the banks, the underside of bridges, the state of public lighting... all this can also be done with Panoramax!",
+        "image": {
+          "url": "river.svg",
+          "alt": "River icon"
+        }
+      }
+    }
+  }
+}
