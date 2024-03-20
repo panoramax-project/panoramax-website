@@ -73,6 +73,7 @@
       "why_title": "Why contribute to Panoramax ?",
       "why_description": "Panoramax allows the contribution and reuse of field photos for many use cases such as: management of street furniture and roads, identification of traffic signs, etc.",
       "why_button": "See the use cases",
+      "stats_button": "See statistics",
       "metrics_title": "A growing community",
       "metrics_1": {
         "number": "10",
@@ -238,9 +239,6 @@
           "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
         }
       }
-    },
-    "pictures": {
-      "title": "Panoramax global photos catalog"
     },
     "faq": {
       "title": "Frequently asked questions : Panoramax and anonymization",

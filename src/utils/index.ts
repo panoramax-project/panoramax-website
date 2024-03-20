@@ -34,5 +34,13 @@ function getSecondMondayDate() {
   } else monday = secondMonday
   return monday
 }
+function formatMillions(num: number): string {
+  const millions = num / 1000000
+  const formattedMillions = millions.toLocaleString('en-US', {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1
+  })
+  return formattedMillions
+}
 
-export { getSecondMondayDate }
+export { getSecondMondayDate, formatMillions }

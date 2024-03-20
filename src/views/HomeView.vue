@@ -71,7 +71,7 @@
       </h2>
       <ol class="wrapper-list wrapper-metrics">
         <Metrics
-          v-for="metric in metrics"
+          v-for="metric in stats"
           :key="metric.number"
           :number="metric.number"
           :text="metric.text"
@@ -244,9 +244,10 @@ import Metrics from '@/components/Metrics.vue'
 import Instance from '@/components/Instance.vue'
 import JoinUs from '@/components/JoinUs.vue'
 import type { Image } from '@/components/ImageInterface'
-import { getSecondMondayDate } from '../utils/index'
+import { getSecondMondayDate, formatMillions } from '../utils/index'
 
 let viewer = ref()
+let stats = ref<MetricsData[]>()
 interface MetricsData {
   number: string
   text: string
@@ -269,24 +270,6 @@ interface joinUsData extends Partial<JoinUsEventData> {
   url: string
 }
 const { t } = useI18n()
-
-const metrics = <MetricsData[]>[
-  {
-    number: t('pages.home.metrics_1.number'),
-    text: t('pages.home.metrics_1.text'),
-    description: t('pages.home.metrics_1.description')
-  },
-  {
-    number: t('pages.home.metrics_2.number'),
-    text: t('pages.home.metrics_2.text'),
-    description: t('pages.home.metrics_2.description')
-  },
-  {
-    number: t('pages.home.metrics_3.number'),
-    text: t('pages.home.metrics_3.text'),
-    description: t('pages.home.metrics_3.description')
-  }
-]
 
 const howItWorks = <HowItWorksData[]>[
   {
@@ -401,12 +384,32 @@ const medias = <Image[]>[
   }
 ]
 
-onMounted(() => {
+onMounted(async () => {
+  const api = import.meta.env.VITE_API_URL
   viewer.value = new Viewer(
     'viewer', // Div ID
-    'https://api.panoramax.xyz/api',
+    api,
     { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0' }
   )
+  const data = await fetch(`${api}stats/`)
+  const jsonData = await data.json()
+  stats.value = [
+    {
+      number: formatMillions(jsonData.generic_stats.nb_pictures),
+      text: t('pages.home.metrics_1.text'),
+      description: t('pages.home.metrics_1.description')
+    },
+    {
+      number: jsonData.generic_stats.collections_length_km.toString(),
+      text: t('pages.home.metrics_2.text'),
+      description: t('pages.home.metrics_2.description')
+    },
+    {
+      number: jsonData.generic_stats.nb_contributors.toString(),
+      text: t('pages.home.metrics_3.text'),
+      description: t('pages.home.metrics_3.description')
+    }
+  ]
 })
 
 function img(name: string): string {
@@ -492,6 +495,7 @@ section:nth-child(even) {
 }
 .wrapper-metrics {
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .instances-section {
   background-color: var(--blue-dark);

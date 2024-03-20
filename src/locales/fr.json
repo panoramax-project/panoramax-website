@@ -73,19 +73,17 @@
       "why_title": "Pourquoi contribuer à Panoramax ?",
       "why_description": "Panoramax permet la contribution et la réutilisation de photos de terrain pour de nombreux cas d'usage comme : la gestion du mobilier urbain et des voiries, l'identification des panneaux de signalisation etc.",
       "why_button": "Voir les cas d'usage",
+      "stats_button": "Voir les statistiques",
       "metrics_title": "Une communauté grandissante",
       "metrics_1": {
-        "number": "14",
         "text": "millions",
         "description": "de photos sur Panoramax"
       },
       "metrics_2": {
-        "number": "150 000",
         "text": "km",
         "description": "de distance couverte"
       },
       "metrics_3": {
-        "number": "206",
         "text": "contributeurs",
         "description": "issus de plusieurs structures"
       },
@@ -239,9 +237,6 @@
         }
       }
     },
-    "pictures": {
-      "title": "Le catalogue de toutes les photos Panoramax"
-    },
     "faq": {
       "title": "Foire aux Questions : Panoramax & anonymisation",
       "introduction_title": "C'est quoi Panoramax ?",
@@ -372,6 +367,19 @@
           "alt": "Icone représentant un fleuve"
         }
       }
+    },
+    "stats": {
+      "stats_title": "Notre communauté grandit",
+      "stats_desc": "Retrouvez les statistiques relatives à Panoramax, par nombre de photos publiées, par nombre de kilomètres du territoire couvert et par nombre de contributeurs. Nous publions également des informations sur le nombre de réutilisations et cas d'usages.\n\nLes données sont mise à jour chaque nuit.",
+      "chart_line_desc": "d'augmentation en moyenne",
+      "chart_line_picture_title": "Évolution du nombre de photos par mois",
+      "chart_line_picture_desc": "{number} millions de photos publiées sur les instances publiques Panoramax et son évolution par mois.\n\nLa calcul a été effectué à partir de l'instance Panoramax de <a href='https://panoramax.ign.fr/' target='_blank' rel='noopener'>l'IGN</a> et <a href='https://panoramax.openstreetmap.fr/' target='_blank' rel='noopener'>d'OSM</a>.",
+      "chart_line_km_title": "Évolution de la distance couverte par mois",
+      "chart_line_km_desc": "{number} km de territoire (routes, chemins, cours d'eau) couvert sur toutes les instances publiques Panoramax et son évolution par mois.\n\nLa calcul a été effectué à partir de l'instance Panoramax de <a href='https://panoramax.ign.fr/' target='_blank' rel='noopener'>l'IGN</a> et <a href='https://panoramax.openstreetmap.fr/' target='_blank' rel='noopener'>d'OSM</a>.",
+      "chart_bar_contrib_title": "Contributeurs actifs par mois",
+      "doughnut_pictures_title": "Nombre de photos par instance",
+      "doughnut_km_title": "Couverture en km par instance",
+      "doughnut_contrib_title": "Nombre de contributeurs par instance"
     }
   }
 }

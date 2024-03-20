@@ -13,7 +13,6 @@ declare global {
     _paq: any[]
   }
 }
-
 const matomoHost = import.meta.env.VITE_MATOMO_HOST
 const matomoSiteId = import.meta.env.VITE_MATOMO_SITE_ID
 const matomoExist = matomoHost && matomoSiteId
@@ -30,7 +29,6 @@ const i18n = createI18n({
   }
 })
 const app = createApp(App)
-
 app.use(i18n)
 app.use(router)
 if (matomoExist) {
