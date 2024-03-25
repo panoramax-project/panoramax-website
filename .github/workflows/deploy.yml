@@ -21,9 +21,9 @@ jobs:
           yarn install
           yarn deploy
         env:
-          VITE_MATOMO_HOST: ${{ secrets.VITE_MATOMO_HOST }}
-          VITE_API_URL: ${{ secrets.VITE_API_URL }}
-          VITE_MATOMO_SITE_ID: ${{ secrets.VITE_MATOMO_SITE_ID }}
+          VITE_MATOMO_HOST: https://matomo.panoramax.xyz/
+          VITE_API_URL: https://api.panoramax.xyz/api/
+          VITE_MATOMO_SITE_ID: 2
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
