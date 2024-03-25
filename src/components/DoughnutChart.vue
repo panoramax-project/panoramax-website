@@ -6,21 +6,20 @@
 import { computed } from 'vue'
 import { DoughnutChart, useDoughnutChart } from 'vue-chart-3'
 import { Chart, registerables } from 'chart.js'
-import type { ChartData } from 'chart.js'
 Chart.register(...registerables)
 
 const props = defineProps({
   labels: {
     type: Array,
-    default: []
+    default: () => []
   },
   datasets: {
     type: Array,
-    default: null
+    default: () => []
   }
 })
 
-const doughnutData = computed<ChartData<'doughnut'>>(() => ({
+const doughnutData = computed(() => ({
   labels: props.labels,
   datasets: props.datasets
 }))

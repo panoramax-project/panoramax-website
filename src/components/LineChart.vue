@@ -8,7 +8,6 @@
 import { computed } from 'vue'
 import { LineChart, useLineChart } from 'vue-chart-3'
 import { Chart, registerables } from 'chart.js'
-import type { ChartData } from 'chart.js'
 Chart.register(...registerables)
 
 const props = defineProps({
@@ -22,7 +21,7 @@ const props = defineProps({
   }
 })
 
-const lineData = computed<ChartData<'line'>>(() => ({
+const lineData = computed(() => ({
   labels: props.labels,
   datasets: [
     {

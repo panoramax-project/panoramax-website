@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Image } from '@/components/ImageInterface'
+import type { Image } from '@/interfaces/index'
 interface Props {
   title: string
   description: string[]

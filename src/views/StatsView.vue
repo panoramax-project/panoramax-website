@@ -117,7 +117,7 @@ import { useI18n } from 'vue-i18n'
 import { formatMillions } from '@/utils'
 import { BarChart, useBarChart } from 'vue-chart-3'
 import { Chart, registerables } from 'chart.js'
-import type { ChartData } from 'chart.js'
+import type { ChartData } from '@/interfaces/index'
 Chart.register(...registerables)
 import Metrics from '@/components/Metrics.vue'
 import LineChart from '@/components/LineChart.vue'
@@ -140,7 +140,7 @@ interface MetricsData {
   description: string
 }
 const { t } = useI18n()
-const activeContribData = computed<ChartData<'bar'>>(() => ({
+const activeContribData = computed<ChartData>(() => ({
   labels: dataLabels.value,
   datasets: [
     {

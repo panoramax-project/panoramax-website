@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import UseCaseCard from '@/components/UseCasesCard.vue'
-import type { Image } from '@/components/ImageInterface'
+import type { Image } from '@/interfaces/index'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 interface UseCaseData {

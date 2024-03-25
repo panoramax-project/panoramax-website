@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import Link from '@/components/Link.vue'
-import type { Image } from '@/components/ImageInterface'
+import type { Image } from '@/interfaces/index'
 interface Props {
   url: string
   image: Image

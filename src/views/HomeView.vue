@@ -78,6 +78,13 @@
           :description="metric.description"
         />
       </ol>
+      <div class="entry-button">
+        <Link
+          :text="$t('pages.home.stats_button')"
+          look="button button--blue"
+          url="/stats"
+        />
+      </div>
     </section>
     <section class="home-section instances-section">
       <h2 class="home-section-title">
@@ -235,7 +242,7 @@
   </main>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Viewer } from 'geovisio'
 import Link from '@/components/Link.vue'
@@ -243,7 +250,7 @@ import HowItWorks from '@/components/HowItWorks.vue'
 import Metrics from '@/components/Metrics.vue'
 import Instance from '@/components/Instance.vue'
 import JoinUs from '@/components/JoinUs.vue'
-import type { Image } from '@/components/ImageInterface'
+import type { Image } from '@/interfaces/index'
 import { getSecondMondayDate, formatMillions } from '../utils/index'
 
 let viewer = ref()
@@ -384,6 +391,9 @@ const medias = <Image[]>[
   }
 ]
 
+onUnmounted(() => {
+  window.location.hash = ''
+})
 onMounted(async () => {
   const api = import.meta.env.VITE_API_URL
   viewer.value = new Viewer(

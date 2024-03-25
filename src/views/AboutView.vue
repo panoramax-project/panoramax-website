@@ -55,7 +55,7 @@
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n'
-import type { Image } from '@/components/ImageInterface'
+import type { Image } from '@/interfaces/index'
 
 interface ArticleData {
   subtitle: string
