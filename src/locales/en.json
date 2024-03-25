@@ -7,7 +7,7 @@
       "contribute": "How to contribute ?",
       "use_cases": "Why contribute ?",
       "faq": "F.A.Q",
-      "panoramax_instance": "Instances",
+      "all_pictures": "All the pictures",
       "contact": "Contact us",
       "instance_ign": "IGN instance",
       "instance_osm": "OSM instance"
@@ -107,7 +107,7 @@
       },
       "joinUs_button_1": {
         "title": "Join the community",
-        "text": "Enter the forum",
+        "text": "Go to the forum",
         "url": "https://forum.geocommuns.fr/c/panoramax/6"
       },
       "joinUs_button_2": {

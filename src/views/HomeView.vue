@@ -242,7 +242,7 @@
   </main>
 </template>
 <script lang="ts" setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Viewer } from 'geovisio'
 import Link from '@/components/Link.vue'
@@ -278,122 +278,129 @@ interface joinUsData extends Partial<JoinUsEventData> {
 }
 const { t } = useI18n()
 
-const howItWorks = <HowItWorksData[]>[
-  {
-    title: t('pages.home.howItWorks_1.title'),
-    description: [
-      t('pages.home.howItWorks_1.description_1'),
-      t('pages.home.howItWorks_1.description_2'),
-      t('pages.home.howItWorks_1.description_3')
-    ],
-    image: {
-      url: t('pages.home.howItWorks_1.image.url'),
-      alt: t('pages.home.howItWorks_1.image.alt')
+const howItWorks = computed((): HowItWorksData[] => {
+  return [
+    {
+      title: t('pages.home.howItWorks_1.title'),
+      description: [
+        t('pages.home.howItWorks_1.description_1'),
+        t('pages.home.howItWorks_1.description_2'),
+        t('pages.home.howItWorks_1.description_3')
+      ],
+      image: {
+        url: t('pages.home.howItWorks_1.image.url'),
+        alt: t('pages.home.howItWorks_1.image.alt')
+      }
+    },
+    {
+      title: t('pages.home.howItWorks_2.title'),
+      description: [
+        t('pages.home.howItWorks_2.description_1'),
+        t('pages.home.howItWorks_2.description_2'),
+        t('pages.home.howItWorks_2.description_3')
+      ],
+      image: {
+        url: t('pages.home.howItWorks_2.image.url'),
+        alt: t('pages.home.howItWorks_2.image.alt')
+      }
+    },
+    {
+      title: t('pages.home.howItWorks_3.title'),
+      description: [
+        t('pages.home.howItWorks_3.description_1'),
+        t('pages.home.howItWorks_3.description_2'),
+        t('pages.home.howItWorks_3.description_3')
+      ],
+      image: {
+        url: t('pages.home.howItWorks_3.image.url'),
+        alt: t('pages.home.howItWorks_3.image.alt')
+      }
     }
-  },
-  {
-    title: t('pages.home.howItWorks_2.title'),
-    description: [
-      t('pages.home.howItWorks_2.description_1'),
-      t('pages.home.howItWorks_2.description_2'),
-      t('pages.home.howItWorks_2.description_3')
-    ],
-    image: {
-      url: t('pages.home.howItWorks_2.image.url'),
-      alt: t('pages.home.howItWorks_2.image.alt')
-    }
-  },
-  {
-    title: t('pages.home.howItWorks_3.title'),
-    description: [
-      t('pages.home.howItWorks_3.description_1'),
-      t('pages.home.howItWorks_3.description_2'),
-      t('pages.home.howItWorks_3.description_3')
-    ],
-    image: {
-      url: t('pages.home.howItWorks_3.image.url'),
-      alt: t('pages.home.howItWorks_3.image.alt')
-    }
-  }
-]
-const joinUs_link = <joinUsData>{
-  title: t('pages.home.joinUs_link.title')
-}
-const joinUsButtons = <joinUsData[]>[
-  {
-    title: t('pages.home.joinUs_button_1.title'),
-    text: t('pages.home.joinUs_button_1.text'),
-    url: t('pages.home.joinUs_button_1.url')
-  },
-  {
-    title: t('pages.home.joinUs_button_2.title'),
-    text: t('pages.home.joinUs_button_2.text'),
-    url: t('pages.home.joinUs_button_2.url'),
-    event_text_1: t('pages.home.joinUs_button_2.event_text_1'),
-    event_text_2: t('pages.home.joinUs_button_2.event_text_2', {
-      date: getSecondMondayDate()
-    }),
-    event_link_text: t('pages.home.joinUs_button_2.event_link_text'),
-    event_link_url: t('pages.home.joinUs_button_2.event_link_url')
-  }
-]
-const communities = <Image[]>[
-  {
-    url: t('pages.home.community_logo_1.url'),
-    alt: t('pages.home.community_logo_1.alt')
-  },
-  {
-    url: t('pages.home.community_logo_2.url'),
-    alt: t('pages.home.community_logo_2.alt')
-  },
-  {
-    url: t('pages.home.community_logo_3.url'),
-    alt: t('pages.home.community_logo_3.alt')
-  },
-  {
-    url: t('pages.home.community_logo_4.url'),
-    alt: t('pages.home.community_logo_4.alt')
-  },
-  {
-    url: t('pages.home.community_logo_5.url'),
-    alt: t('pages.home.community_logo_5.alt')
-  },
-  {
-    url: t('pages.home.community_logo_6.url'),
-    alt: t('pages.home.community_logo_6.alt')
-  },
-  {
-    url: t('pages.home.community_logo_7.url'),
-    alt: t('pages.home.community_logo_7.alt')
-  }
-]
-
-const medias = <Image[]>[
-  {
-    url: t('pages.home.media_logo_1.url'),
-    alt: t('pages.home.media_logo_1.alt'),
-    link: t('pages.home.media_logo_1.link')
-  },
-  {
-    url: t('pages.home.media_logo_2.url'),
-    alt: t('pages.home.media_logo_2.alt'),
-    link: t('pages.home.media_logo_2.link')
-  },
-  {
-    url: t('pages.home.media_logo_3.url'),
-    alt: t('pages.home.media_logo_3.alt'),
-    link: t('pages.home.media_logo_3.link')
-  },
-  {
-    url: t('pages.home.media_logo_4.url'),
-    alt: t('pages.home.media_logo_4.alt'),
-    link: t('pages.home.media_logo_4.link')
-  }
-]
-
-onUnmounted(() => {
-  window.location.hash = ''
+  ]
 })
+
+const joinUs_link = computed((): { title: string } => {
+  return {
+    title: t('pages.home.joinUs_link.title')
+  }
+})
+const joinUsButtons = computed((): joinUsData[] => {
+  return [
+    {
+      title: t('pages.home.joinUs_button_1.title'),
+      text: t('pages.home.joinUs_button_1.text'),
+      url: t('pages.home.joinUs_button_1.url')
+    },
+    {
+      title: t('pages.home.joinUs_button_2.title'),
+      text: t('pages.home.joinUs_button_2.text'),
+      url: t('pages.home.joinUs_button_2.url'),
+      event_text_1: t('pages.home.joinUs_button_2.event_text_1'),
+      event_text_2: t('pages.home.joinUs_button_2.event_text_2', {
+        date: getSecondMondayDate()
+      }),
+      event_link_text: t('pages.home.joinUs_button_2.event_link_text'),
+      event_link_url: t('pages.home.joinUs_button_2.event_link_url')
+    }
+  ]
+})
+const communities = computed((): Image[] => {
+  return [
+    {
+      url: t('pages.home.community_logo_1.url'),
+      alt: t('pages.home.community_logo_1.alt')
+    },
+    {
+      url: t('pages.home.community_logo_2.url'),
+      alt: t('pages.home.community_logo_2.alt')
+    },
+    {
+      url: t('pages.home.community_logo_3.url'),
+      alt: t('pages.home.community_logo_3.alt')
+    },
+    {
+      url: t('pages.home.community_logo_4.url'),
+      alt: t('pages.home.community_logo_4.alt')
+    },
+    {
+      url: t('pages.home.community_logo_5.url'),
+      alt: t('pages.home.community_logo_5.alt')
+    },
+    {
+      url: t('pages.home.community_logo_6.url'),
+      alt: t('pages.home.community_logo_6.alt')
+    },
+    {
+      url: t('pages.home.community_logo_7.url'),
+      alt: t('pages.home.community_logo_7.alt')
+    }
+  ]
+})
+const medias = computed((): Image[] => {
+  return [
+    {
+      url: t('pages.home.media_logo_1.url'),
+      alt: t('pages.home.media_logo_1.alt'),
+      link: t('pages.home.media_logo_1.link')
+    },
+    {
+      url: t('pages.home.media_logo_2.url'),
+      alt: t('pages.home.media_logo_2.alt'),
+      link: t('pages.home.media_logo_2.link')
+    },
+    {
+      url: t('pages.home.media_logo_3.url'),
+      alt: t('pages.home.media_logo_3.alt'),
+      link: t('pages.home.media_logo_3.link')
+    },
+    {
+      url: t('pages.home.media_logo_4.url'),
+      alt: t('pages.home.media_logo_4.alt'),
+      link: t('pages.home.media_logo_4.link')
+    }
+  ]
+})
+
 onMounted(async () => {
   const api = import.meta.env.VITE_API_URL
   viewer.value = new Viewer(

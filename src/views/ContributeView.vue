@@ -218,59 +218,66 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
 import JoinUs from '@/components/JoinUs.vue'
 import Link from '@/components/Link.vue'
 import { useI18n } from 'vue-i18n'
 import { getSecondMondayDate } from '@/utils'
 const { t } = useI18n()
-interface HowToContributeEventData {
-  event_text_1: string
-  event_text_2: string
-  event_link_text: string
-  event_link_url: string
-}
-interface HowToContributeData extends Partial<HowToContributeEventData> {
+interface HowToContributeData {
   title: string
   text: string
-  description: string
   url: string
+  description?: string
+  event_text_1?: string
+  event_text_2?: string
+  event_link_text?: string
+  event_link_url?: string
 }
-const how_to_contribute_link = <HowToContributeData>{
-  title: t('pages.contribute.how_to_contribute_link.title'),
-  description: t('pages.contribute.how_to_contribute_link.description')
-}
-const how_to_contribute_buttons = <HowToContributeData[]>[
-  {
-    title: t('pages.contribute.how_to_contribute_button_1.title'),
-    text: t('pages.contribute.how_to_contribute_button_1.text'),
-    description: t('pages.contribute.how_to_contribute_button_1.description'),
-    url: t('pages.contribute.how_to_contribute_button_1.url')
-  },
-  {
-    title: t('pages.contribute.how_to_contribute_button_2.title'),
-    text: t('pages.contribute.how_to_contribute_button_2.text'),
-    description: t('pages.contribute.how_to_contribute_button_2.description'),
-    url: t('pages.contribute.how_to_contribute_button_2.url')
-  },
-  {
-    title: t('pages.contribute.how_to_contribute_button_3.title'),
-    text: t('pages.contribute.how_to_contribute_button_3.text'),
-    url: t('pages.contribute.how_to_contribute_button_3.url'),
-    event_text_1: t('pages.contribute.how_to_contribute_button_3.event_text_1'),
-    event_text_2: t(
-      'pages.contribute.how_to_contribute_button_3.event_text_2',
-      {
-        date: getSecondMondayDate()
-      }
-    ),
-    event_link_text: t(
-      'pages.contribute.how_to_contribute_button_3.event_link_text'
-    ),
-    event_link_url: t(
-      'pages.contribute.how_to_contribute_button_3.event_link_url'
-    )
+const how_to_contribute_link = computed(
+  (): { title: string; description: string } => {
+    return {
+      title: t('pages.contribute.how_to_contribute_link.title'),
+      description: t('pages.contribute.how_to_contribute_link.description')
+    }
   }
-]
+)
+const how_to_contribute_buttons = computed((): HowToContributeData[] => {
+  return [
+    {
+      title: t('pages.contribute.how_to_contribute_button_1.title'),
+      text: t('pages.contribute.how_to_contribute_button_1.text'),
+      description: t('pages.contribute.how_to_contribute_button_1.description'),
+      url: t('pages.contribute.how_to_contribute_button_1.url')
+    },
+    {
+      title: t('pages.contribute.how_to_contribute_button_2.title'),
+      text: t('pages.contribute.how_to_contribute_button_2.text'),
+      description: t('pages.contribute.how_to_contribute_button_2.description'),
+      url: t('pages.contribute.how_to_contribute_button_2.url')
+    },
+    {
+      title: t('pages.contribute.how_to_contribute_button_3.title'),
+      text: t('pages.contribute.how_to_contribute_button_3.text'),
+      url: t('pages.contribute.how_to_contribute_button_3.url'),
+      event_text_1: t(
+        'pages.contribute.how_to_contribute_button_3.event_text_1'
+      ),
+      event_text_2: t(
+        'pages.contribute.how_to_contribute_button_3.event_text_2',
+        {
+          date: getSecondMondayDate()
+        }
+      ),
+      event_link_text: t(
+        'pages.contribute.how_to_contribute_button_3.event_link_text'
+      ),
+      event_link_url: t(
+        'pages.contribute.how_to_contribute_button_3.event_link_url'
+      )
+    }
+  ]
+})
 </script>
 
 <style scoped>
