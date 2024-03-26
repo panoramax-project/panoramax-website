@@ -90,7 +90,7 @@
                 data: dataPicturesInstancesPercentage,
                 backgroundColor: ['#71777A', '#76CC6C'],
                 datalabels: {
-                  formatter: function (value, context) {
+                  formatter: function (value: any, context: any) {
                     return `${formatNumber(
                       dataPicturesInstances[context.dataIndex]
                     )} millions`
@@ -112,7 +112,7 @@
                 data: dataCovKmInstancesPercentage,
                 backgroundColor: ['#71777A', '#76CC6C'],
                 datalabels: {
-                  formatter: function (value, context) {
+                  formatter: function (value: any, context: any) {
                     return formatNumber(dataCovKmInstances[context.dataIndex])
                   },
                   ...doughnutProperties
@@ -132,7 +132,7 @@
                 data: dataContribInstancesPercentage,
                 backgroundColor: ['#71777A', '#76CC6C'],
                 datalabels: {
-                  formatter: function (value, context) {
+                  formatter: function (value: any, context: any) {
                     return formatNumber(dataContribInstances[context.dataIndex])
                   },
                   ...doughnutProperties
