@@ -34,13 +34,10 @@ function getSecondMondayDate() {
   } else monday = secondMonday
   return monday
 }
-function formatMillions(num: number): string {
-  const millions = num / 1000000
-  const formattedMillions = millions.toLocaleString('en-US', {
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1
-  })
-  return formattedMillions
+function formatNumber(num: number): string {
+  if (num < 1000) return String(num)
+  if (num < 1000000)
+    return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
+  else return (num / 1000000).toFixed(1)
 }
-
-export { getSecondMondayDate, formatMillions }
+export { getSecondMondayDate, formatNumber }

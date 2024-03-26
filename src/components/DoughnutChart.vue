@@ -25,7 +25,18 @@ const doughnutData = computed(() => ({
 }))
 
 const { doughnutChartProps } = useDoughnutChart({
-  chartData: doughnutData
+  chartData: doughnutData,
+  options: {
+    plugins: {
+      tooltip: {
+        callbacks: {
+          label: function (tooltipItem: any) {
+            return ` ${tooltipItem.formattedValue}%`
+          }
+        }
+      }
+    }
+  }
 })
 </script>
 

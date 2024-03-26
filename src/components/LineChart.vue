@@ -29,7 +29,8 @@ const lineData = computed(() => ({
       borderColor: '#2954E9',
       tension: 0.3,
       backgroundColor: '#f6fafe',
-      pointRadius: 5
+      pointRadius: 5,
+      datalabels: { align: 'top' }
     }
   ]
 }))

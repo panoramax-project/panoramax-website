@@ -18,7 +18,7 @@
         <h2 class="charts-subtitle">
           {{ $t('pages.stats.chart_line_picture_title') }}
         </h2>
-        <div class="charts-line">
+        <div class="charts">
           <LineChart
             :labels="dataLabels"
             :datasets="[{ data: dataPictures }]"
@@ -26,7 +26,8 @@
           <div class="wrapper-stat-desc">
             <StatsBlockDescription
               v-if="stats"
-              :number="averagePictures"
+              :title="$t('pages.stats.chart_pictures_title')"
+              :sub-title="$t('pages.stats.chart_desc')"
               :text-desc="
                 $t('pages.stats.chart_line_picture_desc', {
                   number: stats[0].number
@@ -40,12 +41,13 @@
         <h2 class="charts-subtitle">
           {{ $t('pages.stats.chart_line_km_title') }}
         </h2>
-        <div class="charts-line">
+        <div class="charts">
           <LineChart :labels="dataLabels" :datasets="[{ data: dataCovKm }]" />
           <div class="wrapper-stat-desc">
             <StatsBlockDescription
               v-if="stats"
-              :number="averageKm"
+              :title="$t('pages.stats.chart_km_title')"
+              :sub-title="$t('pages.stats.chart_desc')"
               :text-desc="
                 $t('pages.stats.chart_line_km_desc', {
                   number: stats[1].number
@@ -59,7 +61,22 @@
         <h2 class="charts-subtitle">
           {{ $t('pages.stats.chart_bar_contrib_title') }}
         </h2>
-        <BarChart v-bind="barChartProps" />
+        <div class="charts">
+          <div class="wrapper-bar-charts">
+            <BarChart v-bind="barChartProps" />
+          </div>
+          <div class="wrapper-stat-desc">
+            <StatsBlockDescription
+              v-if="stats"
+              :title="$t('pages.stats.chart_contrib_title')"
+              :text-desc="
+                $t('pages.stats.chart_bar_contrib_desc', {
+                  number: stats[2].number
+                })
+              "
+            />
+          </div>
+        </div>
       </div>
       <div class="wrapper-charts-doughnut">
         <div class="wrapper-doughnut-charts">
@@ -70,8 +87,16 @@
             :labels="['IGN', 'OSM-FR']"
             :datasets="[
               {
-                data: dataPicturesInstances,
-                backgroundColor: ['#71777A', '#76CC6C']
+                data: dataPicturesInstancesPercentage,
+                backgroundColor: ['#71777A', '#76CC6C'],
+                datalabels: {
+                  formatter: function (value, context) {
+                    return `${formatNumber(
+                      dataPicturesInstances[context.dataIndex]
+                    )} millions`
+                  },
+                  ...doughnutProperties
+                }
               }
             ]"
           />
@@ -84,9 +109,14 @@
             :labels="['IGN', 'OSM-FR']"
             :datasets="[
               {
-                label: 'Nombre de km couverts par instance',
-                data: dataCovKmInstances,
-                backgroundColor: ['#71777A', '#76CC6C']
+                data: dataCovKmInstancesPercentage,
+                backgroundColor: ['#71777A', '#76CC6C'],
+                datalabels: {
+                  formatter: function (value, context) {
+                    return formatNumber(dataCovKmInstances[context.dataIndex])
+                  },
+                  ...doughnutProperties
+                }
               }
             ]"
           />
@@ -99,9 +129,14 @@
             :labels="['IGN', 'OSM-FR']"
             :datasets="[
               {
-                label: 'Nombre de contributeurs par instance',
-                data: dataContribInstances,
-                backgroundColor: ['#71777A', '#76CC6C']
+                data: dataContribInstancesPercentage,
+                backgroundColor: ['#71777A', '#76CC6C'],
+                datalabels: {
+                  formatter: function (value, context) {
+                    return formatNumber(dataContribInstances[context.dataIndex])
+                  },
+                  ...doughnutProperties
+                }
               }
             ]"
           />
@@ -114,11 +149,12 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { formatMillions } from '@/utils'
+import { formatNumber } from '@/utils'
 import { BarChart, useBarChart } from 'vue-chart-3'
 import { Chart, registerables } from 'chart.js'
+import ChartDataLabels from 'chartjs-plugin-datalabels'
 import type { ChartData } from '@/interfaces/index'
-Chart.register(...registerables)
+Chart.register(...registerables, ChartDataLabels)
 import Metrics from '@/components/Metrics.vue'
 import LineChart from '@/components/LineChart.vue'
 import DoughnutChart from '@/components/DoughnutChart.vue'
@@ -128,8 +164,11 @@ let stats = ref<MetricsData[]>()
 const dataCovKm = ref<number[]>([])
 const dataPictures = ref<number[]>([])
 const dataCovKmInstances = ref<number[]>([])
+const dataCovKmInstancesPercentage = ref<number[]>([])
 const dataPicturesInstances = ref<number[]>([])
+const dataPicturesInstancesPercentage = ref<number[]>([])
 const dataContribInstances = ref<number[]>([])
+const dataContribInstancesPercentage = ref<number[]>([])
 const dataActiveContrib = ref<number[]>([])
 const dataLabels = ref<string[]>([])
 const averagePictures = ref<string>('')
@@ -140,13 +179,29 @@ interface MetricsData {
   description: string
 }
 const { t } = useI18n()
+
+const doughnutProperties = {
+  color: '#0A1F69',
+  align: 'center',
+  backgroundColor: 'white',
+  borderStyle: 'solid',
+  borderWidth: '1',
+  borderColor: '#0A1F69',
+  borderRadius: '5',
+  font: {
+    weight: 'bold'
+  }
+}
 const activeContribData = computed<ChartData>(() => ({
   labels: dataLabels.value,
   datasets: [
     {
       data: dataActiveContrib.value,
       backgroundColor: ['#0A1F69'],
-      borderRadius: 5
+      borderRadius: 5,
+      datalabels: {
+        color: 'white'
+      }
     }
   ]
 }))
@@ -166,38 +221,73 @@ onMounted(async () => {
   const api = import.meta.env.VITE_API_URL
   const data = await fetch(`${api}stats/`)
   const jsonData = await data.json()
+  dataCovKmInstancesPercentage.value = [
+    calcPercentageTwoNumber(
+      jsonData.stats_by_instance.ign.approximated_coverage_km,
+      jsonData.stats_by_instance['osm-fr'].approximated_coverage_km,
+      jsonData.stats_by_instance.ign.approximated_coverage_km
+    ),
+    calcPercentageTwoNumber(
+      jsonData.stats_by_instance.ign.approximated_coverage_km,
+      jsonData.stats_by_instance['osm-fr'].approximated_coverage_km,
+      jsonData.stats_by_instance['osm-fr'].approximated_coverage_km
+    )
+  ]
   dataCovKmInstances.value = [
     jsonData.stats_by_instance.ign.approximated_coverage_km,
     jsonData.stats_by_instance['osm-fr'].approximated_coverage_km
+  ]
+  dataPicturesInstancesPercentage.value = [
+    calcPercentageTwoNumber(
+      jsonData.stats_by_instance.ign.nb_pictures,
+      jsonData.stats_by_instance['osm-fr'].nb_pictures,
+      jsonData.stats_by_instance.ign.nb_pictures
+    ),
+    calcPercentageTwoNumber(
+      jsonData.stats_by_instance.ign.nb_pictures,
+      jsonData.stats_by_instance['osm-fr'].nb_pictures,
+      jsonData.stats_by_instance['osm-fr'].nb_pictures
+    )
   ]
   dataPicturesInstances.value = [
     jsonData.stats_by_instance.ign.nb_pictures,
     jsonData.stats_by_instance['osm-fr'].nb_pictures
   ]
+  dataContribInstancesPercentage.value = [
+    calcPercentageTwoNumber(
+      jsonData.stats_by_instance.ign.nb_contributors,
+      jsonData.stats_by_instance['osm-fr'].nb_contributors,
+      jsonData.stats_by_instance.ign.nb_contributors
+    ),
+    calcPercentageTwoNumber(
+      jsonData.stats_by_instance.ign.nb_contributors,
+      jsonData.stats_by_instance['osm-fr'].nb_contributors,
+      jsonData.stats_by_instance['osm-fr'].nb_contributors
+    )
+  ]
   dataContribInstances.value = [
     jsonData.stats_by_instance.ign.nb_contributors,
     jsonData.stats_by_instance['osm-fr'].nb_contributors
   ]
+
   stats.value = [
     {
-      number: formatMillions(jsonData.generic_stats.nb_pictures),
+      number: formatNumber(jsonData.generic_stats.nb_pictures),
       text: t('pages.home.metrics_1.text'),
       description: t('pages.home.metrics_1.description')
     },
     {
-      number: jsonData.generic_stats.collections_length_km.toString(),
+      number: formatNumber(jsonData.generic_stats.collections_length_km),
       text: t('pages.home.metrics_2.text'),
       description: t('pages.home.metrics_2.description')
     },
     {
-      number: jsonData.generic_stats.nb_contributors.toString(),
+      number: jsonData.generic_stats.nb_contributors,
       text: t('pages.home.metrics_3.text'),
       description: t('pages.home.metrics_3.description')
     }
   ]
-  let percentagePictures: number[] = []
-  let percentageKm: number[] = []
-  Object.keys(jsonData.stats_by_upload_month).forEach(function (key, index) {
+  Object.keys(jsonData.stats_by_upload_month).forEach(function (key) {
     const approximated_coverage_km =
       jsonData.stats_by_upload_month[key].ign.approximated_coverage_km +
       jsonData.stats_by_upload_month[key]['osm-fr'].approximated_coverage_km
@@ -234,22 +324,21 @@ onMounted(async () => {
       obj[key].nb_active_contributors
     ]
     dataCovKm.value = [...dataCovKm.value, obj[key].approximated_coverage_km]
-    if (index === 0) return
-    percentagePictures.push(calcAverage(dataPictures.value, nb_pictures, index))
-    percentageKm.push(
-      calcAverage(dataCovKm.value, collections_length_km, index)
-    )
   })
-  averagePictures.value = `+${calcPercentage(percentagePictures)}%`
-  averageKm.value = `+${calcPercentage(percentageKm)}%`
+  averagePictures.value = `${dataLabels.value.length + 1} ${t(
+    'pages.stats.stats_month'
+  )}`
+  averageKm.value = `${dataLabels.value.length + 1} ${t(
+    'pages.stats.stats_month'
+  )}`
 })
-function calcAverage(nbArray: number[], nb: number, index: number): number {
-  const prevValPictures = nbArray[index - 1]
-  return Math.round(((nb - prevValPictures) / prevValPictures) * 100)
-}
-function calcPercentage(percentage: number[]): number {
-  const totalPercent = percentage.reduce((partialSum, a) => partialSum + a, 0)
-  return Math.round(totalPercent / percentage.length)
+function calcPercentageTwoNumber(
+  numberOne: number,
+  numberTwo: number,
+  numberToCalc: number
+) {
+  const total = numberOne + numberTwo
+  return Math.round((numberToCalc / total) * 100)
 }
 </script>
 
@@ -278,11 +367,14 @@ function calcPercentage(percentage: number[]): number {
   margin-bottom: 2rem;
   text-align: center;
 }
-.charts-line {
+.charts {
   display: flex;
   width: 100%;
 }
-.wrapper-charts:nth-child(odd) .charts-line {
+.wrapper-bar-charts {
+  width: 100%;
+}
+.wrapper-charts:nth-child(odd) .charts {
   flex-direction: row-reverse;
 }
 .wrapper-charts:nth-child(odd) .wrapper-stat-desc {
@@ -327,8 +419,8 @@ function calcPercentage(percentage: number[]): number {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .charts-line,
-  .wrapper-charts:nth-child(odd) .charts-line {
+  .charts,
+  .wrapper-charts:nth-child(odd) .charts {
     flex-direction: column;
   }
   .wrapper-stat-desc {

@@ -251,7 +251,7 @@ import Metrics from '@/components/Metrics.vue'
 import Instance from '@/components/Instance.vue'
 import JoinUs from '@/components/JoinUs.vue'
 import type { Image } from '@/interfaces/index'
-import { getSecondMondayDate, formatMillions } from '../utils/index'
+import { getSecondMondayDate, formatNumber } from '../utils/index'
 
 let viewer = ref()
 let stats = ref<MetricsData[]>()
@@ -412,17 +412,19 @@ onMounted(async () => {
   const jsonData = await data.json()
   stats.value = [
     {
-      number: formatMillions(jsonData.generic_stats.nb_pictures),
+      number: formatNumber(jsonData.generic_stats.nb_pictures),
       text: t('pages.home.metrics_1.text'),
       description: t('pages.home.metrics_1.description')
     },
     {
-      number: jsonData.generic_stats.collections_length_km.toString(),
+      number: formatNumber(
+        jsonData.generic_stats.collections_length_km.toString()
+      ),
       text: t('pages.home.metrics_2.text'),
       description: t('pages.home.metrics_2.description')
     },
     {
-      number: jsonData.generic_stats.nb_contributors.toString(),
+      number: formatNumber(jsonData.generic_stats.nb_contributors.toString()),
       text: t('pages.home.metrics_3.text'),
       description: t('pages.home.metrics_3.description')
     }

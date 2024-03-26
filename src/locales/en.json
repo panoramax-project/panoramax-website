@@ -76,17 +76,14 @@
       "stats_button": "See statistics",
       "metrics_title": "A growing community",
       "metrics_1": {
-        "number": "10",
         "text": "millions",
         "description": "pictures on Panoramax"
       },
       "metrics_2": {
-        "number": "90 000",
         "text": "km",
         "description": "covered"
       },
       "metrics_3": {
-        "number": "137",
         "text": "contributors",
         "description": "from several types of structures"
       },
@@ -370,6 +367,24 @@
           "alt": "River icon"
         }
       }
+    },
+    "stats": {
+      "stats_title": "Our community is growing",
+      "stats_desc": "Find statistics relating to Panoramax, by number of photos published, by number of kilometers of territory covered and by number of contributors. We also publish information on the number of reuse and use cases.\n\n nData is updated every night.",
+      "stats_month": "month",
+      "chart_pictures_title": "A number of photos",
+      "chart_km_title": "A distance covered",
+      "chart_contrib_title": "Active contributors",
+      "chart_desc": "constantly increasing",
+      "chart_line_picture_title": "Evolution of the number of photos",
+      "chart_line_picture_desc": "{number} million photos published on Panoramax public instances and its evolution per month.\n\nThe calculation was made from the Panoramax instance of <a href='https://panoramax. ign.fr/' target='_blank' rel='noopener'>IGN</a> and <a href='https://panoramax.openstreetmap.fr/' target='_blank' rel='noopener' >OSM</a>.",
+      "chart_bar_contrib_desc": "{number} contributors listed on Panoramax instances. This chart represents the number of contributors who published photos on a Panoramax instance.\n\nThe calculation was made from the Panoramax instance of <a href ='https://panoramax.ign.fr/' target='_blank' rel='noopener'>IGN</a> and <a href='https://panoramax.openstreetmap.fr/' target= '_blank' rel='noopener'>OSM</a>.",
+      "chart_line_km_title": "Evolution of the distance covered",
+      "chart_line_km_desc": "{number} km of territory (roads, paths, waterways) covered on all Panoramax public instances and its evolution per month.\n\nThe calculation was carried out from the Panoramax instance of <a href='https://panoramax.ign.fr/' target='_blank' rel='noopener'>IGN</a> and <a href='https://panoramax.openstreetmap.fr/ ' target='_blank' rel='noopener'>OSM</a>.",
+      "chart_bar_contrib_title": "Active contributors",
+      "doughnut_pictures_title": "Number of photos per instance",
+      "doughnut_km_title": "Coverage in km per instance",
+      "doughnut_contrib_title": "Number of contributors per instance"
     }
   }
 }

@@ -114,7 +114,12 @@
             look="link--blue"
           />
         </li>
-        <li class="list-item dropdown instance-item">
+      </ul>
+      <div class="header-right">
+        <button type="button" @click="displayed = !displayed" class="burger">
+          <img src="@/assets/images/burger-icon.svg" loading="lazy" />
+        </button>
+        <div class="list-item dropdown instance-item">
           <img
             :src="formatLangUrl"
             loading="lazy"
@@ -140,11 +145,8 @@
               <span>{{ lang.toUpperCase() }}</span>
             </button>
           </div>
-        </li>
-      </ul>
-      <button type="button" @click="displayed = !displayed" class="burger">
-        <img src="@/assets/images/burger-icon.svg" loading="lazy" />
-      </button>
+        </div>
+      </div>
     </nav>
   </header>
 </template>
@@ -154,7 +156,9 @@ import { useI18n } from 'vue-i18n'
 import Link from '@/components/Link.vue'
 const { locale, messages, t } = useI18n()
 const displayed = ref<boolean>(true)
-const formatLangUrl = computed(() => `/src/assets/images/${locale.value}.png`)
+const formatLangUrl = computed(() =>
+  new URL(`../assets/images/${locale.value}.png`, import.meta.url).toString()
+)
 const allLocales = computed(() => {
   let locales: string[] = []
   Object.keys(messages.value).forEach(function (key) {
@@ -164,11 +168,10 @@ const allLocales = computed(() => {
 })
 function changeLocale(lang: string): void {
   locale.value = lang
-  console.log(locale.value)
-  displayed.value = !displayed.value
+  displayed.value = false
 }
 function formatLangListUrl(lang: string): string {
-  return `/src/assets/images/${lang}.png`
+  return new URL(`../assets/images/${lang}.png`, import.meta.url).toString()
 }
 </script>
 <style scoped>
@@ -217,7 +220,8 @@ function formatLangListUrl(lang: string): string {
 .lang-block {
   top: 5.5rem;
   width: fit-content;
-  left: -0.5rem;
+  left: -1rem;
+  padding: 0.5rem;
 }
 .instances-block div:nth-child(2) {
   margin-bottom: 2rem;
@@ -226,7 +230,7 @@ function formatLangListUrl(lang: string): string {
 
 .image-instance-link {
   width: 2rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .image-all-pictures {
   background: var(--violet);
@@ -264,6 +268,10 @@ function formatLangListUrl(lang: string): string {
   background-color: var(--white);
   border: none;
   cursor: pointer;
+}
+.header-right {
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1324px) {
   .header {
@@ -317,8 +325,9 @@ function formatLangListUrl(lang: string): string {
   .list-item {
     padding: 1rem;
   }
-  .instances-block div:first-child {
+  .instances-block div:nth-child(2) {
     margin-bottom: 0;
+    margin-top: 0;
   }
   .instance-item {
     width: 100%;
@@ -331,6 +340,16 @@ function formatLangListUrl(lang: string): string {
   }
   .desktop {
     display: none;
+  }
+  .header-right .instance-item {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 2rem;
+    padding-bottom: 0;
+  }
+  .lang-block {
+    top: 4rem;
+    left: -2rem;
   }
 }
 </style>
