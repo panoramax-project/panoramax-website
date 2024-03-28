@@ -402,22 +402,14 @@ const medias = computed((): Image[] => {
 })
 
 watchEffect(() => {
-  const api = import.meta.env.VITE_API_URL
   if (viewer.value) {
-    viewer.value = new Viewer(
-      'viewer', // Div ID
-      api,
-      { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0', lang: locale.value }
-    )
+    const api = import.meta.env.VITE_API_URL
+    initViewer(api)
   }
 })
 onMounted(async () => {
   const api = import.meta.env.VITE_API_URL
-  viewer.value = new Viewer(
-    'viewer', // Div ID
-    api,
-    { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0', lang: locale.value }
-  )
+  initViewer(api)
   const data = await fetch(`${api}stats/`)
   const jsonData = await data.json()
   stats.value = [
@@ -441,6 +433,13 @@ onMounted(async () => {
   ]
 })
 
+function initViewer(api: string): void {
+  viewer.value = new Viewer(
+    'viewer', // Div ID
+    api,
+    { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0', lang: locale.value }
+  )
+}
 function img(name: string): string {
   return new URL(`../assets/images/${name}`, import.meta.url).toString()
 }
