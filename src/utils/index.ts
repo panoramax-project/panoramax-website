@@ -36,8 +36,15 @@ function getSecondMondayDate() {
 }
 function formatNumber(num: number): string {
   if (num < 1000) return String(num)
-  if (num < 1000000)
-    return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
-  else return (num / 1000000).toFixed(1)
+  if (num >= 10000000) {
+    const numString = String(num)
+    if (numString.length > 7) {
+      const numFormatted = (num / 1000000).toFixed(1)
+      const splitted = numFormatted.split('.')
+      if (splitted[1] === '0') return splitted[0]
+      return numFormatted
+    }
+  }
+  return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
 }
 export { getSecondMondayDate, formatNumber }

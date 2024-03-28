@@ -242,7 +242,7 @@
   </main>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref, computed } from 'vue'
+import { onMounted, ref, computed, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Viewer } from 'geovisio'
 import Link from '@/components/Link.vue'
@@ -276,7 +276,7 @@ interface joinUsData extends Partial<JoinUsEventData> {
   text: string
   url: string
 }
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const howItWorks = computed((): HowItWorksData[] => {
   return [
@@ -401,12 +401,22 @@ const medias = computed((): Image[] => {
   ]
 })
 
+watchEffect(() => {
+  const api = import.meta.env.VITE_API_URL
+  if (viewer.value) {
+    viewer.value = new Viewer(
+      'viewer', // Div ID
+      api,
+      { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0', lang: locale.value }
+    )
+  }
+})
 onMounted(async () => {
   const api = import.meta.env.VITE_API_URL
   viewer.value = new Viewer(
     'viewer', // Div ID
     api,
-    { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0' }
+    { picId: '7bde6d85-a442-4f1b-bd87-86197157b8f0', lang: locale.value }
   )
   const data = await fetch(`${api}stats/`)
   const jsonData = await data.json()

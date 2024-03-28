@@ -154,7 +154,7 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Link from '@/components/Link.vue'
-const { locale, messages, t } = useI18n()
+const { locale, messages } = useI18n()
 const displayed = ref<boolean>(true)
 const formatLangUrl = computed(() =>
   new URL(`../assets/images/${locale.value}.png`, import.meta.url).toString()

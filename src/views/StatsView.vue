@@ -221,55 +221,57 @@ onMounted(async () => {
   const api = import.meta.env.VITE_API_URL
   const data = await fetch(`${api}stats/`)
   const jsonData = await data.json()
-  dataCovKmInstancesPercentage.value = [
-    calcPercentageTwoNumber(
-      jsonData.stats_by_instance.ign.approximated_coverage_km,
-      jsonData.stats_by_instance['osm-fr'].approximated_coverage_km,
-      jsonData.stats_by_instance.ign.approximated_coverage_km
-    ),
-    calcPercentageTwoNumber(
-      jsonData.stats_by_instance.ign.approximated_coverage_km,
-      jsonData.stats_by_instance['osm-fr'].approximated_coverage_km,
-      jsonData.stats_by_instance['osm-fr'].approximated_coverage_km
-    )
-  ]
-  dataCovKmInstances.value = [
-    jsonData.stats_by_instance.ign.approximated_coverage_km,
-    jsonData.stats_by_instance['osm-fr'].approximated_coverage_km
-  ]
-  dataPicturesInstancesPercentage.value = [
-    calcPercentageTwoNumber(
-      jsonData.stats_by_instance.ign.nb_pictures,
-      jsonData.stats_by_instance['osm-fr'].nb_pictures,
-      jsonData.stats_by_instance.ign.nb_pictures
-    ),
-    calcPercentageTwoNumber(
-      jsonData.stats_by_instance.ign.nb_pictures,
-      jsonData.stats_by_instance['osm-fr'].nb_pictures,
-      jsonData.stats_by_instance['osm-fr'].nb_pictures
-    )
-  ]
-  dataPicturesInstances.value = [
-    jsonData.stats_by_instance.ign.nb_pictures,
-    jsonData.stats_by_instance['osm-fr'].nb_pictures
-  ]
-  dataContribInstancesPercentage.value = [
-    calcPercentageTwoNumber(
-      jsonData.stats_by_instance.ign.nb_contributors,
-      jsonData.stats_by_instance['osm-fr'].nb_contributors,
-      jsonData.stats_by_instance.ign.nb_contributors
-    ),
-    calcPercentageTwoNumber(
-      jsonData.stats_by_instance.ign.nb_contributors,
-      jsonData.stats_by_instance['osm-fr'].nb_contributors,
-      jsonData.stats_by_instance['osm-fr'].nb_contributors
-    )
-  ]
-  dataContribInstances.value = [
-    jsonData.stats_by_instance.ign.nb_contributors,
-    jsonData.stats_by_instance['osm-fr'].nb_contributors
-  ]
-
+  let instancesList: string[] = []
+  Object.keys(jsonData.stats_by_instance).forEach(function (key) {
+    instancesList = [...instancesList, key]
+  })
+  let totalApproximatedCoverageKm = 0
+  let totalNbPictures = 0
+  let totalNbContrib = 0
+  instancesList.map((e) => {
+    totalApproximatedCoverageKm =
+      totalApproximatedCoverageKm +
+      jsonData.stats_by_instance[e].approximated_coverage_km
+    totalNbPictures =
+      totalNbPictures + jsonData.stats_by_instance[e].nb_pictures
+    totalNbContrib =
+      totalNbContrib + jsonData.stats_by_instance[e].nb_contributors
+  })
+  instancesList.map((e) => {
+    dataCovKmInstancesPercentage.value = [
+      ...dataCovKmInstancesPercentage.value,
+      calcPercentageTwoNumber(
+        totalApproximatedCoverageKm,
+        jsonData.stats_by_instance[e].approximated_coverage_km
+      )
+    ]
+    dataPicturesInstancesPercentage.value = [
+      ...dataPicturesInstancesPercentage.value,
+      calcPercentageTwoNumber(
+        totalNbPictures,
+        jsonData.stats_by_instance[e].nb_pictures
+      )
+    ]
+    dataContribInstancesPercentage.value = [
+      ...dataContribInstancesPercentage.value,
+      calcPercentageTwoNumber(
+        totalNbContrib,
+        jsonData.stats_by_instance[e].nb_contributors
+      )
+    ]
+    dataCovKmInstances.value = [
+      ...dataCovKmInstances.value,
+      jsonData.stats_by_instance[e].approximated_coverage_km
+    ]
+    dataPicturesInstances.value = [
+      ...dataPicturesInstances.value,
+      jsonData.stats_by_instance[e].nb_pictures
+    ]
+    dataContribInstances.value = [
+      ...dataContribInstances.value,
+      jsonData.stats_by_instance[e].nb_contributors
+    ]
+  })
   stats.value = [
     {
       number: formatNumber(jsonData.generic_stats.nb_pictures),
@@ -287,44 +289,11 @@ onMounted(async () => {
       description: t('pages.home.metrics_3.description')
     }
   ]
-  Object.keys(jsonData.stats_by_upload_month).forEach(function (key) {
-    const approximated_coverage_km =
-      jsonData.stats_by_upload_month[key].ign.approximated_coverage_km +
-      jsonData.stats_by_upload_month[key]['osm-fr'].approximated_coverage_km
-    const collections_length_km =
-      jsonData.stats_by_upload_month[key].ign.collections_length_km +
-      jsonData.stats_by_upload_month[key]['osm-fr'].collections_length_km
-    const nb_active_contributors =
-      jsonData.stats_by_upload_month[key].ign.nb_active_contributors +
-      jsonData.stats_by_upload_month[key]['osm-fr'].nb_active_contributors
-    const nb_contributors =
-      jsonData.stats_by_upload_month[key].ign.nb_contributors +
-      jsonData.stats_by_upload_month[key]['osm-fr'].nb_contributors
-    const nb_pictures =
-      jsonData.stats_by_upload_month[key].ign.nb_pictures +
-      jsonData.stats_by_upload_month[key]['osm-fr'].nb_pictures
-    const pictures_original_size =
-      jsonData.stats_by_upload_month[key].ign.pictures_original_size +
-      jsonData.stats_by_upload_month[key]['osm-fr'].pictures_original_size
-    let obj = {
-      [key]: {
-        approximated_coverage_km,
-        collections_length_km,
-        nb_active_contributors,
-        nb_contributors,
-        nb_pictures,
-        pictures_original_size
-      }
-    }
-
-    dataLabels.value = [...dataLabels.value, key]
-    dataPictures.value = [...dataPictures.value, obj[key].nb_pictures]
-    dataActiveContrib.value = [
-      ...dataActiveContrib.value,
-      obj[key].nb_active_contributors
-    ]
-    dataCovKm.value = [...dataCovKm.value, obj[key].approximated_coverage_km]
-  })
+  const resultCalc = calculateMonthlySum(jsonData.stats_by_upload_month)
+  dataLabels.value = resultCalc.months
+  dataPictures.value = resultCalc.nb_pictures
+  dataActiveContrib.value = resultCalc.nb_active_contributors
+  dataCovKm.value = resultCalc.collections_length_km
   averagePictures.value = `${dataLabels.value.length + 1} ${t(
     'pages.stats.stats_month'
   )}`
@@ -332,13 +301,65 @@ onMounted(async () => {
     'pages.stats.stats_month'
   )}`
 })
-function calcPercentageTwoNumber(
-  numberOne: number,
-  numberTwo: number,
-  numberToCalc: number
-) {
-  const total = numberOne + numberTwo
+function calcPercentageTwoNumber(total: number, numberToCalc: number): number {
   return Math.round((numberToCalc / total) * 100)
+}
+function calculateMonthlySum(data: Record<string, any>): {
+  months: string[]
+  nb_pictures: number[]
+  nb_active_contributors: number[]
+  collections_length_km: number[]
+  approximated_coverage_km: number[]
+  nb_contributors: number[]
+  pictures_original_size: number[]
+} {
+  const result: Record<string, number[]> = {}
+  const months: string[] = []
+
+  for (const month in data) {
+    if (Object.prototype.hasOwnProperty.call(data, month)) {
+      months.push(month)
+      const monthData = data[month]
+
+      for (const key in monthData) {
+        if (Object.prototype.hasOwnProperty.call(monthData, key)) {
+          const entry = monthData[key]
+
+          for (const field in entry) {
+            if (Object.prototype.hasOwnProperty.call(entry, field)) {
+              if (!result[field]) {
+                result[field] = []
+              }
+              const monthIndex = months.indexOf(month)
+
+              if (!result[field][monthIndex]) {
+                result[field][monthIndex] = 0
+              }
+              result[field][monthIndex] += entry[field]
+            }
+          }
+        }
+      }
+    }
+  }
+  for (const field in result) {
+    if (Object.prototype.hasOwnProperty.call(result, field)) {
+      const values = []
+      for (const value of result[field]) {
+        values.push(value)
+      }
+      result[field] = values
+    }
+  }
+  return {
+    months,
+    nb_pictures: result.nb_pictures,
+    nb_active_contributors: result.nb_active_contributors,
+    collections_length_km: result.collections_length_km,
+    approximated_coverage_km: result.approximated_coverage_km,
+    nb_contributors: result.nb_contributors,
+    pictures_original_size: result.pictures_original_size
+  }
 }
 </script>
 
