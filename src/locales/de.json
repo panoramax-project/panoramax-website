@@ -199,53 +199,53 @@
         "url": "/four-icon.png",
         "alt": "Icone main quatre"
       },
-      "subtitle_4": "4 phases to design a useful digital service ",
-      "text_4": "\n<img src='/graphic.jpg':alt='Drawing illustrating the different phases of the Panoramax project' style='width:100%'/>\n<i>DINUM (Interministerial digital department) state startup method / Beta.gouv</i>\n\n<strong>Where do we stand?</strong> \nFollowing the investigation phase led by IGN intrapreneur Camille Salou, the first investment committee validated the project, which is currently pursuing its construction phase within <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign' target='_blank' rel='noopener'>la Fabrique des Géocommuns</a>, with the help of a small team in charge of its development.\nThe next step? A prototype to be designed and tested by the community by the end of April 2023. At the end of 12 months of development, sharing and pooling, it will be decided whether to enter the acceleration phase, and then to consolidate it to ensure the program's exit.",
-      "subtitle_team": "Panoramax team",
+      "subtitle_4": "4 Phasen zur Entwicklung eines nützlichen digitalen Dienstes ",
+      "text_4": "\n<img src='/graphic.jpg':alt='Drawing illustrating the different phases of the Panoramax project' style='width:100%'/>\n<i>DINUM (Interministerial digital department) state startup method / Beta.gouv</i>\n\n<strong>Wo stehen wir?</strong> \nNach der von IGN-Intrapreneur Camille Salou geleiteten Untersuchungsphase bestätigte der erste Investitionsausschuss das Projekt, das derzeit mit Hilfe eines kleinen Teams, das für seine Entwicklung verantwortlich ist, in der Bauphase innerhalb von <a href='https://www.ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign' target='_blank' rel='noopener'>die Fabrik der Geokommunen</a>, mit Hilfe eines kleinen Teams, das für die Entwicklung zuständig ist.\nDer nächste Schritt? Ein Prototyp, der von der Gemeinschaft bis Ende April 2023 entworfen und getestet wird. Nach 12 Monaten der Entwicklung, des Austauschs und der gemeinsamen Nutzung wird entschieden, ob die Beschleunigungsphase eingeleitet und dann konsolidiert werden soll, um den Ausstieg aus dem Programm zu gewährleisten.",
+      "subtitle_team": "Panoramax Team",
       "panoramax_text": "Panoramax",
       "team": {
         "member_1": {
           "name": "Adrien Pavie",
-          "work": "Geo dev",
+          "work": "Geo Entwickler",
           "image_url": "/adrien.jpg",
           "image_alt": "Photo du membre de l'équipe Adrien Pavie"
         },
         "member_2": {
           "name": "Antoine Desbordes",
-          "work": "Backend dev",
+          "work": "Backend Entwickler",
           "image_url": "/antoine.jpg",
           "image_alt": "Photo du membre de l'équipe Antoine Desbodes"
         },
         "member_3": {
           "name": "Camille Salou",
-          "work": "Intrapreneuse",
+          "work": "Intrapreneur",
           "image_url": "/csalou.png",
           "image_alt": "Photo du membre de l'équipe Camille Salou"
         },
         "member_4": {
           "name": "Christian Quest",
-          "work": "Product owner",
+          "work": "Product Owner",
           "image_url": "/christian-quest.jpg",
           "image_alt": "Photo du membre de l'équipe Christian Quest"
         },
         "member_5": {
           "name": "Jean Andreani",
-          "work": "Frontend dev",
+          "work": "Frontend Developer",
           "image_url": "/logo-generique.jpeg",
           "image_alt": "Photo du membre de l'équipe Jean Andreani"
         },
         "member_6": {
           "name": "Mathilde Ferrey",
-          "work": "Business dev",
+          "work": "Business Developer",
           "image_url": "/mferrey.jpeg",
           "image_alt": "Photo du membre de l'équipe Mathilde Ferrey"
         }
       }
     },
     "faq": {
-      "title": "Frequently asked questions : Panoramax and anonymization",
-      "introduction_title": "What is Panoramax ?",
-      "introduction_text": "Panoramax is a platform that provides an inventory of photography and online visualization of places visible from the public highway. Supported by IGN's Fabrique des géocommuns, the platform aims to offer an alternative to private « street view » type offerings, by turning this tool into a digital commons.Anyone can take photographs of places to feed the Panoramax database. This data is then distributed online via a platform. They are freely accessible and reusable.\nThere are legal issues surrounding this data, and it's in this FAQ that we answer some of your questions on this subject..",
+      "title": "Häufig gestellte Fragen : Panoramax und Anonymisierung",
+      "introduction_title": "Was ist Panoramax?",
+      "introduction_text": "Panoramax ist eine Plattform, die ein Inventar von Fotos und eine Online-Visualisierung von Orten bietet, die von öffentlichen Straßen aus sichtbar sind. Die von IGN's Fabrique des géocommuns unterstützte Plattform soll eine Alternative zu privaten "Street View"-Angeboten bieten, indem sie dieses Instrument in ein digitales Gemeingut umwandelt: Jeder kann Orte fotografieren und in die Panoramax-Datenbank einspeisen. Diese Daten werden dann online über eine Plattform verbreitet. Sie sind frei zugänglich und wiederverwendbar.\nEs gibt rechtliche Probleme im Zusammenhang mit diesen Daten, und in dieser FAQ beantworten wir einige Ihrer Fragen zu diesem Thema.",
       "blocks": [
         {
           "title": "Am I allowed to upload photographs with people in them to a Panoramax instance?",
@@ -347,7 +347,7 @@
         "description": "Val Parisis contributes to Panoramax and aims to make a complete transition from Mapillary to Panoramax. The community already has numerous use cases linked to the publication and use of photos:\n• update up-to-date business data (parking, roads, etc.)\n• before/after control of work zones\n• control of topographical plans delivered by service providers\n • control of vector PCRS delivered\n• etc",
         "image": {
           "url": "mairie-icon.svg",
-          "alt": "Icon representing an official building"
+          "alt": "Symbol, das ein offizielles Gebäude darstellt"
         }
       },
       "useCase_2": {
