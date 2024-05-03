@@ -172,6 +172,14 @@
       "community_logo_7": {
         "url": "code-lutin-logo.png",
         "alt": "Logo Code Lutin"
+      },
+      "community_logo_8": {
+        "url": "geovelo-logo.svg",
+        "alt": "Logo Geovelo"
+      },
+      "community_logo_9": {
+        "url": "jungle-bus-logo.svg",
+        "alt": "Logo Jungle Bus"
       }
     },
     "about": {

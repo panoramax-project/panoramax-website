@@ -373,6 +373,14 @@ const communities = computed((): Image[] => {
     {
       url: t('pages.home.community_logo_7.url'),
       alt: t('pages.home.community_logo_7.alt')
+    },
+    {
+      url: t('pages.home.community_logo_8.url'),
+      alt: t('pages.home.community_logo_8.alt')
+    },
+    {
+      url: t('pages.home.community_logo_9.url'),
+      alt: t('pages.home.community_logo_9.alt')
     }
   ]
 })
@@ -608,6 +616,7 @@ section:nth-child(even) {
 .community-list .wrapper-list {
   border-bottom: 0.1rem solid var(--grey);
   padding-bottom: 3rem;
+  flex-wrap: wrap;
 }
 .community-list .home-section-title {
   margin-bottom: 2rem;
@@ -615,7 +624,7 @@ section:nth-child(even) {
 .community-list li {
   margin-right: 2rem;
   margin-left: 2rem;
-  width: 16.66%;
+  margin-top: 1rem;
 }
 .media-list li {
   margin-right: 2rem;
@@ -724,6 +733,7 @@ section:nth-child(even) {
     align-items: center;
     width: 33%;
     margin: 0;
+    margin-top: 1rem;
   }
   .logo-community {
     height: 5rem;
